@@ -29,4 +29,7 @@ By default, the `color` property on Android is set to white. Normalized to black
 #### Ti.UI.View.backgroundImage
 This property is missing in the Titanium SDK v3.1.2
 
+#### Custom Fonts
+Custom fonts are currently not supported in Titanium SDK v3.1.2
+
 
