@@ -14,9 +14,26 @@
  * 
  */
 
-var rowHeight = Ti.UI.iPhone.statusBarHidden ? Math.floor(Ti.Platform.displayCaps.platformHeight/10) :
-											   Math.floor(Ti.Platform.displayCaps.platformHeight/10)-1; // <-- Account for whether the status bar is shown in th app
-var colWidth = Math.floor(Ti.Platform.displayCaps.platformWidth/10);
+/**
+ * Account for required conversions for Android and IOS variance
+ */
+var statusBarVariance = 0;
+var dpToPxConversion = OS_ANDROID ? Ti.Platform.displayCaps.dpi/160 : 1;
+
+if(OS_IOS && !Ti.UI.iPhone.statusBarHidden){
+	statusBarVariance = Ti.Platform.displayCaps.platformHeight <=480 ? 2 : 1;
+}
+else if(OS_ANDROID){
+	statusBarVariance = dpToPxConversion;
+}
+
+/**
+ * Set the standard row/col widths
+ */
+
+var rowHeight = Math.floor(Ti.Platform.displayCaps.platformHeight / (10*dpToPxConversion)) - statusBarVariance;
+var colWidth = Math.floor(Ti.Platform.displayCaps.platformWidth / (10*dpToPxConversion));
+
 
 module.exports = {
 
