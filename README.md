@@ -15,8 +15,8 @@ Across Appcelerator Titanium, there are certain inconsistencies that this bootst
 #### Ti.UI.ImageView.preventDefaultImage
 Nothing says amatuer hour like seeing this default images load up
 
-### iPhone
 
+### iOS
 
 
 ### Android
