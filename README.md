@@ -4,6 +4,7 @@ Bootstrap and reset stylesheet for use with Appcelerator Titanium Alloy Cross Pl
 
 Also - a big thanks to the Twitter Boostrap project. Its just awsome and a big inspiration for what I'm trying to do here with Appcelerator Titanium and Alloy.
 
+THIS IS A WORK IN PROGRESS AND SHOULD BE CONSIDERED EXPERIMENTAL - ESPECIALLY THE GRID SYSTEM :)
 
 ## Platform Standardizations & Inconsistencies
 
