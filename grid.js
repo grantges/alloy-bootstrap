@@ -1,4 +1,4 @@
-**
+/*
  * 	Grid Based Layout System for Alloy MVC Framework and Appcelerator Titanium
  *  This is modeled loosely after twitter bootstrap project
  *  
