@@ -12,25 +12,22 @@ Across Appcelerator Titanium, there are certain inconsistencies that this bootst
 
 ### All Platforms
 
-
 #### Ti.UI.ImageView.preventDefaultImage
 Nothing says amatuer hour like seeing this default images load up
 
+### Ti.UI.Window
+Standardized the background color to `white` for all windows
 
-### iOS
-
+### Ti.UI.TextField
+Borders will be rounded with a standard `1px` border
 
 ### Android
 
 #### Ti.UI.Label.color
 By default, the `color` property on Android is set to white. Normalized to black with this Bootstrap stylesheet. 
 
-### Blackberry
 
-#### Ti.UI.View.backgroundImage
-This property is missing in the Titanium SDK v3.1.2
-
-#### Custom Fonts
-Custom fonts are currently not supported in Titanium SDK v3.1.2
+### Icon Font Support
+With this latest update i have added support for using [FontAwesome](http://fontawesome.io) icons within your project. In order to best standardize on this with the font naming convention, I am using a service called [Icomoon.io](http://icomoon.io) to package the FontAwesome icon set for distribution. Simply go to their font builder and select the FontAwesome package, making sure to remove any others that may be included and this should work for you.
 
 
