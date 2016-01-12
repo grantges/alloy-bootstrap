@@ -31,6 +31,47 @@
 }
 
 /**************************************************************************
+ * Widget Icons
+ *************************************************************************/
+
+'.menuIcon':{
+	left: 10,
+	width: 30,
+	height: 54,
+	textAlign: 'center',
+	font:{
+		fontFamily: 'FontAwesome', fontSize: 18 
+	},
+	//color: "#7d8493" <-- Old School iOS
+	color: "#fff"
+},
+
+'.dropDownIcon':{
+	left: 10,
+	width: 30,
+	height: 54,
+	textAlign: 'center',
+	font:{
+		fontFamily: 'FontAwesome', fontSize: 18 
+	},
+	//color: "#7d8493" <-- Old School iOS
+	color: "#fff"
+},
+
+
+'.chevronListIcon':{
+	right: 10,
+	width: 30,
+	height: 54,
+	textAlign: 'center',
+	font:{
+		fontFamily: 'FontAwesome', fontSize: 18 
+	},
+	//color: "#7d8493" <-- Old School iOS
+	color: "#ff0000"
+},
+
+/**************************************************************************
  * General Helper and Utility Styles
  *************************************************************************/
 
@@ -131,84 +172,84 @@
 }
 
 ".col-1": {
-	width: Alloy.Bootstrap.Grid.columnWidths.col1,
+	width: "8.33333333%",
 	height:50,
 	layout: 'horizontal',
-	left: Alloy.Bootstrap.Grid.columnbufferStyle
+	left: 5
 },
 
 ".col-2": {
-	width: Alloy.Bootstrap.Grid.columnWidths.col2,
+	width: "16.66666667%",
 	height: Ti.UI.SIZE,
 	layout: 'horizontal',
 	left: 5
 },
 
 ".col-3": {
-	width: Alloy.Bootstrap.Grid.columnWidths.col3,
+	width: "25%",
 	height: Ti.UI.SIZE,
 	layout: 'horizontal',
 	left: 5
 },
 
 ".col-4": {
-	width: Alloy.Bootstrap.Grid.columnWidths.col4,
+	width: "33.33333333%",
 	height: Ti.UI.SIZE,
 	layout: 'horizontal',
 	left: 5
 },
 
 ".col-5": {
-	width: Alloy.Bootstrap.Grid.columnWidths.col5,
+	width: "41.66666667%",
 	height: Ti.UI.SIZE,
 	layout: 'horizontal',
 	left: 5
 },
 
 ".col-6": {
-	width: Alloy.Bootstrap.Grid.columnWidths.col6,
+	width: "50%",
 	height: Ti.UI.SIZE,
 	layout: 'horizontal',
 	left: 5
 },
 
 ".col-7": {
-	width: Alloy.Bootstrap.Grid.columnWidths.col7,
+	width: "58.33333333%",
 	height: Ti.UI.SIZE,
 	layout: 'horizontal',
 	left: 5
 },
 
 ".col-8": {
-	width: Alloy.Bootstrap.Grid.columnWidths.col8,
+	width: "66.66666667%",
 	height: Ti.UI.SIZE,
 	layout: 'horizontal',
 	left: 5
 },
 
 ".col-9": {
-	width: Alloy.Bootstrap.Grid.columnWidths.col9,
+	width: "75%",
 	height: Ti.UI.SIZE,
 	layout: 'horizontal',
 	left: 5
 },
 
 ".col-10": {
-	width: Alloy.Bootstrap.Grid.columnWidths.col10,
+	width: "83.33333333%",
 	height: Ti.UI.SIZE,
 	layout: 'horizontal',
 	left: 5
 },
 
 ".col-11": {
-	width: Alloy.Bootstrap.Grid.columnWidths.col11,
+	width: "91.66666667%",
 	height: Ti.UI.SIZE,
 	layout: 'horizontal',
 	left: 5
 },
 
 ".col-12": {
-	width: Alloy.Bootstrap.Grid.columnWidths.col12,
+	width: "100%",
 	height: Ti.UI.SIZE,
 	layout: 'horizontal',
 	left: 5
@@ -508,2566 +549,2231 @@
 
 ".icon": {
   font: {
-    fontFamily: "icomoon"
+    fontFamily: "icomoon" 
   }
 },
 
+
 ".icon-sunrise": {
-	text: "\ue600"
+    text: "\ue900"
 },
-
 ".icon-sun": {
-	text: "\ue601"
+    text: "\ue901"
 },
-
 ".icon-moon": {
-	text: "\ue602"
+    text: "\ue902"
 },
-
 ".icon-sun2": {
-	text: "\ue603"
+    text: "\ue903"
 },
-
 ".icon-windy": {
-	text: "\ue604"
+    text: "\ue904"
 },
-
 ".icon-wind": {
-	text: "\ue605"
+    text: "\ue905"
 },
-
 ".icon-snowflake": {
-	text: "\ue606"
+    text: "\ue906"
 },
-
 ".icon-cloudy": {
-	text: "\ue607"
+    text: "\ue907"
 },
-
 ".icon-cloud2": {
-	text: "\ue608"
+    text: "\ue908"
 },
-
 ".icon-weather": {
-	text: "\ue609"
+    text: "\ue909"
 },
-
 ".icon-weather2": {
-	text: "\ue60a"
+    text: "\ue90a"
 },
-
 ".icon-weather3": {
-	text: "\ue60b"
+    text: "\ue90b"
 },
-
 ".icon-lines": {
-	text: "\ue60c"
+    text: "\ue90c"
 },
-
 ".icon-cloud3": {
-	text: "\ue60d"
+    text: "\ue90d"
 },
-
 ".icon-lightning": {
-	text: "\ue60e"
+    text: "\ue90e"
 },
-
 ".icon-lightning2": {
-	text: "\ue60f"
+    text: "\ue90f"
 },
-
 ".icon-rainy": {
-	text: "\ue610"
+    text: "\ue910"
 },
-
 ".icon-rainy2": {
-	text: "\ue611"
+    text: "\ue911"
 },
-
 ".icon-windy2": {
-	text: "\ue612"
+    text: "\ue912"
 },
-
 ".icon-windy3": {
-	text: "\ue613"
+    text: "\ue913"
 },
-
 ".icon-snowy": {
-	text: "\ue614"
+    text: "\ue914"
 },
-
 ".icon-snowy2": {
-	text: "\ue615"
+    text: "\ue915"
 },
-
 ".icon-snowy3": {
-	text: "\ue616"
+    text: "\ue916"
 },
-
 ".icon-weather4": {
-	text: "\ue617"
+    text: "\ue917"
 },
-
 ".icon-cloudy2": {
-	text: "\ue618"
+    text: "\ue918"
 },
-
 ".icon-cloud4": {
-	text: "\ue619"
+    text: "\ue919"
 },
-
 ".icon-lightning3": {
-	text: "\ue61a"
+    text: "\ue91a"
 },
-
 ".icon-sun3": {
-	text: "\ue61b"
+    text: "\ue91b"
 },
-
 ".icon-moon2": {
-	text: "\ue61c"
+    text: "\ue91c"
 },
-
 ".icon-cloudy3": {
-	text: "\ue61d"
+    text: "\ue91d"
 },
-
 ".icon-cloud5": {
-	text: "\ue61e"
+    text: "\ue91e"
 },
-
 ".icon-cloud6": {
-	text: "\ue61f"
+    text: "\ue91f"
 },
-
 ".icon-lightning4": {
-	text: "\ue620"
+    text: "\ue920"
 },
-
 ".icon-rainy3": {
-	text: "\ue621"
+    text: "\ue921"
 },
-
 ".icon-rainy4": {
-	text: "\ue622"
+    text: "\ue922"
 },
-
 ".icon-windy4": {
-	text: "\ue623"
+    text: "\ue923"
 },
-
 ".icon-windy5": {
-	text: "\ue624"
+    text: "\ue924"
 },
-
 ".icon-snowy4": {
-	text: "\ue625"
+    text: "\ue925"
 },
-
 ".icon-snowy5": {
-	text: "\ue626"
+    text: "\ue926"
 },
-
 ".icon-weather5": {
-	text: "\ue627"
+    text: "\ue927"
 },
-
 ".icon-cloudy4": {
-	text: "\ue628"
+    text: "\ue928"
 },
-
 ".icon-lightning5": {
-	text: "\ue629"
+    text: "\ue929"
 },
-
 ".icon-thermometer": {
-	text: "\ue62a"
+    text: "\ue92a"
 },
-
 ".icon-compass2": {
-	text: "\ue62b"
+    text: "\ue92b"
 },
-
 ".icon-none": {
-	text: "\ue62c"
+    text: "\ue92c"
 },
-
 ".icon-Celsius": {
-	text: "\ue62d"
+    text: "\ue92d"
 },
-
 ".icon-Fahrenheit": {
-	text: "\ue62e"
+    text: "\ue92e"
 },
-
 ".icon-glass": {
-	text: "\uf000"
+    text: "\uf000"
 },
-
 ".icon-music": {
-	text: "\uf001"
+    text: "\uf001"
 },
-
 ".icon-search": {
-	text: "\uf002"
+    text: "\uf002"
 },
-
 ".icon-envelope-o": {
-	text: "\uf003"
+    text: "\uf003"
 },
-
 ".icon-heart": {
-	text: "\uf004"
+    text: "\uf004"
 },
-
 ".icon-star": {
-	text: "\uf005"
+    text: "\uf005"
 },
-
 ".icon-star-o": {
-	text: "\uf006"
+    text: "\uf006"
 },
-
 ".icon-user": {
-	text: "\uf007"
+    text: "\uf007"
 },
-
 ".icon-film": {
-	text: "\uf008"
+    text: "\uf008"
 },
-
 ".icon-th-large": {
-	text: "\uf009"
+    text: "\uf009"
 },
-
 ".icon-th": {
-	text: "\uf00a"
+    text: "\uf00a"
 },
-
 ".icon-th-list": {
-	text: "\uf00b"
+    text: "\uf00b"
 },
-
 ".icon-check": {
-	text: "\uf00c"
+    text: "\uf00c"
 },
-
 ".icon-close": {
-	text: "\uf00d"
+    text: "\uf00d"
 },
-
 ".icon-remove": {
-	text: "\uf00d"
+    text: "\uf00d"
 },
-
 ".icon-times": {
-	text: "\uf00d"
+    text: "\uf00d"
 },
-
 ".icon-search-plus": {
-	text: "\uf00e"
+    text: "\uf00e"
 },
-
 ".icon-search-minus": {
-	text: "\uf010"
+    text: "\uf010"
 },
-
 ".icon-power-off": {
-	text: "\uf011"
+    text: "\uf011"
 },
-
 ".icon-signal": {
-	text: "\uf012"
+    text: "\uf012"
 },
-
 ".icon-cog": {
-	text: "\uf013"
+    text: "\uf013"
 },
-
 ".icon-gear": {
-	text: "\uf013"
+    text: "\uf013"
 },
-
 ".icon-trash-o": {
-	text: "\uf014"
+    text: "\uf014"
 },
-
 ".icon-home": {
-	text: "\uf015"
+    text: "\uf015"
 },
-
 ".icon-file-o": {
-	text: "\uf016"
+    text: "\uf016"
 },
-
 ".icon-clock-o": {
-	text: "\uf017"
+    text: "\uf017"
 },
-
 ".icon-road": {
-	text: "\uf018"
+    text: "\uf018"
 },
-
 ".icon-download": {
-	text: "\uf019"
+    text: "\uf019"
 },
-
 ".icon-arrow-circle-o-down": {
-	text: "\uf01a"
+    text: "\uf01a"
 },
-
 ".icon-arrow-circle-o-up": {
-	text: "\uf01b"
+    text: "\uf01b"
 },
-
 ".icon-inbox": {
-	text: "\uf01c"
+    text: "\uf01c"
 },
-
 ".icon-play-circle-o": {
-	text: "\uf01d"
+    text: "\uf01d"
 },
-
 ".icon-repeat": {
-	text: "\uf01e"
+    text: "\uf01e"
 },
-
 ".icon-rotate-right": {
-	text: "\uf01e"
+    text: "\uf01e"
 },
-
 ".icon-refresh": {
-	text: "\uf021"
+    text: "\uf021"
 },
-
 ".icon-list-alt": {
-	text: "\uf022"
+    text: "\uf022"
 },
-
 ".icon-lock": {
-	text: "\uf023"
+    text: "\uf023"
 },
-
 ".icon-flag": {
-	text: "\uf024"
+    text: "\uf024"
 },
-
 ".icon-headphones": {
-	text: "\uf025"
+    text: "\uf025"
 },
-
 ".icon-volume-off": {
-	text: "\uf026"
+    text: "\uf026"
 },
-
 ".icon-volume-down": {
-	text: "\uf027"
+    text: "\uf027"
 },
-
 ".icon-volume-up": {
-	text: "\uf028"
+    text: "\uf028"
 },
-
 ".icon-qrcode": {
-	text: "\uf029"
+    text: "\uf029"
 },
-
 ".icon-barcode": {
-	text: "\uf02a"
+    text: "\uf02a"
 },
-
 ".icon-tag": {
-	text: "\uf02b"
+    text: "\uf02b"
 },
-
 ".icon-tags": {
-	text: "\uf02c"
+    text: "\uf02c"
 },
-
 ".icon-book": {
-	text: "\uf02d"
+    text: "\uf02d"
 },
-
 ".icon-bookmark": {
-	text: "\uf02e"
+    text: "\uf02e"
 },
-
 ".icon-print": {
-	text: "\uf02f"
+    text: "\uf02f"
 },
-
 ".icon-camera": {
-	text: "\uf030"
+    text: "\uf030"
 },
-
 ".icon-font": {
-	text: "\uf031"
+    text: "\uf031"
 },
-
 ".icon-bold": {
-	text: "\uf032"
+    text: "\uf032"
 },
-
 ".icon-italic": {
-	text: "\uf033"
+    text: "\uf033"
 },
-
 ".icon-text-height": {
-	text: "\uf034"
+    text: "\uf034"
 },
-
 ".icon-text-width": {
-	text: "\uf035"
+    text: "\uf035"
 },
-
 ".icon-align-left": {
-	text: "\uf036"
+    text: "\uf036"
 },
-
 ".icon-align-center": {
-	text: "\uf037"
+    text: "\uf037"
 },
-
 ".icon-align-right": {
-	text: "\uf038"
+    text: "\uf038"
 },
-
 ".icon-align-justify": {
-	text: "\uf039"
+    text: "\uf039"
 },
-
 ".icon-list": {
-	text: "\uf03a"
+    text: "\uf03a"
 },
-
 ".icon-dedent": {
-	text: "\uf03b"
+    text: "\uf03b"
 },
-
 ".icon-outdent": {
-	text: "\uf03b"
+    text: "\uf03b"
 },
-
 ".icon-indent": {
-	text: "\uf03c"
+    text: "\uf03c"
 },
-
 ".icon-video-camera": {
-	text: "\uf03d"
+    text: "\uf03d"
 },
-
 ".icon-image": {
-	text: "\uf03e"
+    text: "\uf03e"
 },
-
 ".icon-photo": {
-	text: "\uf03e"
+    text: "\uf03e"
 },
-
 ".icon-picture-o": {
-	text: "\uf03e"
+    text: "\uf03e"
 },
-
 ".icon-pencil": {
-	text: "\uf040"
+    text: "\uf040"
 },
-
 ".icon-map-marker": {
-	text: "\uf041"
+    text: "\uf041"
 },
-
 ".icon-adjust": {
-	text: "\uf042"
+    text: "\uf042"
 },
-
 ".icon-tint": {
-	text: "\uf043"
+    text: "\uf043"
 },
-
 ".icon-edit": {
-	text: "\uf044"
+    text: "\uf044"
 },
-
 ".icon-pencil-square-o": {
-	text: "\uf044"
+    text: "\uf044"
 },
-
 ".icon-share-square-o": {
-	text: "\uf045"
+    text: "\uf045"
 },
-
 ".icon-check-square-o": {
-	text: "\uf046"
+    text: "\uf046"
 },
-
 ".icon-arrows": {
-	text: "\uf047"
+    text: "\uf047"
 },
-
 ".icon-step-backward": {
-	text: "\uf048"
+    text: "\uf048"
 },
-
 ".icon-fast-backward": {
-	text: "\uf049"
+    text: "\uf049"
 },
-
 ".icon-backward": {
-	text: "\uf04a"
+    text: "\uf04a"
 },
-
 ".icon-play": {
-	text: "\uf04b"
+    text: "\uf04b"
 },
-
 ".icon-pause": {
-	text: "\uf04c"
+    text: "\uf04c"
 },
-
 ".icon-stop": {
-	text: "\uf04d"
+    text: "\uf04d"
 },
-
 ".icon-forward": {
-	text: "\uf04e"
+    text: "\uf04e"
 },
-
 ".icon-fast-forward": {
-	text: "\uf050"
+    text: "\uf050"
 },
-
 ".icon-step-forward": {
-	text: "\uf051"
+    text: "\uf051"
 },
-
 ".icon-eject": {
-	text: "\uf052"
+    text: "\uf052"
 },
-
 ".icon-chevron-left": {
-	text: "\uf053"
+    text: "\uf053"
 },
-
 ".icon-chevron-right": {
-	text: "\uf054"
+    text: "\uf054"
 },
-
 ".icon-plus-circle": {
-	text: "\uf055"
+    text: "\uf055"
 },
-
 ".icon-minus-circle": {
-	text: "\uf056"
+    text: "\uf056"
 },
-
 ".icon-times-circle": {
-	text: "\uf057"
+    text: "\uf057"
 },
-
 ".icon-check-circle": {
-	text: "\uf058"
+    text: "\uf058"
 },
-
 ".icon-question-circle": {
-	text: "\uf059"
+    text: "\uf059"
 },
-
 ".icon-info-circle": {
-	text: "\uf05a"
+    text: "\uf05a"
 },
-
 ".icon-crosshairs": {
-	text: "\uf05b"
+    text: "\uf05b"
 },
-
 ".icon-times-circle-o": {
-	text: "\uf05c"
+    text: "\uf05c"
 },
-
 ".icon-check-circle-o": {
-	text: "\uf05d"
+    text: "\uf05d"
 },
-
 ".icon-ban": {
-	text: "\uf05e"
+    text: "\uf05e"
 },
-
 ".icon-arrow-left": {
-	text: "\uf060"
+    text: "\uf060"
 },
-
 ".icon-arrow-right": {
-	text: "\uf061"
+    text: "\uf061"
 },
-
 ".icon-arrow-up": {
-	text: "\uf062"
+    text: "\uf062"
 },
-
 ".icon-arrow-down": {
-	text: "\uf063"
+    text: "\uf063"
 },
-
 ".icon-mail-forward": {
-	text: "\uf064"
+    text: "\uf064"
 },
-
 ".icon-share": {
-	text: "\uf064"
+    text: "\uf064"
 },
-
 ".icon-expand": {
-	text: "\uf065"
+    text: "\uf065"
 },
-
 ".icon-compress": {
-	text: "\uf066"
+    text: "\uf066"
 },
-
 ".icon-plus": {
-	text: "\uf067"
+    text: "\uf067"
 },
-
 ".icon-minus": {
-	text: "\uf068"
+    text: "\uf068"
 },
-
 ".icon-asterisk": {
-	text: "\uf069"
+    text: "\uf069"
 },
-
 ".icon-exclamation-circle": {
-	text: "\uf06a"
+    text: "\uf06a"
 },
-
 ".icon-gift": {
-	text: "\uf06b"
+    text: "\uf06b"
 },
-
 ".icon-leaf": {
-	text: "\uf06c"
+    text: "\uf06c"
 },
-
 ".icon-fire": {
-	text: "\uf06d"
+    text: "\uf06d"
 },
-
 ".icon-eye": {
-	text: "\uf06e"
+    text: "\uf06e"
 },
-
 ".icon-eye-slash": {
-	text: "\uf070"
+    text: "\uf070"
 },
-
 ".icon-exclamation-triangle": {
-	text: "\uf071"
+    text: "\uf071"
 },
-
 ".icon-warning": {
-	text: "\uf071"
+    text: "\uf071"
 },
-
 ".icon-plane": {
-	text: "\uf072"
+    text: "\uf072"
 },
-
 ".icon-calendar": {
-	text: "\uf073"
+    text: "\uf073"
 },
-
 ".icon-random": {
-	text: "\uf074"
+    text: "\uf074"
 },
-
 ".icon-comment": {
-	text: "\uf075"
+    text: "\uf075"
 },
-
 ".icon-magnet": {
-	text: "\uf076"
+    text: "\uf076"
 },
-
 ".icon-chevron-up": {
-	text: "\uf077"
+    text: "\uf077"
 },
-
 ".icon-chevron-down": {
-	text: "\uf078"
+    text: "\uf078"
 },
-
 ".icon-retweet": {
-	text: "\uf079"
+    text: "\uf079"
 },
-
 ".icon-shopping-cart": {
-	text: "\uf07a"
+    text: "\uf07a"
 },
-
 ".icon-folder": {
-	text: "\uf07b"
+    text: "\uf07b"
 },
-
 ".icon-folder-open": {
-	text: "\uf07c"
+    text: "\uf07c"
 },
-
 ".icon-arrows-v": {
-	text: "\uf07d"
+    text: "\uf07d"
 },
-
 ".icon-arrows-h": {
-	text: "\uf07e"
+    text: "\uf07e"
 },
-
 ".icon-bar-chart": {
-	text: "\uf080"
+    text: "\uf080"
 },
-
 ".icon-bar-chart-o": {
-	text: "\uf080"
+    text: "\uf080"
 },
-
 ".icon-twitter-square": {
-	text: "\uf081"
+    text: "\uf081"
 },
-
 ".icon-facebook-square": {
-	text: "\uf082"
+    text: "\uf082"
 },
-
 ".icon-camera-retro": {
-	text: "\uf083"
+    text: "\uf083"
 },
-
 ".icon-key": {
-	text: "\uf084"
+    text: "\uf084"
 },
-
 ".icon-cogs": {
-	text: "\uf085"
+    text: "\uf085"
 },
-
 ".icon-gears": {
-	text: "\uf085"
+    text: "\uf085"
 },
-
 ".icon-comments": {
-	text: "\uf086"
+    text: "\uf086"
 },
-
 ".icon-thumbs-o-up": {
-	text: "\uf087"
+    text: "\uf087"
 },
-
 ".icon-thumbs-o-down": {
-	text: "\uf088"
+    text: "\uf088"
 },
-
 ".icon-star-half": {
-	text: "\uf089"
+    text: "\uf089"
 },
-
 ".icon-heart-o": {
-	text: "\uf08a"
+    text: "\uf08a"
 },
-
 ".icon-sign-out": {
-	text: "\uf08b"
+    text: "\uf08b"
 },
-
 ".icon-linkedin-square": {
-	text: "\uf08c"
+    text: "\uf08c"
 },
-
 ".icon-thumb-tack": {
-	text: "\uf08d"
+    text: "\uf08d"
 },
-
 ".icon-external-link": {
-	text: "\uf08e"
+    text: "\uf08e"
 },
-
 ".icon-sign-in": {
-	text: "\uf090"
+    text: "\uf090"
 },
-
 ".icon-trophy": {
-	text: "\uf091"
+    text: "\uf091"
 },
-
 ".icon-github-square": {
-	text: "\uf092"
+    text: "\uf092"
 },
-
 ".icon-upload": {
-	text: "\uf093"
+    text: "\uf093"
 },
-
 ".icon-lemon-o": {
-	text: "\uf094"
+    text: "\uf094"
 },
-
 ".icon-phone": {
-	text: "\uf095"
+    text: "\uf095"
 },
-
 ".icon-square-o": {
-	text: "\uf096"
+    text: "\uf096"
 },
-
 ".icon-bookmark-o": {
-	text: "\uf097"
+    text: "\uf097"
 },
-
 ".icon-phone-square": {
-	text: "\uf098"
+    text: "\uf098"
 },
-
 ".icon-twitter": {
-	text: "\uf099"
+    text: "\uf099"
 },
-
 ".icon-facebook": {
-	text: "\uf09a"
+    text: "\uf09a"
 },
-
 ".icon-facebook-f": {
-	text: "\uf09a"
+    text: "\uf09a"
 },
-
 ".icon-github": {
-	text: "\uf09b"
+    text: "\uf09b"
 },
-
 ".icon-unlock": {
-	text: "\uf09c"
+    text: "\uf09c"
 },
-
 ".icon-credit-card": {
-	text: "\uf09d"
+    text: "\uf09d"
 },
-
+".icon-feed": {
+    text: "\uf09e"
+},
 ".icon-rss": {
-	text: "\uf09e"
+    text: "\uf09e"
 },
-
 ".icon-hdd-o": {
-	text: "\uf0a0"
+    text: "\uf0a0"
 },
-
 ".icon-bullhorn": {
-	text: "\uf0a1"
+    text: "\uf0a1"
 },
-
 ".icon-bell-o": {
-	text: "\uf0a2"
+    text: "\uf0a2"
 },
-
 ".icon-certificate": {
-	text: "\uf0a3"
+    text: "\uf0a3"
 },
-
 ".icon-hand-o-right": {
-	text: "\uf0a4"
+    text: "\uf0a4"
 },
-
 ".icon-hand-o-left": {
-	text: "\uf0a5"
+    text: "\uf0a5"
 },
-
 ".icon-hand-o-up": {
-	text: "\uf0a6"
+    text: "\uf0a6"
 },
-
 ".icon-hand-o-down": {
-	text: "\uf0a7"
+    text: "\uf0a7"
 },
-
 ".icon-arrow-circle-left": {
-	text: "\uf0a8"
+    text: "\uf0a8"
 },
-
 ".icon-arrow-circle-right": {
-	text: "\uf0a9"
+    text: "\uf0a9"
 },
-
 ".icon-arrow-circle-up": {
-	text: "\uf0aa"
+    text: "\uf0aa"
 },
-
 ".icon-arrow-circle-down": {
-	text: "\uf0ab"
+    text: "\uf0ab"
 },
-
 ".icon-globe": {
-	text: "\uf0ac"
+    text: "\uf0ac"
 },
-
 ".icon-wrench": {
-	text: "\uf0ad"
+    text: "\uf0ad"
 },
-
 ".icon-tasks": {
-	text: "\uf0ae"
+    text: "\uf0ae"
 },
-
 ".icon-filter": {
-	text: "\uf0b0"
+    text: "\uf0b0"
 },
-
 ".icon-briefcase": {
-	text: "\uf0b1"
+    text: "\uf0b1"
 },
-
 ".icon-arrows-alt": {
-	text: "\uf0b2"
+    text: "\uf0b2"
 },
-
 ".icon-group": {
-	text: "\uf0c0"
+    text: "\uf0c0"
 },
-
 ".icon-users": {
-	text: "\uf0c0"
+    text: "\uf0c0"
 },
-
 ".icon-chain": {
-	text: "\uf0c1"
+    text: "\uf0c1"
 },
-
 ".icon-link": {
-	text: "\uf0c1"
+    text: "\uf0c1"
 },
-
 ".icon-cloud": {
-	text: "\uf0c2"
+    text: "\uf0c2"
 },
-
 ".icon-flask": {
-	text: "\uf0c3"
+    text: "\uf0c3"
 },
-
 ".icon-cut": {
-	text: "\uf0c4"
+    text: "\uf0c4"
 },
-
 ".icon-scissors": {
-	text: "\uf0c4"
+    text: "\uf0c4"
 },
-
 ".icon-copy": {
-	text: "\uf0c5"
+    text: "\uf0c5"
 },
-
 ".icon-files-o": {
-	text: "\uf0c5"
+    text: "\uf0c5"
 },
-
 ".icon-paperclip": {
-	text: "\uf0c6"
+    text: "\uf0c6"
 },
-
 ".icon-floppy-o": {
-	text: "\uf0c7"
+    text: "\uf0c7"
 },
-
 ".icon-save": {
-	text: "\uf0c7"
+    text: "\uf0c7"
 },
-
 ".icon-square": {
-	text: "\uf0c8"
+    text: "\uf0c8"
 },
-
 ".icon-bars": {
-	text: "\uf0c9"
+    text: "\uf0c9"
 },
-
 ".icon-navicon": {
-	text: "\uf0c9"
+    text: "\uf0c9"
 },
-
 ".icon-reorder": {
-	text: "\uf0c9"
+    text: "\uf0c9"
 },
-
 ".icon-list-ul": {
-	text: "\uf0ca"
+    text: "\uf0ca"
 },
-
 ".icon-list-ol": {
-	text: "\uf0cb"
+    text: "\uf0cb"
 },
-
 ".icon-strikethrough": {
-	text: "\uf0cc"
+    text: "\uf0cc"
 },
-
 ".icon-underline": {
-	text: "\uf0cd"
+    text: "\uf0cd"
 },
-
 ".icon-table": {
-	text: "\uf0ce"
+    text: "\uf0ce"
 },
-
 ".icon-magic": {
-	text: "\uf0d0"
+    text: "\uf0d0"
 },
-
 ".icon-truck": {
-	text: "\uf0d1"
+    text: "\uf0d1"
 },
-
 ".icon-pinterest": {
-	text: "\uf0d2"
+    text: "\uf0d2"
 },
-
 ".icon-pinterest-square": {
-	text: "\uf0d3"
+    text: "\uf0d3"
 },
-
 ".icon-google-plus-square": {
-	text: "\uf0d4"
+    text: "\uf0d4"
 },
-
 ".icon-google-plus": {
-	text: "\uf0d5"
+    text: "\uf0d5"
 },
-
 ".icon-money": {
-	text: "\uf0d6"
+    text: "\uf0d6"
 },
-
 ".icon-caret-down": {
-	text: "\uf0d7"
+    text: "\uf0d7"
 },
-
 ".icon-caret-up": {
-	text: "\uf0d8"
+    text: "\uf0d8"
 },
-
 ".icon-caret-left": {
-	text: "\uf0d9"
+    text: "\uf0d9"
 },
-
 ".icon-caret-right": {
-	text: "\uf0da"
+    text: "\uf0da"
 },
-
 ".icon-columns": {
-	text: "\uf0db"
+    text: "\uf0db"
 },
-
 ".icon-sort": {
-	text: "\uf0dc"
+    text: "\uf0dc"
 },
-
 ".icon-unsorted": {
-	text: "\uf0dc"
+    text: "\uf0dc"
 },
-
 ".icon-sort-desc": {
-	text: "\uf0dd"
+    text: "\uf0dd"
 },
-
 ".icon-sort-down": {
-	text: "\uf0dd"
+    text: "\uf0dd"
 },
-
 ".icon-sort-asc": {
-	text: "\uf0de"
+    text: "\uf0de"
 },
-
 ".icon-sort-up": {
-	text: "\uf0de"
+    text: "\uf0de"
 },
-
 ".icon-envelope": {
-	text: "\uf0e0"
+    text: "\uf0e0"
 },
-
 ".icon-linkedin": {
-	text: "\uf0e1"
+    text: "\uf0e1"
 },
-
 ".icon-rotate-left": {
-	text: "\uf0e2"
+    text: "\uf0e2"
 },
-
 ".icon-undo": {
-	text: "\uf0e2"
+    text: "\uf0e2"
 },
-
 ".icon-gavel": {
-	text: "\uf0e3"
+    text: "\uf0e3"
 },
-
 ".icon-legal": {
-	text: "\uf0e3"
+    text: "\uf0e3"
 },
-
 ".icon-dashboard": {
-	text: "\uf0e4"
+    text: "\uf0e4"
 },
-
 ".icon-tachometer": {
-	text: "\uf0e4"
+    text: "\uf0e4"
 },
-
 ".icon-comment-o": {
-	text: "\uf0e5"
+    text: "\uf0e5"
 },
-
 ".icon-comments-o": {
-	text: "\uf0e6"
+    text: "\uf0e6"
 },
-
 ".icon-bolt": {
-	text: "\uf0e7"
+    text: "\uf0e7"
 },
-
 ".icon-flash": {
-	text: "\uf0e7"
+    text: "\uf0e7"
 },
-
 ".icon-sitemap": {
-	text: "\uf0e8"
+    text: "\uf0e8"
 },
-
 ".icon-umbrella": {
-	text: "\uf0e9"
+    text: "\uf0e9"
 },
-
 ".icon-clipboard": {
-	text: "\uf0ea"
+    text: "\uf0ea"
 },
-
 ".icon-paste": {
-	text: "\uf0ea"
+    text: "\uf0ea"
 },
-
 ".icon-lightbulb-o": {
-	text: "\uf0eb"
+    text: "\uf0eb"
 },
-
 ".icon-exchange": {
-	text: "\uf0ec"
+    text: "\uf0ec"
 },
-
 ".icon-cloud-download": {
-	text: "\uf0ed"
+    text: "\uf0ed"
 },
-
 ".icon-cloud-upload": {
-	text: "\uf0ee"
+    text: "\uf0ee"
 },
-
 ".icon-user-md": {
-	text: "\uf0f0"
+    text: "\uf0f0"
 },
-
 ".icon-stethoscope": {
-	text: "\uf0f1"
+    text: "\uf0f1"
 },
-
 ".icon-suitcase": {
-	text: "\uf0f2"
+    text: "\uf0f2"
 },
-
 ".icon-bell": {
-	text: "\uf0f3"
+    text: "\uf0f3"
 },
-
 ".icon-coffee": {
-	text: "\uf0f4"
+    text: "\uf0f4"
 },
-
 ".icon-cutlery": {
-	text: "\uf0f5"
+    text: "\uf0f5"
 },
-
 ".icon-file-text-o": {
-	text: "\uf0f6"
+    text: "\uf0f6"
 },
-
 ".icon-building-o": {
-	text: "\uf0f7"
+    text: "\uf0f7"
 },
-
 ".icon-hospital-o": {
-	text: "\uf0f8"
+    text: "\uf0f8"
 },
-
 ".icon-ambulance": {
-	text: "\uf0f9"
+    text: "\uf0f9"
 },
-
 ".icon-medkit": {
-	text: "\uf0fa"
+    text: "\uf0fa"
 },
-
 ".icon-fighter-jet": {
-	text: "\uf0fb"
+    text: "\uf0fb"
 },
-
 ".icon-beer": {
-	text: "\uf0fc"
+    text: "\uf0fc"
 },
-
 ".icon-h-square": {
-	text: "\uf0fd"
+    text: "\uf0fd"
 },
-
 ".icon-plus-square": {
-	text: "\uf0fe"
+    text: "\uf0fe"
 },
-
 ".icon-angle-double-left": {
-	text: "\uf100"
+    text: "\uf100"
 },
-
 ".icon-angle-double-right": {
-	text: "\uf101"
+    text: "\uf101"
 },
-
 ".icon-angle-double-up": {
-	text: "\uf102"
+    text: "\uf102"
 },
-
 ".icon-angle-double-down": {
-	text: "\uf103"
+    text: "\uf103"
 },
-
 ".icon-angle-left": {
-	text: "\uf104"
+    text: "\uf104"
 },
-
 ".icon-angle-right": {
-	text: "\uf105"
+    text: "\uf105"
 },
-
 ".icon-angle-up": {
-	text: "\uf106"
+    text: "\uf106"
 },
-
 ".icon-angle-down": {
-	text: "\uf107"
+    text: "\uf107"
 },
-
 ".icon-desktop": {
-	text: "\uf108"
+    text: "\uf108"
 },
-
 ".icon-laptop": {
-	text: "\uf109"
+    text: "\uf109"
 },
-
 ".icon-tablet": {
-	text: "\uf10a"
+    text: "\uf10a"
 },
-
 ".icon-mobile": {
-	text: "\uf10b"
+    text: "\uf10b"
 },
-
 ".icon-mobile-phone": {
-	text: "\uf10b"
+    text: "\uf10b"
 },
-
 ".icon-circle-o": {
-	text: "\uf10c"
+    text: "\uf10c"
 },
-
 ".icon-quote-left": {
-	text: "\uf10d"
+    text: "\uf10d"
 },
-
 ".icon-quote-right": {
-	text: "\uf10e"
+    text: "\uf10e"
 },
-
 ".icon-spinner": {
-	text: "\uf110"
+    text: "\uf110"
 },
-
 ".icon-circle": {
-	text: "\uf111"
+    text: "\uf111"
 },
-
 ".icon-mail-reply": {
-	text: "\uf112"
+    text: "\uf112"
 },
-
 ".icon-reply": {
-	text: "\uf112"
+    text: "\uf112"
 },
-
 ".icon-github-alt": {
-	text: "\uf113"
+    text: "\uf113"
 },
-
 ".icon-folder-o": {
-	text: "\uf114"
+    text: "\uf114"
 },
-
 ".icon-folder-open-o": {
-	text: "\uf115"
+    text: "\uf115"
 },
-
 ".icon-smile-o": {
-	text: "\uf118"
+    text: "\uf118"
 },
-
 ".icon-frown-o": {
-	text: "\uf119"
+    text: "\uf119"
 },
-
 ".icon-meh-o": {
-	text: "\uf11a"
+    text: "\uf11a"
 },
-
 ".icon-gamepad": {
-	text: "\uf11b"
+    text: "\uf11b"
 },
-
 ".icon-keyboard-o": {
-	text: "\uf11c"
+    text: "\uf11c"
 },
-
 ".icon-flag-o": {
-	text: "\uf11d"
+    text: "\uf11d"
 },
-
 ".icon-flag-checkered": {
-	text: "\uf11e"
+    text: "\uf11e"
 },
-
 ".icon-terminal": {
-	text: "\uf120"
+    text: "\uf120"
 },
-
 ".icon-code": {
-	text: "\uf121"
+    text: "\uf121"
 },
-
 ".icon-mail-reply-all": {
-	text: "\uf122"
+    text: "\uf122"
 },
-
 ".icon-reply-all": {
-	text: "\uf122"
+    text: "\uf122"
 },
-
 ".icon-star-half-empty": {
-	text: "\uf123"
+    text: "\uf123"
 },
-
 ".icon-star-half-full": {
-	text: "\uf123"
+    text: "\uf123"
 },
-
 ".icon-star-half-o": {
-	text: "\uf123"
+    text: "\uf123"
 },
-
 ".icon-location-arrow": {
-	text: "\uf124"
+    text: "\uf124"
 },
-
 ".icon-crop": {
-	text: "\uf125"
+    text: "\uf125"
 },
-
 ".icon-code-fork": {
-	text: "\uf126"
+    text: "\uf126"
 },
-
 ".icon-chain-broken": {
-	text: "\uf127"
+    text: "\uf127"
 },
-
 ".icon-unlink": {
-	text: "\uf127"
+    text: "\uf127"
 },
-
 ".icon-question": {
-	text: "\uf128"
+    text: "\uf128"
 },
-
 ".icon-info": {
-	text: "\uf129"
+    text: "\uf129"
 },
-
 ".icon-exclamation": {
-	text: "\uf12a"
+    text: "\uf12a"
 },
-
 ".icon-superscript": {
-	text: "\uf12b"
+    text: "\uf12b"
 },
-
 ".icon-subscript": {
-	text: "\uf12c"
+    text: "\uf12c"
 },
-
 ".icon-eraser": {
-	text: "\uf12d"
+    text: "\uf12d"
 },
-
 ".icon-puzzle-piece": {
-	text: "\uf12e"
+    text: "\uf12e"
 },
-
 ".icon-microphone": {
-	text: "\uf130"
+    text: "\uf130"
 },
-
 ".icon-microphone-slash": {
-	text: "\uf131"
+    text: "\uf131"
 },
-
 ".icon-shield": {
-	text: "\uf132"
+    text: "\uf132"
 },
-
 ".icon-calendar-o": {
-	text: "\uf133"
+    text: "\uf133"
 },
-
 ".icon-fire-extinguisher": {
-	text: "\uf134"
+    text: "\uf134"
 },
-
 ".icon-rocket": {
-	text: "\uf135"
+    text: "\uf135"
 },
-
 ".icon-maxcdn": {
-	text: "\uf136"
+    text: "\uf136"
 },
-
 ".icon-chevron-circle-left": {
-	text: "\uf137"
+    text: "\uf137"
 },
-
 ".icon-chevron-circle-right": {
-	text: "\uf138"
+    text: "\uf138"
 },
-
 ".icon-chevron-circle-up": {
-	text: "\uf139"
+    text: "\uf139"
 },
-
 ".icon-chevron-circle-down": {
-	text: "\uf13a"
+    text: "\uf13a"
 },
-
 ".icon-html5": {
-	text: "\uf13b"
+    text: "\uf13b"
 },
-
 ".icon-css3": {
-	text: "\uf13c"
+    text: "\uf13c"
 },
-
 ".icon-anchor": {
-	text: "\uf13d"
+    text: "\uf13d"
 },
-
 ".icon-unlock-alt": {
-	text: "\uf13e"
+    text: "\uf13e"
 },
-
 ".icon-bullseye": {
-	text: "\uf140"
+    text: "\uf140"
 },
-
 ".icon-ellipsis-h": {
-	text: "\uf141"
+    text: "\uf141"
 },
-
 ".icon-ellipsis-v": {
-	text: "\uf142"
+    text: "\uf142"
 },
-
 ".icon-rss-square": {
-	text: "\uf143"
+    text: "\uf143"
 },
-
 ".icon-play-circle": {
-	text: "\uf144"
+    text: "\uf144"
 },
-
 ".icon-ticket": {
-	text: "\uf145"
+    text: "\uf145"
 },
-
 ".icon-minus-square": {
-	text: "\uf146"
+    text: "\uf146"
 },
-
 ".icon-minus-square-o": {
-	text: "\uf147"
+    text: "\uf147"
 },
-
 ".icon-level-up": {
-	text: "\uf148"
+    text: "\uf148"
 },
-
 ".icon-level-down": {
-	text: "\uf149"
+    text: "\uf149"
 },
-
 ".icon-check-square": {
-	text: "\uf14a"
+    text: "\uf14a"
 },
-
 ".icon-pencil-square": {
-	text: "\uf14b"
+    text: "\uf14b"
 },
-
 ".icon-external-link-square": {
-	text: "\uf14c"
+    text: "\uf14c"
 },
-
 ".icon-share-square": {
-	text: "\uf14d"
+    text: "\uf14d"
 },
-
 ".icon-compass": {
-	text: "\uf14e"
+    text: "\uf14e"
 },
-
 ".icon-caret-square-o-down": {
-	text: "\uf150"
+    text: "\uf150"
 },
-
 ".icon-toggle-down": {
-	text: "\uf150"
+    text: "\uf150"
 },
-
 ".icon-caret-square-o-up": {
-	text: "\uf151"
+    text: "\uf151"
 },
-
 ".icon-toggle-up": {
-	text: "\uf151"
+    text: "\uf151"
 },
-
 ".icon-caret-square-o-right": {
-	text: "\uf152"
+    text: "\uf152"
 },
-
 ".icon-toggle-right": {
-	text: "\uf152"
+    text: "\uf152"
 },
-
 ".icon-eur": {
-	text: "\uf153"
+    text: "\uf153"
 },
-
 ".icon-euro": {
-	text: "\uf153"
+    text: "\uf153"
 },
-
 ".icon-gbp": {
-	text: "\uf154"
+    text: "\uf154"
 },
-
 ".icon-dollar": {
-	text: "\uf155"
+    text: "\uf155"
 },
-
 ".icon-usd": {
-	text: "\uf155"
+    text: "\uf155"
 },
-
 ".icon-inr": {
-	text: "\uf156"
+    text: "\uf156"
 },
-
 ".icon-rupee": {
-	text: "\uf156"
+    text: "\uf156"
 },
-
 ".icon-cny": {
-	text: "\uf157"
+    text: "\uf157"
 },
-
 ".icon-jpy": {
-	text: "\uf157"
+    text: "\uf157"
 },
-
 ".icon-rmb": {
-	text: "\uf157"
+    text: "\uf157"
 },
-
 ".icon-yen": {
-	text: "\uf157"
+    text: "\uf157"
 },
-
 ".icon-rouble": {
-	text: "\uf158"
+    text: "\uf158"
 },
-
 ".icon-rub": {
-	text: "\uf158"
+    text: "\uf158"
 },
-
 ".icon-ruble": {
-	text: "\uf158"
+    text: "\uf158"
 },
-
 ".icon-krw": {
-	text: "\uf159"
+    text: "\uf159"
 },
-
 ".icon-won": {
-	text: "\uf159"
+    text: "\uf159"
 },
-
 ".icon-bitcoin": {
-	text: "\uf15a"
+    text: "\uf15a"
 },
-
 ".icon-btc": {
-	text: "\uf15a"
+    text: "\uf15a"
 },
-
 ".icon-file": {
-	text: "\uf15b"
+    text: "\uf15b"
 },
-
 ".icon-file-text": {
-	text: "\uf15c"
+    text: "\uf15c"
 },
-
 ".icon-sort-alpha-asc": {
-	text: "\uf15d"
+    text: "\uf15d"
 },
-
 ".icon-sort-alpha-desc": {
-	text: "\uf15e"
+    text: "\uf15e"
 },
-
 ".icon-sort-amount-asc": {
-	text: "\uf160"
+    text: "\uf160"
 },
-
 ".icon-sort-amount-desc": {
-	text: "\uf161"
+    text: "\uf161"
 },
-
 ".icon-sort-numeric-asc": {
-	text: "\uf162"
+    text: "\uf162"
 },
-
 ".icon-sort-numeric-desc": {
-	text: "\uf163"
+    text: "\uf163"
 },
-
 ".icon-thumbs-up": {
-	text: "\uf164"
+    text: "\uf164"
 },
-
 ".icon-thumbs-down": {
-	text: "\uf165"
+    text: "\uf165"
 },
-
 ".icon-youtube-square": {
-	text: "\uf166"
+    text: "\uf166"
 },
-
 ".icon-youtube": {
-	text: "\uf167"
+    text: "\uf167"
 },
-
 ".icon-xing": {
-	text: "\uf168"
+    text: "\uf168"
 },
-
 ".icon-xing-square": {
-	text: "\uf169"
+    text: "\uf169"
 },
-
 ".icon-youtube-play": {
-	text: "\uf16a"
+    text: "\uf16a"
 },
-
 ".icon-dropbox": {
-	text: "\uf16b"
+    text: "\uf16b"
 },
-
 ".icon-stack-overflow": {
-	text: "\uf16c"
+    text: "\uf16c"
 },
-
 ".icon-instagram": {
-	text: "\uf16d"
+    text: "\uf16d"
 },
-
 ".icon-flickr": {
-	text: "\uf16e"
+    text: "\uf16e"
 },
-
 ".icon-adn": {
-	text: "\uf170"
+    text: "\uf170"
 },
-
 ".icon-bitbucket": {
-	text: "\uf171"
+    text: "\uf171"
 },
-
 ".icon-bitbucket-square": {
-	text: "\uf172"
+    text: "\uf172"
 },
-
 ".icon-tumblr": {
-	text: "\uf173"
+    text: "\uf173"
 },
-
 ".icon-tumblr-square": {
-	text: "\uf174"
+    text: "\uf174"
 },
-
 ".icon-long-arrow-down": {
-	text: "\uf175"
+    text: "\uf175"
 },
-
 ".icon-long-arrow-up": {
-	text: "\uf176"
+    text: "\uf176"
 },
-
 ".icon-long-arrow-left": {
-	text: "\uf177"
+    text: "\uf177"
 },
-
 ".icon-long-arrow-right": {
-	text: "\uf178"
+    text: "\uf178"
 },
-
 ".icon-apple": {
-	text: "\uf179"
+    text: "\uf179"
 },
-
 ".icon-windows": {
-	text: "\uf17a"
+    text: "\uf17a"
 },
-
 ".icon-android": {
-	text: "\uf17b"
+    text: "\uf17b"
 },
-
 ".icon-linux": {
-	text: "\uf17c"
+    text: "\uf17c"
 },
-
 ".icon-dribbble": {
-	text: "\uf17d"
+    text: "\uf17d"
 },
-
 ".icon-skype": {
-	text: "\uf17e"
+    text: "\uf17e"
 },
-
 ".icon-foursquare": {
-	text: "\uf180"
+    text: "\uf180"
 },
-
 ".icon-trello": {
-	text: "\uf181"
+    text: "\uf181"
 },
-
 ".icon-female": {
-	text: "\uf182"
+    text: "\uf182"
 },
-
 ".icon-male": {
-	text: "\uf183"
+    text: "\uf183"
 },
-
 ".icon-gittip": {
-	text: "\uf184"
+    text: "\uf184"
 },
-
 ".icon-gratipay": {
-	text: "\uf184"
+    text: "\uf184"
 },
-
 ".icon-sun-o": {
-	text: "\uf185"
+    text: "\uf185"
 },
-
 ".icon-moon-o": {
-	text: "\uf186"
+    text: "\uf186"
 },
-
 ".icon-archive": {
-	text: "\uf187"
+    text: "\uf187"
 },
-
 ".icon-bug": {
-	text: "\uf188"
+    text: "\uf188"
 },
-
 ".icon-vk": {
-	text: "\uf189"
+    text: "\uf189"
 },
-
 ".icon-weibo": {
-	text: "\uf18a"
+    text: "\uf18a"
 },
-
 ".icon-renren": {
-	text: "\uf18b"
+    text: "\uf18b"
 },
-
 ".icon-pagelines": {
-	text: "\uf18c"
+    text: "\uf18c"
 },
-
 ".icon-stack-exchange": {
-	text: "\uf18d"
+    text: "\uf18d"
 },
-
 ".icon-arrow-circle-o-right": {
-	text: "\uf18e"
+    text: "\uf18e"
 },
-
 ".icon-arrow-circle-o-left": {
-	text: "\uf190"
+    text: "\uf190"
 },
-
 ".icon-caret-square-o-left": {
-	text: "\uf191"
+    text: "\uf191"
 },
-
 ".icon-toggle-left": {
-	text: "\uf191"
+    text: "\uf191"
 },
-
 ".icon-dot-circle-o": {
-	text: "\uf192"
+    text: "\uf192"
 },
-
 ".icon-wheelchair": {
-	text: "\uf193"
+    text: "\uf193"
 },
-
 ".icon-vimeo-square": {
-	text: "\uf194"
+    text: "\uf194"
 },
-
 ".icon-try": {
-	text: "\uf195"
+    text: "\uf195"
 },
-
 ".icon-turkish-lira": {
-	text: "\uf195"
+    text: "\uf195"
 },
-
 ".icon-plus-square-o": {
-	text: "\uf196"
+    text: "\uf196"
 },
-
 ".icon-space-shuttle": {
-	text: "\uf197"
+    text: "\uf197"
 },
-
 ".icon-slack": {
-	text: "\uf198"
+    text: "\uf198"
 },
-
 ".icon-envelope-square": {
-	text: "\uf199"
+    text: "\uf199"
 },
-
 ".icon-wordpress": {
-	text: "\uf19a"
+    text: "\uf19a"
 },
-
 ".icon-openid": {
-	text: "\uf19b"
+    text: "\uf19b"
 },
-
 ".icon-bank": {
-	text: "\uf19c"
+    text: "\uf19c"
 },
-
 ".icon-institution": {
-	text: "\uf19c"
+    text: "\uf19c"
 },
-
 ".icon-university": {
-	text: "\uf19c"
+    text: "\uf19c"
 },
-
 ".icon-graduation-cap": {
-	text: "\uf19d"
+    text: "\uf19d"
 },
-
 ".icon-mortar-board": {
-	text: "\uf19d"
+    text: "\uf19d"
 },
-
 ".icon-yahoo": {
-	text: "\uf19e"
+    text: "\uf19e"
 },
-
 ".icon-google": {
-	text: "\uf1a0"
+    text: "\uf1a0"
 },
-
 ".icon-reddit": {
-	text: "\uf1a1"
+    text: "\uf1a1"
 },
-
 ".icon-reddit-square": {
-	text: "\uf1a2"
+    text: "\uf1a2"
 },
-
 ".icon-stumbleupon-circle": {
-	text: "\uf1a3"
+    text: "\uf1a3"
 },
-
 ".icon-stumbleupon": {
-	text: "\uf1a4"
+    text: "\uf1a4"
 },
-
 ".icon-delicious": {
-	text: "\uf1a5"
+    text: "\uf1a5"
 },
-
 ".icon-digg": {
-	text: "\uf1a6"
+    text: "\uf1a6"
 },
-
 ".icon-pied-piper": {
-	text: "\uf1a7"
+    text: "\uf1a7"
 },
-
 ".icon-pied-piper-alt": {
-	text: "\uf1a8"
+    text: "\uf1a8"
 },
-
 ".icon-drupal": {
-	text: "\uf1a9"
+    text: "\uf1a9"
 },
-
 ".icon-joomla": {
-	text: "\uf1aa"
+    text: "\uf1aa"
 },
-
 ".icon-language": {
-	text: "\uf1ab"
+    text: "\uf1ab"
 },
-
 ".icon-fax": {
-	text: "\uf1ac"
+    text: "\uf1ac"
 },
-
 ".icon-building": {
-	text: "\uf1ad"
+    text: "\uf1ad"
 },
-
 ".icon-child": {
-	text: "\uf1ae"
+    text: "\uf1ae"
 },
-
 ".icon-paw": {
-	text: "\uf1b0"
+    text: "\uf1b0"
 },
-
 ".icon-spoon": {
-	text: "\uf1b1"
+    text: "\uf1b1"
 },
-
 ".icon-cube": {
-	text: "\uf1b2"
+    text: "\uf1b2"
 },
-
 ".icon-cubes": {
-	text: "\uf1b3"
+    text: "\uf1b3"
 },
-
 ".icon-behance": {
-	text: "\uf1b4"
+    text: "\uf1b4"
 },
-
 ".icon-behance-square": {
-	text: "\uf1b5"
+    text: "\uf1b5"
 },
-
 ".icon-steam": {
-	text: "\uf1b6"
+    text: "\uf1b6"
 },
-
 ".icon-steam-square": {
-	text: "\uf1b7"
+    text: "\uf1b7"
 },
-
 ".icon-recycle": {
-	text: "\uf1b8"
+    text: "\uf1b8"
 },
-
 ".icon-automobile": {
-	text: "\uf1b9"
+    text: "\uf1b9"
 },
-
 ".icon-car": {
-	text: "\uf1b9"
+    text: "\uf1b9"
 },
-
 ".icon-cab": {
-	text: "\uf1ba"
+    text: "\uf1ba"
 },
-
 ".icon-taxi": {
-	text: "\uf1ba"
+    text: "\uf1ba"
 },
-
 ".icon-tree": {
-	text: "\uf1bb"
+    text: "\uf1bb"
 },
-
 ".icon-spotify": {
-	text: "\uf1bc"
+    text: "\uf1bc"
 },
-
 ".icon-deviantart": {
-	text: "\uf1bd"
+    text: "\uf1bd"
 },
-
 ".icon-soundcloud": {
-	text: "\uf1be"
+    text: "\uf1be"
 },
-
 ".icon-database": {
-	text: "\uf1c0"
+    text: "\uf1c0"
 },
-
 ".icon-file-pdf-o": {
-	text: "\uf1c1"
+    text: "\uf1c1"
 },
-
 ".icon-file-word-o": {
-	text: "\uf1c2"
+    text: "\uf1c2"
 },
-
 ".icon-file-excel-o": {
-	text: "\uf1c3"
+    text: "\uf1c3"
 },
-
 ".icon-file-powerpoint-o": {
-	text: "\uf1c4"
+    text: "\uf1c4"
 },
-
 ".icon-file-image-o": {
-	text: "\uf1c5"
+    text: "\uf1c5"
 },
-
 ".icon-file-photo-o": {
-	text: "\uf1c5"
+    text: "\uf1c5"
 },
-
 ".icon-file-picture-o": {
-	text: "\uf1c5"
+    text: "\uf1c5"
 },
-
 ".icon-file-archive-o": {
-	text: "\uf1c6"
+    text: "\uf1c6"
 },
-
 ".icon-file-zip-o": {
-	text: "\uf1c6"
+    text: "\uf1c6"
 },
-
 ".icon-file-audio-o": {
-	text: "\uf1c7"
+    text: "\uf1c7"
 },
-
 ".icon-file-sound-o": {
-	text: "\uf1c7"
+    text: "\uf1c7"
 },
-
 ".icon-file-movie-o": {
-	text: "\uf1c8"
+    text: "\uf1c8"
 },
-
 ".icon-file-video-o": {
-	text: "\uf1c8"
+    text: "\uf1c8"
 },
-
 ".icon-file-code-o": {
-	text: "\uf1c9"
+    text: "\uf1c9"
 },
-
 ".icon-vine": {
-	text: "\uf1ca"
+    text: "\uf1ca"
 },
-
 ".icon-codepen": {
-	text: "\uf1cb"
+    text: "\uf1cb"
 },
-
 ".icon-jsfiddle": {
-	text: "\uf1cc"
+    text: "\uf1cc"
 },
-
 ".icon-life-bouy": {
-	text: "\uf1cd"
+    text: "\uf1cd"
 },
-
 ".icon-life-buoy": {
-	text: "\uf1cd"
+    text: "\uf1cd"
 },
-
 ".icon-life-ring": {
-	text: "\uf1cd"
+    text: "\uf1cd"
 },
-
 ".icon-life-saver": {
-	text: "\uf1cd"
+    text: "\uf1cd"
 },
-
 ".icon-support": {
-	text: "\uf1cd"
+    text: "\uf1cd"
 },
-
 ".icon-circle-o-notch": {
-	text: "\uf1ce"
+    text: "\uf1ce"
 },
-
 ".icon-ra": {
-	text: "\uf1d0"
+    text: "\uf1d0"
 },
-
 ".icon-rebel": {
-	text: "\uf1d0"
+    text: "\uf1d0"
 },
-
 ".icon-empire": {
-	text: "\uf1d1"
+    text: "\uf1d1"
 },
-
 ".icon-ge": {
-	text: "\uf1d1"
+    text: "\uf1d1"
 },
-
 ".icon-git-square": {
-	text: "\uf1d2"
+    text: "\uf1d2"
 },
-
 ".icon-git": {
-	text: "\uf1d3"
+    text: "\uf1d3"
 },
-
 ".icon-hacker-news": {
-	text: "\uf1d4"
+    text: "\uf1d4"
 },
-
+".icon-y-combinator-square": {
+    text: "\uf1d4"
+},
+".icon-yc-square": {
+    text: "\uf1d4"
+},
 ".icon-tencent-weibo": {
-	text: "\uf1d5"
+    text: "\uf1d5"
 },
-
 ".icon-qq": {
-	text: "\uf1d6"
+    text: "\uf1d6"
 },
-
 ".icon-wechat": {
-	text: "\uf1d7"
+    text: "\uf1d7"
 },
-
 ".icon-weixin": {
-	text: "\uf1d7"
+    text: "\uf1d7"
 },
-
 ".icon-paper-plane": {
-	text: "\uf1d8"
+    text: "\uf1d8"
 },
-
 ".icon-send": {
-	text: "\uf1d8"
+    text: "\uf1d8"
 },
-
 ".icon-paper-plane-o": {
-	text: "\uf1d9"
+    text: "\uf1d9"
 },
-
 ".icon-send-o": {
-	text: "\uf1d9"
+    text: "\uf1d9"
 },
-
 ".icon-history": {
-	text: "\uf1da"
+    text: "\uf1da"
 },
-
 ".icon-circle-thin": {
-	text: "\uf1db"
+    text: "\uf1db"
 },
-
-".icon-genderless": {
-	text: "\uf1db"
-},
-
 ".icon-header": {
-	text: "\uf1dc"
+    text: "\uf1dc"
 },
-
 ".icon-paragraph": {
-	text: "\uf1dd"
+    text: "\uf1dd"
 },
-
 ".icon-sliders": {
-	text: "\uf1de"
+    text: "\uf1de"
 },
-
 ".icon-share-alt": {
-	text: "\uf1e0"
+    text: "\uf1e0"
 },
-
 ".icon-share-alt-square": {
-	text: "\uf1e1"
+    text: "\uf1e1"
 },
-
 ".icon-bomb": {
-	text: "\uf1e2"
+    text: "\uf1e2"
 },
-
 ".icon-futbol-o": {
-	text: "\uf1e3"
+    text: "\uf1e3"
 },
-
 ".icon-soccer-ball-o": {
-	text: "\uf1e3"
+    text: "\uf1e3"
 },
-
 ".icon-tty": {
-	text: "\uf1e4"
+    text: "\uf1e4"
 },
-
 ".icon-binoculars": {
-	text: "\uf1e5"
+    text: "\uf1e5"
 },
-
 ".icon-plug": {
-	text: "\uf1e6"
+    text: "\uf1e6"
 },
-
 ".icon-slideshare": {
-	text: "\uf1e7"
+    text: "\uf1e7"
 },
-
 ".icon-twitch": {
-	text: "\uf1e8"
+    text: "\uf1e8"
 },
-
 ".icon-yelp": {
-	text: "\uf1e9"
+    text: "\uf1e9"
 },
-
 ".icon-newspaper-o": {
-	text: "\uf1ea"
+    text: "\uf1ea"
 },
-
 ".icon-wifi": {
-	text: "\uf1eb"
+    text: "\uf1eb"
 },
-
 ".icon-calculator": {
-	text: "\uf1ec"
+    text: "\uf1ec"
 },
-
 ".icon-paypal": {
-	text: "\uf1ed"
+    text: "\uf1ed"
 },
-
 ".icon-google-wallet": {
-	text: "\uf1ee"
+    text: "\uf1ee"
 },
-
 ".icon-cc-visa": {
-	text: "\uf1f0"
+    text: "\uf1f0"
 },
-
 ".icon-cc-mastercard": {
-	text: "\uf1f1"
+    text: "\uf1f1"
 },
-
 ".icon-cc-discover": {
-	text: "\uf1f2"
+    text: "\uf1f2"
 },
-
 ".icon-cc-amex": {
-	text: "\uf1f3"
+    text: "\uf1f3"
 },
-
 ".icon-cc-paypal": {
-	text: "\uf1f4"
+    text: "\uf1f4"
 },
-
 ".icon-cc-stripe": {
-	text: "\uf1f5"
+    text: "\uf1f5"
 },
-
 ".icon-bell-slash": {
-	text: "\uf1f6"
+    text: "\uf1f6"
 },
-
 ".icon-bell-slash-o": {
-	text: "\uf1f7"
+    text: "\uf1f7"
 },
-
 ".icon-trash": {
-	text: "\uf1f8"
+    text: "\uf1f8"
 },
-
 ".icon-copyright": {
-	text: "\uf1f9"
+    text: "\uf1f9"
 },
-
 ".icon-at": {
-	text: "\uf1fa"
+    text: "\uf1fa"
 },
-
 ".icon-eyedropper": {
-	text: "\uf1fb"
+    text: "\uf1fb"
 },
-
 ".icon-paint-brush": {
-	text: "\uf1fc"
+    text: "\uf1fc"
 },
-
 ".icon-birthday-cake": {
-	text: "\uf1fd"
+    text: "\uf1fd"
 },
-
 ".icon-area-chart": {
-	text: "\uf1fe"
+    text: "\uf1fe"
 },
-
 ".icon-pie-chart": {
-	text: "\uf200"
+    text: "\uf200"
 },
-
 ".icon-line-chart": {
-	text: "\uf201"
+    text: "\uf201"
 },
-
 ".icon-lastfm": {
-	text: "\uf202"
+    text: "\uf202"
 },
-
 ".icon-lastfm-square": {
-	text: "\uf203"
+    text: "\uf203"
 },
-
 ".icon-toggle-off": {
-	text: "\uf204"
+    text: "\uf204"
 },
-
 ".icon-toggle-on": {
-	text: "\uf205"
+    text: "\uf205"
 },
-
 ".icon-bicycle": {
-	text: "\uf206"
+    text: "\uf206"
 },
-
 ".icon-bus": {
-	text: "\uf207"
+    text: "\uf207"
 },
-
 ".icon-ioxhost": {
-	text: "\uf208"
+    text: "\uf208"
 },
-
 ".icon-angellist": {
-	text: "\uf209"
+    text: "\uf209"
 },
-
 ".icon-cc": {
-	text: "\uf20a"
+    text: "\uf20a"
 },
-
 ".icon-ils": {
-	text: "\uf20b"
+    text: "\uf20b"
 },
-
 ".icon-shekel": {
-	text: "\uf20b"
+    text: "\uf20b"
 },
-
 ".icon-sheqel": {
-	text: "\uf20b"
+    text: "\uf20b"
 },
-
 ".icon-meanpath": {
-	text: "\uf20c"
+    text: "\uf20c"
 },
-
 ".icon-buysellads": {
-	text: "\uf20d"
+    text: "\uf20d"
 },
-
 ".icon-connectdevelop": {
-	text: "\uf20e"
+    text: "\uf20e"
 },
-
 ".icon-dashcube": {
-	text: "\uf210"
+    text: "\uf210"
 },
-
 ".icon-forumbee": {
-	text: "\uf211"
+    text: "\uf211"
 },
-
 ".icon-leanpub": {
-	text: "\uf212"
+    text: "\uf212"
 },
-
 ".icon-sellsy": {
-	text: "\uf213"
+    text: "\uf213"
 },
-
 ".icon-shirtsinbulk": {
-	text: "\uf214"
+    text: "\uf214"
 },
-
 ".icon-simplybuilt": {
-	text: "\uf215"
+    text: "\uf215"
 },
-
 ".icon-skyatlas": {
-	text: "\uf216"
+    text: "\uf216"
 },
-
 ".icon-cart-plus": {
-	text: "\uf217"
+    text: "\uf217"
 },
-
 ".icon-cart-arrow-down": {
-	text: "\uf218"
+    text: "\uf218"
 },
-
 ".icon-diamond": {
-	text: "\uf219"
+    text: "\uf219"
 },
-
 ".icon-ship": {
-	text: "\uf21a"
+    text: "\uf21a"
 },
-
 ".icon-user-secret": {
-	text: "\uf21b"
+    text: "\uf21b"
 },
-
 ".icon-motorcycle": {
-	text: "\uf21c"
+    text: "\uf21c"
 },
-
 ".icon-street-view": {
-	text: "\uf21d"
+    text: "\uf21d"
 },
-
 ".icon-heartbeat": {
-	text: "\uf21e"
+    text: "\uf21e"
 },
-
 ".icon-venus": {
-	text: "\uf221"
+    text: "\uf221"
 },
-
 ".icon-mars": {
-	text: "\uf222"
+    text: "\uf222"
 },
-
 ".icon-mercury": {
-	text: "\uf223"
+    text: "\uf223"
 },
-
+".icon-intersex": {
+    text: "\uf224"
+},
 ".icon-transgender": {
-	text: "\uf224"
+    text: "\uf224"
 },
-
 ".icon-transgender-alt": {
-	text: "\uf225"
+    text: "\uf225"
 },
-
 ".icon-venus-double": {
-	text: "\uf226"
+    text: "\uf226"
 },
-
 ".icon-mars-double": {
-	text: "\uf227"
+    text: "\uf227"
 },
-
 ".icon-venus-mars": {
-	text: "\uf228"
+    text: "\uf228"
 },
-
 ".icon-mars-stroke": {
-	text: "\uf229"
+    text: "\uf229"
 },
-
 ".icon-mars-stroke-v": {
-	text: "\uf22a"
+    text: "\uf22a"
 },
-
 ".icon-mars-stroke-h": {
-	text: "\uf22b"
+    text: "\uf22b"
 },
-
 ".icon-neuter": {
-	text: "\uf22c"
+    text: "\uf22c"
 },
-
+".icon-genderless": {
+    text: "\uf22d"
+},
 ".icon-facebook-official": {
-	text: "\uf230"
+    text: "\uf230"
 },
-
 ".icon-pinterest-p": {
-	text: "\uf231"
+    text: "\uf231"
 },
-
 ".icon-whatsapp": {
-	text: "\uf232"
+    text: "\uf232"
 },
-
 ".icon-server": {
-	text: "\uf233"
+    text: "\uf233"
 },
-
 ".icon-user-plus": {
-	text: "\uf234"
+    text: "\uf234"
 },
-
 ".icon-user-times": {
-	text: "\uf235"
+    text: "\uf235"
 },
-
 ".icon-bed": {
-	text: "\uf236"
+    text: "\uf236"
 },
-
 ".icon-hotel": {
-	text: "\uf236"
+    text: "\uf236"
 },
-
 ".icon-viacoin": {
-	text: "\uf237"
+    text: "\uf237"
 },
-
 ".icon-train": {
-	text: "\uf238"
+    text: "\uf238"
 },
-
 ".icon-subway": {
-	text: "\uf239"
+    text: "\uf239"
 },
-
 ".icon-medium": {
-	text: "\uf23a"
-}
+    text: "\uf23a"
+},
+".icon-y-combinator": {
+    text: "\uf23b"
+},
+".icon-yc": {
+    text: "\uf23b"
+},
+".icon-optin-monster": {
+    text: "\uf23c"
+},
+".icon-opencart": {
+    text: "\uf23d"
+},
+".icon-expeditedssl": {
+    text: "\uf23e"
+},
+".icon-battery-4": {
+    text: "\uf240"
+},
+".icon-battery-full": {
+    text: "\uf240"
+},
+".icon-battery-3": {
+    text: "\uf241"
+},
+".icon-battery-three-quarters": {
+    text: "\uf241"
+},
+".icon-battery-2": {
+    text: "\uf242"
+},
+".icon-battery-half": {
+    text: "\uf242"
+},
+".icon-battery-1": {
+    text: "\uf243"
+},
+".icon-battery-quarter": {
+    text: "\uf243"
+},
+".icon-battery-0": {
+    text: "\uf244"
+},
+".icon-battery-empty": {
+    text: "\uf244"
+},
+".icon-mouse-pointer": {
+    text: "\uf245"
+},
+".icon-i-cursor": {
+    text: "\uf246"
+},
+".icon-object-group": {
+    text: "\uf247"
+},
+".icon-object-ungroup": {
+    text: "\uf248"
+},
+".icon-sticky-note": {
+    text: "\uf249"
+},
+".icon-sticky-note-o": {
+    text: "\uf24a"
+},
+".icon-cc-jcb": {
+    text: "\uf24b"
+},
+".icon-cc-diners-club": {
+    text: "\uf24c"
+},
+".icon-clone": {
+    text: "\uf24d"
+},
+".icon-balance-scale": {
+    text: "\uf24e"
+},
+".icon-hourglass-o": {
+    text: "\uf250"
+},
+".icon-hourglass-1": {
+    text: "\uf251"
+},
+".icon-hourglass-start": {
+    text: "\uf251"
+},
+".icon-hourglass-2": {
+    text: "\uf252"
+},
+".icon-hourglass-half": {
+    text: "\uf252"
+},
+".icon-hourglass-3": {
+    text: "\uf253"
+},
+".icon-hourglass-end": {
+    text: "\uf253"
+},
+".icon-hourglass": {
+    text: "\uf254"
+},
+".icon-hand-grab-o": {
+    text: "\uf255"
+},
+".icon-hand-rock-o": {
+    text: "\uf255"
+},
+".icon-hand-paper-o": {
+    text: "\uf256"
+},
+".icon-hand-stop-o": {
+    text: "\uf256"
+},
+".icon-hand-scissors-o": {
+    text: "\uf257"
+},
+".icon-hand-lizard-o": {
+    text: "\uf258"
+},
+".icon-hand-spock-o": {
+    text: "\uf259"
+},
+".icon-hand-pointer-o": {
+    text: "\uf25a"
+},
+".icon-hand-peace-o": {
+    text: "\uf25b"
+},
+".icon-trademark": {
+    text: "\uf25c"
+},
+".icon-registered": {
+    text: "\uf25d"
+},
+".icon-creative-commons": {
+    text: "\uf25e"
+},
+".icon-gg": {
+    text: "\uf260"
+},
+".icon-gg-circle": {
+    text: "\uf261"
+},
+".icon-tripadvisor": {
+    text: "\uf262"
+},
+".icon-odnoklassniki": {
+    text: "\uf263"
+},
+".icon-odnoklassniki-square": {
+    text: "\uf264"
+},
+".icon-get-pocket": {
+    text: "\uf265"
+},
+".icon-wikipedia-w": {
+    text: "\uf266"
+},
+".icon-safari": {
+    text: "\uf267"
+},
+".icon-chrome": {
+    text: "\uf268"
+},
+".icon-firefox": {
+    text: "\uf269"
+},
+".icon-opera": {
+    text: "\uf26a"
+},
+".icon-internet-explorer": {
+    text: "\uf26b"
+},
+".icon-television": {
+    text: "\uf26c"
+},
+".icon-tv": {
+    text: "\uf26c"
+},
+".icon-contao": {
+    text: "\uf26d"
+},
+".icon-500px": {
+    text: "\uf26e"
+},
+".icon-amazon": {
+    text: "\uf270"
+},
+".icon-calendar-plus-o": {
+    text: "\uf271"
+},
+".icon-calendar-minus-o": {
+    text: "\uf272"
+},
+".icon-calendar-times-o": {
+    text: "\uf273"
+},
+".icon-calendar-check-o": {
+    text: "\uf274"
+},
+".icon-industry": {
+    text: "\uf275"
+},
+".icon-map-pin": {
+    text: "\uf276"
+},
+".icon-map-signs": {
+    text: "\uf277"
+},
+".icon-map-o": {
+    text: "\uf278"
+},
+".icon-map": {
+    text: "\uf279"
+},
+".icon-commenting": {
+    text: "\uf27a"
+},
+".icon-commenting-o": {
+    text: "\uf27b"
+},
+".icon-houzz": {
+    text: "\uf27c"
+},
+".icon-vimeo": {
+    text: "\uf27d"
+},
+".icon-black-tie": {
+    text: "\uf27e"
+},
+".icon-fonticons": {
+    text: "\uf280"
+},
+".icon-reddit-alien": {
+    text: "\uf281"
+},
+".icon-edge": {
+    text: "\uf282"
+},
+".icon-credit-card-alt": {
+    text: "\uf283"
+},
+".icon-codiepie": {
+    text: "\uf284"
+},
+".icon-modx": {
+    text: "\uf285"
+},
+".icon-fort-awesome": {
+    text: "\uf286"
+},
+".icon-usb": {
+    text: "\uf287"
+},
+".icon-product-hunt": {
+    text: "\uf288"
+},
+".icon-mixcloud": {
+    text: "\uf289"
+},
+".icon-scribd": {
+    text: "\uf28a"
+},
+".icon-pause-circle": {
+    text: "\uf28b"
+},
+".icon-pause-circle-o": {
+    text: "\uf28c"
+},
+".icon-stop-circle": {
+    text: "\uf28d"
+},
+".icon-stop-circle-o": {
+    text: "\uf28e"
+},
+".icon-shopping-bag": {
+    text: "\uf290"
+},
+".icon-shopping-basket": {
+    text: "\uf291"
+},
+".icon-hashtag": {
+    text: "\uf292"
+},
+".icon-bluetooth": {
+    text: "\uf293"
+},
+".icon-bluetooth-b": {
+    text: "\uf294"
+},
+".icon-percent": {
+    text: "\uf295"
+},
