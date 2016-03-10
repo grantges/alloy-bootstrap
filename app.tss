@@ -422,7 +422,7 @@
   color: "#CB564D"
 }
 
-"white":{
+".white":{
   color: "#fff"
 }
 
