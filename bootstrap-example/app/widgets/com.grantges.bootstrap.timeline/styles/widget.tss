@@ -1,0 +1,18 @@
+"Label": {
+	color: '#000',
+	font: {
+		fontSize: 18,
+		fontWeight: 'bold'
+	},
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE
+}
+
+"#tableView":{
+	separatorStyle:0,
+	separatorColor:"transparent"
+}
+
+"#tableView[platform=mobileweb]":{
+	seaparatorStyle:Titanium.UI.MobileWeb.TableViewSeparatorStyle.NONE
+}

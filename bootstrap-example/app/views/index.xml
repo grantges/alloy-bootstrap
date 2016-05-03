@@ -1,0 +1,11 @@
+<Alloy>
+	<NavigationWindow>
+	<Window class="container">
+		<TableView id="tableView" onClick="onTableViewClick">
+			<TableViewRow title="bootstrap ui" navid="ui"/>
+			<TableViewRow title="bootstrap browser" navid="com.grantges.bootstrap.browser" type="widget"/>
+			<TableViewRow title="bootstrap timeline" navid="com.grantges.bootstrap.timeline" type="widget"/>
+		</TableView>
+	</Window>
+</NavigationWindow>
+</Alloy>

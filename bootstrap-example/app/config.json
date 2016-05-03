@@ -1,0 +1,19 @@
+{
+    "global": {
+      "theme":"bootstrap"
+    },
+    "env:development": {},
+    "env:test": {},
+    "env:production": {},
+    "os:android": {},
+    "os:blackberry": {},
+    "os:ios": {},
+    "os:mobileweb": {},
+    "os:windows": {},
+    "dependencies": {
+        "com.grantges.bootstrap": "1.0",
+        "com.grantges.bootstrap.browser": "1.0",
+        "com.grantges.bootstrap.timeline": "1.0",
+        "com.grantges.bootstrap.menus": "1.0"
+    }
+}
