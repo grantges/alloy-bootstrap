@@ -1,35 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Alloy-bootstrap by grantges</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <title>Alloy-bootstrap by grantges</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Alloy-bootstrap</h1>
-        <p>Bootstrap and reset stylesheet for use with Appcelerator Titanium Alloy Cross Platform Applications</p>
+    <div id="container">
+      <div class="inner">
 
-        <p class="view"><a href="https://github.com/grantges/Alloy-Bootstrap">View the Project on GitHub <small>grantges/Alloy-Bootstrap</small></a></p>
+        <header>
+          <h1>Alloy-bootstrap</h1>
+          <h2>Bootstrap and reset stylesheet for use with Appcelerator Titanium Alloy Cross Platform Applications</h2>
+        </header>
 
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/grantges/alloy-bootstrap/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/grantges/alloy-bootstrap/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/grantges/alloy-bootstrap" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
 
-        <ul>
-          <li><a href="https://github.com/grantges/Alloy-Bootstrap/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/grantges/Alloy-Bootstrap/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/grantges/Alloy-Bootstrap">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>
-<a id="alloy-bootstrap" class="anchor" href="#alloy-bootstrap" aria-hidden="true"><span class="octicon octicon-link"></span></a>Alloy-Bootstrap</h1>
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a id="alloy-bootstrap" class="anchor" href="#alloy-bootstrap" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Alloy-Bootstrap</h1>
 
 <p>Bootstrap and reset stylesheet for use with Appcelerator Titanium Alloy Cross Platform Applications. A big thanks to Tony Lukasavage for starting down this process with his initial reset stylesheet for Alloy. I'll continue to pull from his standards and keep the bootstrap updated.</p>
 
@@ -38,48 +41,48 @@
 <p>THIS IS A WORK IN PROGRESS AND SHOULD BE CONSIDERED EXPERIMENTAL - ESPECIALLY THE GRID SYSTEM :)</p>
 
 <h2>
-<a id="platform-standardizations--inconsistencies" class="anchor" href="#platform-standardizations--inconsistencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Platform Standardizations &amp; Inconsistencies</h2>
+<a id="platform-standardizations--inconsistencies" class="anchor" href="#platform-standardizations--inconsistencies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Platform Standardizations &amp; Inconsistencies</h2>
 
 <p>Across Appcelerator Titanium, there are certain inconsistencies that this bootstrap file tries to normalize OR workaround. This section documents the querks that are seen and references how they are addressed in the Alloy-Bootstrap app.tss file.</p>
 
 <h3>
-<a id="all-platforms" class="anchor" href="#all-platforms" aria-hidden="true"><span class="octicon octicon-link"></span></a>All Platforms</h3>
+<a id="all-platforms" class="anchor" href="#all-platforms" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>All Platforms</h3>
 
 <h4>
-<a id="tiuiimageviewpreventdefaultimage" class="anchor" href="#tiuiimageviewpreventdefaultimage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ti.UI.ImageView.preventDefaultImage</h4>
+<a id="tiuiimageviewpreventdefaultimage" class="anchor" href="#tiuiimageviewpreventdefaultimage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ti.UI.ImageView.preventDefaultImage</h4>
 
 <p>Nothing says amatuer hour like seeing this default images load up</p>
 
 <h3>
-<a id="tiuiwindow" class="anchor" href="#tiuiwindow" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ti.UI.Window</h3>
+<a id="tiuiwindow" class="anchor" href="#tiuiwindow" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ti.UI.Window</h3>
 
 <p>Standardized the background color to <code>white</code> for all windows</p>
 
 <h3>
-<a id="tiuitextfield" class="anchor" href="#tiuitextfield" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ti.UI.TextField</h3>
+<a id="tiuitextfield" class="anchor" href="#tiuitextfield" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ti.UI.TextField</h3>
 
 <p>Borders will be rounded with a standard <code>1px</code> border</p>
 
 <h3>
-<a id="android" class="anchor" href="#android" aria-hidden="true"><span class="octicon octicon-link"></span></a>Android</h3>
+<a id="android" class="anchor" href="#android" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Android</h3>
 
 <h4>
-<a id="tiuilabelcolor" class="anchor" href="#tiuilabelcolor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ti.UI.Label.color</h4>
+<a id="tiuilabelcolor" class="anchor" href="#tiuilabelcolor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ti.UI.Label.color</h4>
 
 <p>By default, the <code>color</code> property on Android is set to white. Normalized to black with this Bootstrap stylesheet. </p>
 
 <h3>
-<a id="icon-font-support" class="anchor" href="#icon-font-support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Icon Font Support</h3>
+<a id="icon-font-support" class="anchor" href="#icon-font-support" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Icon Font Support</h3>
 
 <p>With this latest update i have added support for using <a href="http://fontawesome.io">FontAwesome</a> icons within your project. In order to best standardize on this with the font naming convention, I am using a service called <a href="http://icomoon.io">Icomoon.io</a> to package the FontAwesome icon set for distribution. Simply go to their font builder and select the FontAwesome package, making sure to remove any others that may be included and this should work for you.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/grantges">grantges</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
+        </section>
+
+        <footer>
+          Alloy-bootstrap is maintained by <a href="https://github.com/grantges">grantges</a><br>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+                  <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
@@ -90,5 +93,7 @@
             } catch(err) {}
           </script>
 
+      </div>
+    </div>
   </body>
 </html>
