@@ -4,11 +4,56 @@
 
 The `alloy-bootstrap` project is a combination theme and widget library for use with Appcelerator Titanium and the Alloy Development Framework.
 
-The goal of `alloy-boostrap` is to provide a faster easier approach to building cross platform mobile interfaces through a highly structured, global Titanium StyleSheet (TSS). Furthermore, a catalog of base components and more complex UI widgets that inherits and builds upon the TSS and core library allowing for a consistent look and feel throughout your mobile app. 
-
-This
+The goal of `alloy-boostrap` is to provide a faster easier approach to building cross platform mobile interfaces through a highly structured, global Titanium StyleSheet (TSS). Furthermore, a catalog of base components and more complex UI widgets that inherits and builds upon the TSS and core library allowing for a consistent look and feel throughout your mobile app.
 
 ## Goals
+* Massively increase speed at which app UI can be development
+* Reset the Titanium UI defaults to behave in a standardized manner
+* Create a nice looking cross platform theme
+* Provide high end prebuilt UI/UX widgets and workflows
+
+## Getting Started
+
+* Download or Clone this repository.
+* Copy the `themes` folder and `widgets` folder to your projects `/app` folder
+* Update your app config dependencies to take advantage of the new theme and widgets
+
+~~~
+{
+    "global": {
+        "theme": "bootstrap"
+    },
+    "env:development": {},
+    "env:test": {},
+    "env:production": {},
+    "os:android": {},
+    "os:blackberry": {},
+    "os:ios": {},
+    "os:mobileweb": {},
+    "os:windows": {},
+    "dependencies": {
+        "co.grantges.bootstrap": "0.0.1",
+        "co.grantges.bootstrap.browser": "0.0.1",
+        "co.grantges.bootstrap.timeline": "0.0.1",
+        "co.grantges.bootstrap.menus": "0.0.1",
+        "co.grantges.bootstrap.walkthrough": "0.0.1"
+    }
+}
+~~~
+
+
+* In your project's `alloy.js` file, add the following code:
+
+~~~
+App = Alloy.createWidget('co.grantges.bootstrap').App;
+~~~
+
+The above code will implement the global App singleton object used for managing your application.
+
+> Note eventually you'll be able to just npm this into your project, just not there yet.
+
+------
+
 
 ## Platform Standardizations & Inconsistencies
 
