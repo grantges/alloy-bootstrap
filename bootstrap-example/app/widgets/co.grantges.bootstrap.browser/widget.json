@@ -5,7 +5,7 @@
 	"author": "Bert Grantges",
 	"version": "0.0.1",
 	"copyright":"Copyright (c) 2016",
-	"license":"Apache 2",
+	"license":"MIT",
 	"min-alloy-version": "1.0",
 	"min-titanium-version":"2.1",
 	"tags":"titanium, alloy, bootstrap, browser, web, html",

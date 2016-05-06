@@ -8,10 +8,11 @@ function __processArg(obj, key) {
 }
 
 function Controller() {
-    function _startApp() {
+    function _openIndex() {
         $.index.open();
+        alert(App.User.theme);
     }
-    function onTableViewClick(e) {
+    function _onTableViewClick(e) {
         var win;
         var controller = "widget" === e.row.type ? Alloy.createWidget(e.row.navid) : Alloy.createController(e.row.navid);
         if ("Ti.UI.Window" !== controller.getView().apiName) {
@@ -67,7 +68,7 @@ function Controller() {
         id: "tableView"
     });
     $.__views.__alloyId7.add($.__views.tableView);
-    onTableViewClick ? $.addListener($.__views.tableView, "click", onTableViewClick) : __defers["$.__views.tableView!click!onTableViewClick"] = true;
+    _onTableViewClick ? $.addListener($.__views.tableView, "click", _onTableViewClick) : __defers["$.__views.tableView!click!_onTableViewClick"] = true;
     $.__views.index = Ti.UI.iOS.createNavigationWindow({
         window: $.__views.__alloyId7,
         id: "index"
@@ -90,11 +91,11 @@ function Controller() {
             image: "/images/intro-3.png"
         } ],
         onClose: function() {
-            _startApp();
+            _openIndex();
         }
     });
     walkthroughWidget.open();
-    __defers["$.__views.tableView!click!onTableViewClick"] && $.addListener($.__views.tableView, "click", onTableViewClick);
+    __defers["$.__views.tableView!click!_onTableViewClick"] && $.addListener($.__views.tableView, "click", _onTableViewClick);
     _.extend($, exports);
 }
 

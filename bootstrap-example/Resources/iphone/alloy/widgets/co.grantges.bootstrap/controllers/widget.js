@@ -26,21 +26,29 @@ function Controller() {
     }
     var $ = this;
     var exports = {};
-    $.__views.widget = Ti.UI.createLabel({
-        color: "#000",
-        font: {
-            fontSize: 18,
-            fontWeight: "bold",
-            fontFamily: "Helvetica Neue"
-        },
-        height: Ti.UI.SIZE,
-        width: Ti.UI.SIZE,
-        text: "I'm the default widget",
-        id: "widget"
-    });
-    $.__views.widget && $.addTopLevelView($.__views.widget);
     exports.destroy = function() {};
     _.extend($, $.__views);
+    $.App = {
+        User: {
+            isAuthenticated: false,
+            sessionId: null
+        },
+        Device: {
+            screenHeight: Ti.Platform.displayCaps.platformHeight,
+            screenWidth: Ti.Platform.displayCaps.platformWidth,
+            dpi: Ti.Platform.displayCaps.dpi
+        },
+        Events: {
+            start: function() {},
+            resume: function() {},
+            pause: function() {}
+        },
+        Errors: {
+            log: function() {},
+            unhandledException: function() {}
+        }
+    };
+    _.extend($.App, $.args);
     _.extend($, exports);
 }
 

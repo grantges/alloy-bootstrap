@@ -6,7 +6,7 @@ function WPATH(s) {
 
 module.exports = [ {
     isApi: true,
-    priority: 1000.0832,
+    priority: 1000.0831,
     key: "TableViewRow",
     style: {
         selectionStyle: "Titanium.UI.iPhone.TableViewCellSelectionStyle.NONE",
@@ -5911,7 +5911,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0834,
+    priority: 100000.0833,
     key: "message",
     style: {
         font: {
@@ -5920,7 +5920,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0835,
+    priority: 100000.0834,
     key: "label",
     style: {
         left: 0,
