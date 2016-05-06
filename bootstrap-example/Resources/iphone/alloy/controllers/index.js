@@ -10,7 +10,6 @@ function __processArg(obj, key) {
 function Controller() {
     function _openIndex() {
         $.index.open();
-        alert(App.User.theme);
     }
     function _onTableViewClick(e) {
         var win;

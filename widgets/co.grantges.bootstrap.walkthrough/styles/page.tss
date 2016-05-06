@@ -1,10 +1,6 @@
 /**
  * Walkthrough
  */
- '.walkthrough-text':{
-   color: '#646E7E'
- },
-
  '.walkthrough-title':{
    font: {
      fontFamily: 'Helvetica Neue'

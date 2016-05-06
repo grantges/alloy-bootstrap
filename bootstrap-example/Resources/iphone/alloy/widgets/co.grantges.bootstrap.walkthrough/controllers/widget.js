@@ -20,7 +20,10 @@ function Controller() {
             $.scrollableView.addView(page.getView());
             _pages.push(page);
             _pages.forEach(function(item, index) {
-                0 !== index && (item.getView().transform = PAGE_START_TRANSFORMATION);
+                if (0 !== index) {
+                    item.getView().opacity = PAGE_START_OPACITY;
+                    item.getView().transform = PAGE_START_TRANSFORMATION;
+                }
             });
         }
     }
@@ -56,43 +59,71 @@ function Controller() {
     var __defers = {};
     $.__views.walkthroughView = Ti.UI.createWindow({
         backgroundColor: "#fff",
-        layout: "vertical",
-        id: "walkthroughView"
+        apiName: "Ti.UI.Window",
+        id: "walkthroughView",
+        classes: []
     });
     $.__views.walkthroughView && $.addTopLevelView($.__views.walkthroughView);
-    $.__views.closeBtn = Ti.UI.createLabel({
-        font: {
-            fontFamily: "icomoon",
-            fontSize: 24
-        },
-        right: 10,
-        text: "",
-        top: 50,
-        id: "closeBtn"
-    });
-    $.__views.walkthroughView.add($.__views.closeBtn);
-    _close ? $.addListener($.__views.closeBtn, "click", _close) : __defers["$.__views.closeBtn!click!_close"] = true;
     var __alloyId6 = [];
     $.__views.scrollableView = Ti.UI.createScrollableView({
         cacheSize: 4,
-        height: Ti.UI.FILL,
-        width: Ti.UI.FILL,
+        height: "70%",
+        showPagingControl: true,
+        pagingControlColor: "transparent",
+        pageIndicatorColor: "#552D8DD6",
+        currentPageIndicatorColor: "#2D8DD6",
         views: __alloyId6,
-        id: "scrollableView"
+        apiName: "Ti.UI.ScrollableView",
+        id: "scrollableView",
+        classes: []
     });
     $.__views.walkthroughView.add($.__views.scrollableView);
+    $.__views.closeBtn = Ti.UI.createLabel({
+        font: {
+            fontFamily: "Helvetica Neue",
+            fontSize: 18
+        },
+        bottom: 40,
+        width: "33.33333333%",
+        height: 45,
+        layout: "horizontal",
+        borderRadius: 4,
+        textAlign: "center",
+        backgroundColor: "#ececec",
+        color: "#969696",
+        apiName: "Ti.UI.Label",
+        id: "closeBtn",
+        classes: [ "btn", "btn-default", "h4", "col-4", "bottom-buffer" ],
+        text: L("btn-skip", "Skip")
+    });
+    $.__views.walkthroughView.add($.__views.closeBtn);
+    _close ? $.addListener($.__views.closeBtn, "click", _close) : __defers["$.__views.closeBtn!click!_close"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);
-    var PAGE_START_TRANSFORMATION = Ti.UI.create2DMatrix().scale(.5);
+    var PAGE_START_TRANSFORMATION = Ti.UI.create2DMatrix().scale(.5), PAGE_START_OPACITY = .4;
     var $A = Alloy.createWidget("co.grantges.bootstrap", "animations"), _currentPage = 0, _pages = [];
     !function(options) {
-        $.scrollableView.cacheSize = 4;
         $.scrollableView.addEventListener("scrollend", function(e) {
             _currentPage = e.currentPage;
+            if ($.scrollableView.currentPage >= $.scrollableView.views.length - 1) {
+                $.removeClass($.closeBtn, "btn-default");
+                $.addClass($.closeBtn, "btn-primary", {
+                    text: "Close"
+                });
+            } else if ($.closeBtn.text != L("btn-skip", "Skip")) {
+                $.removeClass($.closeBtn, "btn-primary");
+                $.addClass($.closeBtn, "btn-default", {
+                    text: L("btn-skip", "Skip")
+                });
+            }
         });
         $.scrollableView.addEventListener("scroll", function(e) {
             var scale = Math.abs(e.currentPageAsFloat - e.currentPage);
-            .5 > scale && _pages[e.currentPage - 1] && (_pages[e.currentPage - 1].getView().transform = Ti.UI.create2DMatrix().scale(scale));
+            if (.5 > scale && _pages[e.currentPage - 1]) {
+                _pages[e.currentPage - 1].getView().opacity = scale.toFixed(1);
+                _pages[e.currentPage - 1].getView().transform = Ti.UI.create2DMatrix().scale(scale);
+            }
+            _pages[e.currentPage].getView().opacity = 1 - scale.toFixed(2);
             _pages[e.currentPage].getView().transform = Ti.UI.create2DMatrix().scale(1 - scale);
         });
         if (options.pages && options.pages.length) {

@@ -4,7 +4,8 @@
  * @constant {Object}
  * @private
  */
-var PAGE_START_TRANSFORMATION = Ti.UI.create2DMatrix().scale(0.5);
+var PAGE_START_TRANSFORMATION = Ti.UI.create2DMatrix().scale(0.5),
+    PAGE_START_OPACITY = 0.4;
 
 /**
  * Utility Library for standard Animations
@@ -42,18 +43,30 @@ _onCancel;
  */
 (function _constructor(options){
 
-  $.scrollableView.cacheSize = 4;
   $.scrollableView.addEventListener('scrollend', function(e){
      _currentPage = e.currentPage;
+
+     if($.scrollableView.currentPage >= $.scrollableView.views.length-1){
+       //set the skip button to a close style
+       $.removeClass($.closeBtn, 'btn-default');
+       $.addClass($.closeBtn, 'btn-primary', {text: 'Close'});
+     }
+     else if($.closeBtn.text != L('btn-skip', 'Skip')){
+       //set the skip button to a close style
+       $.removeClass($.closeBtn, 'btn-primary');
+       $.addClass($.closeBtn, 'btn-default', {text: L('btn-skip', 'Skip')});
+     }
    });
 
   $.scrollableView.addEventListener('scroll', function(e){
     var scale = Math.abs((e.currentPageAsFloat - e.currentPage));
     if(scale < 0.5) {
       if(_pages[e.currentPage-1]){
+        _pages[e.currentPage-1].getView().opacity = scale.toFixed(1);
         _pages[e.currentPage-1].getView().transform = Ti.UI.create2DMatrix().scale(scale);
       }
     }
+    _pages[e.currentPage].getView().opacity = 1-scale.toFixed(2);
     _pages[e.currentPage].getView().transform = Ti.UI.create2DMatrix().scale(1-scale);
   });
 
@@ -85,6 +98,7 @@ function _add(pageData){
     //setup pages for animation
     _pages.forEach(function(item, index){
       if(index !== 0){
+        item.getView().opacity = PAGE_START_OPACITY;
         item.getView().transform = PAGE_START_TRANSFORMATION;
       }
     })

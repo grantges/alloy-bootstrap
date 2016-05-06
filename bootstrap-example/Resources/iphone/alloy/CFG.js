@@ -1,1 +1,1 @@
-module.exports={"dependencies":{"co.grantges.bootstrap":"0.0.1","co.grantges.bootstrap.browser":"0.0.1","co.grantges.bootstrap.timeline":"0.0.1","co.grantges.bootstrap.menus":"0.0.1","co.grantges.bootstrap.walkthrough":"0.0.1"},"theme":"bootstrap"};
+module.exports={"dependencies":{},"theme":"bootstrap"};

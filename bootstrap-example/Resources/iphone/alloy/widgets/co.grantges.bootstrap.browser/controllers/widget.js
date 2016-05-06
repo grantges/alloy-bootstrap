@@ -84,7 +84,7 @@ function Controller() {
             fontFamily: "icomoon",
             fontSize: 24
         },
-        left: 5,
+        left: 10,
         top: 10,
         width: "25%",
         height: Ti.UI.SIZE,
@@ -99,7 +99,7 @@ function Controller() {
             fontFamily: "icomoon",
             fontSize: 24
         },
-        left: 5,
+        left: 10,
         top: 10,
         width: "25%",
         height: Ti.UI.SIZE,
@@ -114,7 +114,7 @@ function Controller() {
             fontFamily: "icomoon",
             fontSize: 24
         },
-        left: 5,
+        left: 10,
         top: 10,
         width: "25%",
         height: Ti.UI.SIZE,
@@ -129,7 +129,7 @@ function Controller() {
             fontFamily: "icomoon",
             fontSize: 24
         },
-        left: 5,
+        left: 10,
         top: 10,
         width: "25%",
         height: Ti.UI.SIZE,

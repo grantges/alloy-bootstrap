@@ -7,6 +7,9 @@
  * This object is a singleton, meaning there can (and should) be only one instance of
  * `App` in your application.
  *
+ * This is derived from the Core concepts put together by Rick Blalock here:
+ * https://github.com/rblalock/core
+ *
  * @singleton
  */
 

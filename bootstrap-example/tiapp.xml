@@ -58,7 +58,7 @@
 		<target device="mobileweb">true</target>
 		<target device="windows">true</target>
 	</deployment-targets>
-	<sdk-version>5.2.2.GA</sdk-version>
+	<sdk-version>5.4.0.v20160505081735</sdk-version>
 <plugins><plugin version="1.0">ti.alloy</plugin>
 </plugins>
 </ti:app>

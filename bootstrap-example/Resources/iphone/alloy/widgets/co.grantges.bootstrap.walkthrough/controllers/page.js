@@ -63,26 +63,13 @@ function Controller() {
             fontFamily: "Helvetica Neue",
             fontSize: 14
         },
-        color: "#646E7E",
         width: "90%",
         top: 10,
+        color: "#646E7E",
         text: "Veniam proident incididunt mollit velit consectetur elit laboris eiusmod est dolor.",
         id: "description"
     });
     $.__views.page.add($.__views.description);
-    $.__views.swipeText = Ti.UI.createLabel({
-        font: {
-            fontFamily: "Helvetica Neue",
-            fontSize: 12
-        },
-        color: "#646E7E",
-        width: "90%",
-        textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-        top: 40,
-        text: "swipe ->",
-        id: "swipeText"
-    });
-    $.__views.page.add($.__views.swipeText);
     exports.destroy = function() {};
     _.extend($, $.__views);
     !function(options) {

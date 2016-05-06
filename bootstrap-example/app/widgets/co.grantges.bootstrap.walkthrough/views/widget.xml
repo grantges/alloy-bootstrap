@@ -1,7 +1,6 @@
-<Alloy>
-	<Window id="walkthroughView" class="vgroup">
-		<Label id="closeBtn" class="icon icon-close h3 right-buffer" onClick="_close"/>
-		<ScrollableView id="scrollableView" class="fill">
+<Alloy autoStyle="true">
+	<Window id="walkthroughView">
+		<ScrollableView id="scrollableView">
 
 			<!-- Example Structure
 			<View id="walkthroughImage1" class="size vgroup top">
@@ -24,5 +23,6 @@
 			</View>
 	 	-->
 		</ScrollableView>
+		<Label id="closeBtn" class="btn btn-default h4 col-4 bottom-buffer" onClick="_close" text="L('btn-skip', 'Skip')"/>
 	</Window>
 </Alloy>

@@ -186,85 +186,73 @@
 '.col-1': {
 	width: '8.33333333%',
 	height:50,
-	layout: 'horizontal',
-	left: 5
+	layout: 'horizontal'
 },
 
 '.col-2': {
 	width: '16.66666667%',
 	height: Ti.UI.SIZE,
 	layout: 'horizontal',
-	left: 5
 },
 
 '.col-3': {
 	width: '25%',
 	height: Ti.UI.SIZE,
 	layout: 'horizontal',
-	left: 5
 },
 
 '.col-4': {
 	width: '33.33333333%',
 	height: Ti.UI.SIZE,
 	layout: 'horizontal',
-	left: 5
 },
 
 '.col-5': {
 	width: '41.66666667%',
 	height: Ti.UI.SIZE,
 	layout: 'horizontal',
-	left: 5
 },
 
 '.col-6': {
 	width: '50%',
 	height: Ti.UI.SIZE,
 	layout: 'horizontal',
-	left: 5
 },
 
 '.col-7': {
 	width: '58.33333333%',
 	height: Ti.UI.SIZE,
 	layout: 'horizontal',
-	left: 5
 },
 
 '.col-8': {
 	width: '66.66666667%',
 	height: Ti.UI.SIZE,
 	layout: 'horizontal',
-	left: 5
 },
 
 '.col-9': {
 	width: '75%',
 	height: Ti.UI.SIZE,
 	layout: 'horizontal',
-	left: 5
 },
 
 '.col-10': {
 	width: '83.33333333%',
 	height: Ti.UI.SIZE,
 	layout: 'horizontal',
-	left: 5
 },
 
 '.col-11': {
 	width: '91.66666667%',
 	height: Ti.UI.SIZE,
 	layout: 'horizontal',
-	left: 5
 },
 
 '.col-12': {
 	width: '100%',
 	height: Ti.UI.SIZE,
 	layout: 'horizontal',
-	left: 5
 }
 
 
@@ -404,16 +392,30 @@
   color: '#CB564D'
 }
 
+'.muted':{
+  color: '#ececec'
+}
+
 '.white':{
   color: '#fff'
+}
+
+'.light-gray':{
+  color: '#646E7E'
+}
+
+'.dark-gray':{
+  color: '#969696'
+}
+
+'.black':{
+  color: '#201C1D'
 }
 
 '.btn':{
   borderRadius: 4,
   textAlign: 'center',
-  font:{
-    fontSize: 14
-  }
+  height: 45
 },
 
 '.btn-icon':{
@@ -424,6 +426,11 @@
   width: 50,
   textAlign: 'center',
   borderRadius: 25
+},
+
+'.btn-default':{
+  backgroundColor: '#ececec',
+  color:'#969696'
 },
 
 '.btn-primary':{
