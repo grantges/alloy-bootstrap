@@ -1,0 +1,8 @@
+<Alloy>
+  <View class="size vgroup">
+    <ImageView id="image" class='walkthrough-image' />
+    <Label id="title" class='walkthrough-text walkthrough-title h2'>Page Title</Label>
+    <Label id="description" class='walkthrough-text walkthrough-description h5 top-buffer'>Veniam proident incididunt mollit velit consectetur elit laboris eiusmod est dolor.</Label>
+    <Label id="swipeText" class='walkthrough-text walkthrough-description h6 text-center'>swipe -></Label>
+  </View>
+</Alloy>

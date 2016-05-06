@@ -1,6 +1,6 @@
 {
     "global": {
-      "theme":"bootstrap"
+        "theme": "bootstrap"
     },
     "env:development": {},
     "env:test": {},
@@ -11,9 +11,10 @@
     "os:mobileweb": {},
     "os:windows": {},
     "dependencies": {
-        "com.grantges.bootstrap": "1.0",
-        "com.grantges.bootstrap.browser": "1.0",
-        "com.grantges.bootstrap.timeline": "1.0",
-        "com.grantges.bootstrap.menus": "1.0"
+        "co.grantges.bootstrap": "0.0.1",
+        "co.grantges.bootstrap.browser": "0.0.1",
+        "co.grantges.bootstrap.timeline": "0.0.1",
+        "co.grantges.bootstrap.menus": "0.0.1",
+        "co.grantges.bootstrap.walkthrough": "0.0.1"
     }
 }
