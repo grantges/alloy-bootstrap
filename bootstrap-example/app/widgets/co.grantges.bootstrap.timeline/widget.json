@@ -9,5 +9,8 @@
 	"min-alloy-version": "1.0",
 	"min-titanium-version":"2.1",
 	"tags":"titanium, alloy, timeline, Ti.UI.TableView",
-	"platforms":"android,ios,mobileweb"
+	"platforms":"android,ios,mobileweb",
+	"dependencies":{
+		"co.grantges.bootstrap":"^0.0.1"
+	}
 }
