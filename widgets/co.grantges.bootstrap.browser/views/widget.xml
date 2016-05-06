@@ -1,0 +1,22 @@
+<Alloy>
+	<Window id="wrapper">
+		<TitleControl platform="ios">
+			<View class="size">
+				<TextField id="title" />
+			</View>
+		</TitleControl>
+
+		<WebView id="webView" url="http://www.appcelerator.com">
+			<!-- LOADED DYNAMICALLY BY DEVELOPER using the widget .setHTML or .setURL functions -->
+		</WebView>
+
+		<!-- iOS, MobileWeb support the back button character -->
+		<View class="gray-line"/>
+		<View id="browserNavigation" class="hgroup span-width">
+			<Label id="backBtn" class="icon icon-chevron-left col-3 top-buffer left-buffer"/>
+			<Label id="forwardBtn" class="icon icon-chevron-right col-3 top-buffer left-buffer"/>
+			<Label id="shareBtn" class="icon icon-share-square-o col-3 top-buffer left-buffer" />
+			<Label id="bookmark" class="icon icon-bookmark col-3 top-buffer left-buffer" />
+		</View>
+	</Window>
+</Alloy>

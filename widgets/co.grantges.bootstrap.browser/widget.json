@@ -1,0 +1,16 @@
+{
+	"id": "co.grantges.bootstrap.browser",
+	"name": "om.grantges.bootstrap.browser",
+	"description" : "Lightweight modal browser for use in any Appcelerator Titanium application",
+	"author": "Bert Grantges",
+	"version": "0.0.1",
+	"copyright":"Copyright (c) 2016",
+	"license":"MIT",
+	"min-alloy-version": "1.0",
+	"min-titanium-version":"2.1",
+	"tags":"titanium, alloy, bootstrap, browser, web, html",
+	"platforms":"android,ios,mobileweb",
+	"dependencies":{
+		"co.grantges.bootstrap":"^0.0.1"
+	}
+}

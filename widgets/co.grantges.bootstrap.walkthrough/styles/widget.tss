@@ -1,0 +1,8 @@
+
+'ScrollableView':{
+  cacheSize: 4
+}
+
+'#closeBtn':{
+  top: 50
+}

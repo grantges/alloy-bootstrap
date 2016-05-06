@@ -1,0 +1,25 @@
+/**
+ * Walkthrough
+ */
+ '.walkthrough-text':{
+   color: '#646E7E'
+ },
+
+ '.walkthrough-title':{
+   font: {
+     fontFamily: 'Helvetica Neue'
+   }
+ },
+
+ '.walkthrough-description':{
+   width: '90%'
+ },
+
+ '.walkthrough-image[formFactor=handheld]':{
+   height: 300,
+   width: Ti.UI.Size
+ },
+
+ '#swipeText':{
+   top: 40
+ }
