@@ -37,39 +37,46 @@ function Controller() {
     var $ = this;
     var exports = {};
     var __defers = {};
-    $.__views.__alloyId7 = Ti.UI.createWindow({
+    $.__views.__alloyId8 = Ti.UI.createWindow({
         backgroundColor: "white",
-        id: "__alloyId7"
+        id: "__alloyId8"
     });
-    var __alloyId8 = [];
-    $.__views.__alloyId9 = Ti.UI.createTableViewRow({
+    var __alloyId9 = [];
+    $.__views.__alloyId10 = Ti.UI.createTableViewRow({
         title: "bootstrap ui",
         navid: "ui",
-        id: "__alloyId9"
+        id: "__alloyId10"
     });
-    __alloyId8.push($.__views.__alloyId9);
-    $.__views.__alloyId10 = Ti.UI.createTableViewRow({
+    __alloyId9.push($.__views.__alloyId10);
+    $.__views.__alloyId11 = Ti.UI.createTableViewRow({
         title: "bootstrap browser",
         navid: "co.grantges.bootstrap.browser",
         type: "widget",
-        id: "__alloyId10"
+        id: "__alloyId11"
     });
-    __alloyId8.push($.__views.__alloyId10);
-    $.__views.__alloyId11 = Ti.UI.createTableViewRow({
+    __alloyId9.push($.__views.__alloyId11);
+    $.__views.__alloyId12 = Ti.UI.createTableViewRow({
         title: "bootstrap timeline",
         navid: "co.grantges.bootstrap.timeline",
         type: "widget",
-        id: "__alloyId11"
+        id: "__alloyId12"
     });
-    __alloyId8.push($.__views.__alloyId11);
+    __alloyId9.push($.__views.__alloyId12);
+    $.__views.__alloyId13 = Ti.UI.createTableViewRow({
+        title: "bootstrap locations",
+        navid: "co.grantges.bootstrap.locationFinder",
+        type: "widget",
+        id: "__alloyId13"
+    });
+    __alloyId9.push($.__views.__alloyId13);
     $.__views.tableView = Ti.UI.createTableView({
-        data: __alloyId8,
+        data: __alloyId9,
         id: "tableView"
     });
-    $.__views.__alloyId7.add($.__views.tableView);
+    $.__views.__alloyId8.add($.__views.tableView);
     _onTableViewClick ? $.addListener($.__views.tableView, "click", _onTableViewClick) : __defers["$.__views.tableView!click!_onTableViewClick"] = true;
     $.__views.index = Ti.UI.iOS.createNavigationWindow({
-        window: $.__views.__alloyId7,
+        window: $.__views.__alloyId8,
         id: "index"
     });
     $.__views.index && $.addTopLevelView($.__views.index);

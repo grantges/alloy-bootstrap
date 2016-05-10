@@ -1,7 +1,7 @@
 {
-	"id": "co.grantges.bootstrap.walkthrough",
-	"name": "co.grantges.bootstrap.walkthrough",
-	"description" : "An widget for easily providing a nice instructional walkthrough of the app.",
+	"id": "co.grantges.bootstrap.locationFinder",
+	"name": "co.grantges.bootstrap.locationFinder",
+	"description" : "A UI and workflow for using and searching locations on a map within an app.",
 	"author": "Bert Grantges",
 	"version": "0.0.1",
 	"copyright":"Copyright (c) 2016",
@@ -11,6 +11,6 @@
 	"tags":"",
 	"platforms":"android,ios",
 	"dependencies":{
-		"co.grantges.bootstrap":"^0.0.1"
+		"co.grantges.bootstrap":"0.0.1"
 	}
 }

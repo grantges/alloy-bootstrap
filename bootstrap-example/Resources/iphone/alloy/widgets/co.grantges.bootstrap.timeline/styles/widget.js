@@ -6,7 +6,7 @@ function WPATH(s) {
 
 module.exports = [ {
     isApi: true,
-    priority: 1000.0846,
+    priority: 1000.0849,
     key: "Label",
     style: {
         color: "#000",
@@ -5938,7 +5938,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0847,
+    priority: 100000.085,
     key: "tableView",
     style: {
         separatorStyle: 0,

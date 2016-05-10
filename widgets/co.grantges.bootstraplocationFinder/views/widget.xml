@@ -1,0 +1,6 @@
+<Alloy>
+	<View>
+		<!-- <View id="mapview" module="ti.map" /> -->
+		<Widget id="panel" src="co.grantges.bootstrap" name="panel" top="50" bottom="50" left="50" right="10%"/>
+	</View>
+</Alloy>

@@ -5,6 +5,7 @@
 			<TableViewRow title="bootstrap ui" navid="ui"/>
 			<TableViewRow title="bootstrap browser" navid="co.grantges.bootstrap.browser" type="widget"/>
 			<TableViewRow title="bootstrap timeline" navid="co.grantges.bootstrap.timeline" type="widget"/>
+			<TableViewRow title="bootstrap locations" navid="co.grantges.bootstrap.locationFinder" type="widget"/>
 		</TableView>
 	</Window>
 </NavigationWindow>

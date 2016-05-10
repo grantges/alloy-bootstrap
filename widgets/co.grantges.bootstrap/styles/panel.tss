@@ -1,0 +1,16 @@
+
+'#panel':{
+  backgroundColor: '#ececec',
+  borderColor: '#dcdcdc',
+  borderWidth: 1
+}
+
+'#panel[platform=ios]':{
+  viewShadowColor: '#55000000',
+  viewShadowOffset: {x: 0, y:0},
+  viewShadowRadius: 3.0
+}
+
+'#panel[platform=android]':{
+  elevation: 5
+}

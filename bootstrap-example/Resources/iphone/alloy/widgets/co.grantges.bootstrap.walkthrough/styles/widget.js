@@ -6,7 +6,7 @@ function WPATH(s) {
 
 module.exports = [ {
     isApi: true,
-    priority: 1000.0854,
+    priority: 1000.0857,
     key: "ScrollableView",
     style: {
         cacheSize: 4,
@@ -5937,7 +5937,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0855,
+    priority: 100000.0858,
     key: "closeBtn",
     style: {
         bottom: 40

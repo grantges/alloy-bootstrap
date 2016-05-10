@@ -16,7 +16,8 @@ task("pre:load",function(event,logger){
         "co.grantges.bootstrap.browser": "*",
         "co.grantges.bootstrap.timeline": "*",
         "co.grantges.bootstrap.menus": "*",
-        "co.grantges.bootstrap.walkthrough": "*"
+        "co.grantges.bootstrap.walkthrough": "*",
+        "co.grantges.bootstrap.locationFinder": "*"
     };
     logger.info('Add widget dependencies in config.json');
     updateConfigDependencies(dependencies, event.dir.home+"/config.json");

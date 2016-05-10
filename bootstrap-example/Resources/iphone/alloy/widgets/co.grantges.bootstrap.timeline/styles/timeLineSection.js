@@ -52,7 +52,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.084,
+    priority: 10000.0843,
     key: "container",
     style: {
         backgroundColor: "transparent",
@@ -5934,7 +5934,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0841,
+    priority: 100000.0844,
     key: "gradient",
     style: {
         backgroundColor: "#FFF",
@@ -5944,7 +5944,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0842,
+    priority: 100000.0845,
     key: "circle",
     style: {
         backgroundColor: "#fff",
@@ -5957,7 +5957,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0844,
+    priority: 100000.0847,
     key: "label",
     style: {
         width: 56,
