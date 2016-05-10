@@ -12,7 +12,7 @@
 
 		<!-- iOS, MobileWeb support the back button character -->
 		<View class="gray-line"/>
-		<View id="browserNavigation" class="hgroup span-width">
+		<View id="browserNavigation" class="hgroup left-buffer right-buffer">
 			<Label id="backBtn" class="icon icon-chevron-left col-3 top-buffer left-buffer"/>
 			<Label id="forwardBtn" class="icon icon-chevron-right col-3 top-buffer left-buffer"/>
 			<Label id="shareBtn" class="icon icon-share-square-o col-3 top-buffer left-buffer" />
