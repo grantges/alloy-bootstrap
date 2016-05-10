@@ -1,0 +1,13 @@
+
+'ScrollableView':{
+  cacheSize: 4,
+  height: '70%',
+  showPagingControl: true,
+  pagingControlColor: 'transparent',
+  pageIndicatorColor: '#552D8DD6',
+  currentPageIndicatorColor: '#2D8DD6',
+}
+
+'#closeBtn':{
+  bottom: 40
+}

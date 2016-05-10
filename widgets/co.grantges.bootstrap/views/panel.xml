@@ -1,0 +1,4 @@
+<Alloy>
+  <View platform="ios" />
+  <CardView platform="android" />
+</Alloy>

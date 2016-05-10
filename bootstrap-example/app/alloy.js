@@ -8,4 +8,23 @@
 // accessible globally by attaching them to the `Alloy.Globals`
 // object. For example:
 //
-// Alloy.Globals.someGlobalFunction = function(){};
+
+
+/**
+ * Initialize the app singleton. Yep, thats all you have to do. You can reference
+ * the `App` variable from anywhere in your application now!
+ */
+App = Alloy.createWidget('co.grantges.bootstrap').App;
+
+/**
+ * The App object is easily extenisble if you need to, just pass in data objects like
+ * any widget!
+ *
+ * Example - Extending the User Object
+ *
+ * App = Alloy.createWidget('co.grantges.bootstrap', {
+ *   User: {
+ *     type: 'admin'
+ *   }
+ * }).App;
+ */

@@ -1,0 +1,112 @@
+var fs = require('fs'),
+    path = require('path');
+
+/**
+ * Precompile Task to copy `theme` and `widget` folders into the bootstrap examples directory.
+ * This saves you from having to copy and paste over whats in the base repo folder and protects
+ * against many kinds of general release errors that could come from sync issues between whats in
+ * the base repo folder vs what is in the actual example app folder.
+ *
+ * Pretty smart don't you think :)
+ */
+task("pre:load",function(event,logger){
+
+    var dependencies = {
+        "co.grantges.bootstrap": "*",
+        "co.grantges.bootstrap.browser": "*",
+        "co.grantges.bootstrap.timeline": "*",
+        "co.grantges.bootstrap.menus": "*",
+        "co.grantges.bootstrap.walkthrough": "*",
+        "co.grantges.bootstrap.locationFinder": "*"
+    };
+    logger.info('Add widget dependencies in config.json');
+    updateConfigDependencies(dependencies, event.dir.home+"/config.json");
+
+    // Get the repository folder path
+    var repoFolder = event.dir.project.substring(0, event.dir.project.lastIndexOf('/'));
+
+    // Create the destination directories for themes and widgets.
+    var srcThemesFolder = repoFolder + '/themes';
+    var srcWidgetsFolder = repoFolder + '/widgets';
+
+    // Copy over the themes folder
+    logger.info('Copy theme folder from the main repository directory -> ' + srcThemesFolder );
+    copyRecursiveSync(srcThemesFolder, event.dir.home+"/themes", true);
+
+    // Copy over the widgets folder
+    logger.info('Copy widgets folder from the main repository directory -> ' + srcWidgetsFolder );
+    copyRecursiveSync(srcWidgetsFolder, event.dir.home+"/widgets", true);
+});
+
+/**
+ * Removes the widget dependencies from the config.json. This is to prevent
+ * failure on the dependency check if the versions do not line up correctly.
+ */
+task('post:compile', function(event, logger){
+
+  // Remove any widget dependencies for now
+  logger.info('Remove widget dependencies in config.json');
+  updateConfigDependencies(null, event.dir.home+"/config.json");
+
+});
+
+/**
+ * cp -R
+ *
+ * @param {string} src The path to the thing to copy.
+ * @param {string} dest The path to the new copy.
+ */
+var copyRecursiveSync = function(src, dest, overwrite) {
+  overwrite = overwrite || false;
+
+  if(fs.existsSync(dest) && overwrite){
+    deleteFolderRecursive(dest);
+  }
+
+  var exists = fs.existsSync(src);
+  var stats = exists && fs.statSync(src);
+  var isDirectory = exists && stats.isDirectory();
+  if (exists && isDirectory) {
+    fs.mkdirSync(dest);
+    fs.readdirSync(src).forEach(function(childItemName) {
+      copyRecursiveSync(path.join(src, childItemName),
+                        path.join(dest, childItemName));
+    });
+  } else {
+    fs.linkSync(src, dest);
+  }
+};
+
+/**
+ * Recursive delete file function
+ *
+ * @param {string} src The path to the thing to delete.
+ */
+var deleteFolderRecursive = function(src) {
+if( fs.existsSync(src) ) {
+fs.readdirSync(src).forEach(function(file,index){
+var curPath = src + "/" + file;
+if(fs.lstatSync(curPath).isDirectory()) { // recurse
+deleteFolderRecursive(curPath);
+      } else { // delete file
+fs.unlinkSync(curPath);
+      }
+    });
+fs.rmdirSync(src);
+  }
+};
+
+/**
+ * Updates the app configuration file with new dependencies. A dependency value of `null`
+ * removes any dependencies.
+ *
+ * @param {object} dependencies The dependencies to add to the config file
+ * @param {string} src The path to the config file to update
+ */
+var updateConfigDependencies = function(dependencies, src){
+  var config = require(src);
+  if(config){
+    config.dependencies = dependencies || {};
+  }
+  fs.writeFileSync(src, JSON.stringify(config, null, 4));
+}

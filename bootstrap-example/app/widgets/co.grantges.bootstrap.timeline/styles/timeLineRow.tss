@@ -1,0 +1,28 @@
+"TableViewRow":{
+	selectionStyle:"Titanium.UI.iPhone.TableViewCellSelectionStyle.NONE",
+	height:50
+},
+
+"TableViewRow[platform=mobileweb]":{
+	top:-15
+},
+
+"#message":{
+	font:{
+		fontSize:12
+	}	
+},
+
+"#label":{
+	left:0, 
+	width:50, 
+	height:30,
+	borderRadius:5,
+	textAlign:"center",
+	color:"#fff",
+	width: 75,
+	font:{
+		fontSize:10,
+		fontWeight:"bold"
+	}
+}

@@ -1,10 +1,4 @@
-.DS_Store
-Resources
+# Build folder and log file
+build/
 build.log
-build
-npm-debug.log
-tmp
-.map
-.project
-.settings
-Thumbs.db
+Resources

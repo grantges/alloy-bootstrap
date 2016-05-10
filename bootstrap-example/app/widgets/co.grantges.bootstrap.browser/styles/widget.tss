@@ -1,0 +1,39 @@
+"Label":{
+	color: "#CCC",
+	font: {
+		fontFamily: "Arial",
+		fontSize: 24
+	},
+	left: 5
+},
+"#wrapper":{
+	layout:"vertical"
+},
+
+"#header":{
+	backgroundColor: "#ececec",
+	height: 50
+},
+
+"#browserNavigation":{
+	height: 50
+},
+
+"#title":{
+	width: '80%',
+	height: 20,
+	borderRadius: 5,
+	enabled: false,
+	backgroundColor: "#11000000",
+	color: "#999",
+	font:{
+		fontSize: 10,
+		fontFamily: "Arial"
+	},
+	textAlign:"center"
+}
+
+"#webView":{
+	willHandleTouches:false,
+	height: '93%'
+}
