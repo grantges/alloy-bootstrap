@@ -1,0 +1,12 @@
+
+'#container':{
+  height: 70,
+}
+'#inputLabel':{
+  height:40
+}
+'#inputCaptureBtn':{
+  height: 40,
+  width: 40,
+  borderRadius: 20
+}

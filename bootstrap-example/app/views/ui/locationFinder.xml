@@ -1,0 +1,5 @@
+<Alloy>
+  <Window id="win">
+    <Widget id="locationFinder" src="co.grantges.bootstrap.locationFinder" />
+  </Window>
+</Alloy>

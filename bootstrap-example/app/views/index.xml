@@ -2,10 +2,12 @@
 	<NavigationWindow>
 	<Window class="container">
 		<TableView id="tableView" onClick="_onTableViewClick">
-			<TableViewRow title="bootstrap ui" navid="ui"/>
-			<TableViewRow title="bootstrap browser" navid="co.grantges.bootstrap.browser" type="widget"/>
-			<TableViewRow title="bootstrap timeline" navid="co.grantges.bootstrap.timeline" type="widget"/>
-			<TableViewRow title="bootstrap locations" navid="co.grantges.bootstrap.locationFinder" type="widget"/>
+			<TableViewRow title="form inputs" navid="form" />
+			<TableViewRow title="alerts" navid="alerts" />
+			<TableViewRow title="signature" navid="signature"/>
+			<TableViewRow title="browser" navid="browser" />
+			<TableViewRow title="timeline" navid="timeline"/>
+			<TableViewRow title="locations" navid="locationFinder"/>
 		</TableView>
 	</Window>
 </NavigationWindow>

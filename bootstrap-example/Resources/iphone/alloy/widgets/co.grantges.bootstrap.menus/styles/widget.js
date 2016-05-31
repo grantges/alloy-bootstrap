@@ -6,7 +6,7 @@ function WPATH(s) {
 
 module.exports = [ {
     isApi: true,
-    priority: 1000.0852,
+    priority: 1000.0861,
     key: "Label",
     style: {
         color: "#000",
@@ -600,7 +600,8 @@ module.exports = [ {
     style: {
         borderRadius: 4,
         textAlign: "center",
-        height: 45
+        height: 45,
+        width: 100
     }
 }, {
     isClass: true,

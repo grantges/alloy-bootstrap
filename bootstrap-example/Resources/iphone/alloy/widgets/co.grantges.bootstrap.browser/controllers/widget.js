@@ -32,10 +32,10 @@ function Controller() {
         id: "wrapper"
     });
     $.__views.wrapper && $.addTopLevelView($.__views.wrapper);
-    $.__views.__alloyId1 = Ti.UI.createView({
+    $.__views.__alloyId3 = Ti.UI.createView({
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
-        id: "__alloyId1"
+        id: "__alloyId3"
     });
     $.__views.title = Ti.UI.createTextField({
         font: {
@@ -55,8 +55,8 @@ function Controller() {
         textAlign: "center",
         id: "title"
     });
-    $.__views.__alloyId1.add($.__views.title);
-    $.__views.wrapper.titleControl = $.__views.__alloyId1;
+    $.__views.__alloyId3.add($.__views.title);
+    $.__views.wrapper.titleControl = $.__views.__alloyId3;
     $.__views.webView = Ti.UI.createWebView({
         willHandleTouches: false,
         height: "93%",
@@ -64,13 +64,13 @@ function Controller() {
         url: "http://www.appcelerator.com"
     });
     $.__views.wrapper.add($.__views.webView);
-    $.__views.__alloyId2 = Ti.UI.createView({
+    $.__views.__alloyId4 = Ti.UI.createView({
         backgroundColor: "#9b9d9f",
         width: Ti.UI.FILL,
         height: 1,
-        id: "__alloyId2"
+        id: "__alloyId4"
     });
-    $.__views.wrapper.add($.__views.__alloyId2);
+    $.__views.wrapper.add($.__views.__alloyId4);
     $.__views.browserNavigation = Ti.UI.createView({
         layout: "horizontal",
         width: "100%",

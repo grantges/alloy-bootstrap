@@ -1,0 +1,13 @@
+"Label": {
+	color: '#666',
+	font: {
+		fontSize: 18,
+		fontWeight: 'bold'
+	},
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE
+}
+
+".bottom-margin":{
+	bottom: 25
+}

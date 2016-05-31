@@ -64,7 +64,7 @@ function Controller() {
         classes: []
     });
     $.__views.walkthroughView && $.addTopLevelView($.__views.walkthroughView);
-    var __alloyId6 = [];
+    var __alloyId8 = [];
     $.__views.scrollableView = Ti.UI.createScrollableView({
         cacheSize: 4,
         height: "70%",
@@ -72,7 +72,7 @@ function Controller() {
         pagingControlColor: "transparent",
         pageIndicatorColor: "#552D8DD6",
         currentPageIndicatorColor: "#2D8DD6",
-        views: __alloyId6,
+        views: __alloyId8,
         apiName: "Ti.UI.ScrollableView",
         id: "scrollableView",
         classes: []
@@ -84,7 +84,7 @@ function Controller() {
             fontSize: 18
         },
         bottom: 40,
-        width: "33.33333333%",
+        width: 100,
         height: 45,
         layout: "horizontal",
         borderRadius: 4,

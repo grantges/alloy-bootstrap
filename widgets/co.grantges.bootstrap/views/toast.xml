@@ -1,0 +1,8 @@
+<Alloy autoStyle="true">
+	<Window class="container" onClick="_onToastClick">
+		<View class="hgroup size">
+			<Label id="icon" class="icon no-touch" />
+			<Label id="title" class="left-buffer no-touch">Message Title</Label>
+		</View>
+	</Window>
+</Alloy>

@@ -1,4 +1,5 @@
 
+var panel = $.panel.getView();
 
 (function _constructor(options){
 
@@ -8,6 +9,7 @@
     backgroundColor: 'red'
   });
 
-  $.panel.add(view);
+  console.log(typeof($.panel.add));
+  panel.add(view);
 
 })($.args);

@@ -1,0 +1,11 @@
+<Alloy>
+	<View id="container">
+		<Label id="title" class="h4 dark-gray top-buffer" text="Signature"/>
+
+		<Label id="icon" class="left-buffer bottom-margin" text="X"/>
+		<View  id="line" class="gray-line bottom-margin" />
+		<Module id="paint" module="ti.paint" method="createPaintView"
+			eraseMode="false" strokeWidth="1.0" strokeColor="red" strokeAlpha="100" />
+		<Button id="clearBtn" class="top-buffer right-buffer" onClick="_clear" title='Reset' />
+	</View>
+</Alloy>

@@ -1,0 +1,7 @@
+<Alloy>
+  <Window id="win" title="Toast" class="vgroup">
+    <Button class="btn btn-primary top-buffer" onClick="openToast">Default Toast</Button>
+
+    <Button class="btn btn-error top-buffer" onClick="openRedToast">Custom Toast</Button>
+  </Window>
+</Alloy>

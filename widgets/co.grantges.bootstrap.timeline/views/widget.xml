@@ -1,5 +1,5 @@
 <Alloy>
-	<TableView id="tableView" backgroundColor="white">
-		
+	<TableView id="tableView" class="top-buffer" backgroundColor="white">
+
 	</TableView>
 </Alloy>

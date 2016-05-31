@@ -1,0 +1,8 @@
+<Alloy autoStyle="true">
+  <View id="container" class="size left-buffer right-buffer">
+    <Label id="inputLabel" class="h4 primary size left bottom no-touch" text="Label"/>
+    <TextField id="inputText" class="h4 dark-gray left right bottom" onFocus="_onInputFocus" onBlur="_onInputBlur" onChange="_onInputChange"/>
+    <Label id="inputCancel" class="icon icon-close dark-gray bottom-buffer hide right-buffer" onClick="_onInputCancel" />
+    <View class="gray-line bottom"/>
+  </View>
+</Alloy>

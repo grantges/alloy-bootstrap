@@ -1,0 +1,10 @@
+<Alloy>
+  <Window id="win" title="UI">
+    <ScrollView class="vgroup left-buffer right-buffer">
+      <Widget src="co.grantges.bootstrap" name='input_text' id="textInput" top="30"/>
+      <Button class="btn btn-primary right-buffer top-buffer" onClick="alertInputValue">Click Me</Button>
+
+      <Widget src="co.grantges.bootstrap" name='input_signature' id="signatureInput" top="30"/>
+    </ScrollView>
+  </Window>
+</Alloy>
