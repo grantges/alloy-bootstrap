@@ -1,0 +1,12 @@
+
+'#container':{
+  height: 50,
+}
+'#inputLabel':{
+  height:40
+}
+'#inputText':{
+  height: 40,
+  paddingLeft:0,
+  backgroundColor:'transparent'
+}

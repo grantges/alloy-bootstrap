@@ -1,11 +1,10 @@
 
-
 (function _constructor(options){
+
+  console.log($.panel.apiName);
+
   _.extend($.panel, options);
-
-
 })($.args);
-
 
 /**
  * Android specific properties
@@ -20,6 +19,5 @@ Object.defineProperty($, 'elevation', {
     $.panel.elevation = e;
   }
 });
-
 
 }

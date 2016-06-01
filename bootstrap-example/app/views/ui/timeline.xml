@@ -1,0 +1,5 @@
+<Alloy>
+  <Window id="win">
+    <Widget id="timeline" src="co.grantges.bootstrap.timeline" />
+  </Window>
+</Alloy>

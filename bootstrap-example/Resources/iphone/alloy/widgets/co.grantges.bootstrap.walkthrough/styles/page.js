@@ -52,7 +52,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0853,
+    priority: 10000.0862,
     key: "walkthrough-title",
     style: {
         font: {
@@ -61,7 +61,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0854,
+    priority: 10000.0863,
     key: "walkthrough-description",
     style: {
         width: "90%"
@@ -603,7 +603,8 @@ module.exports = [ {
     style: {
         borderRadius: 4,
         textAlign: "center",
-        height: 45
+        height: 45,
+        width: 100
     }
 }, {
     isClass: true,
@@ -5944,7 +5945,7 @@ module.exports = [ {
     queries: {
         formFactor: "isHandheld"
     },
-    priority: 10011.0855,
+    priority: 10011.0864,
     key: "walkthrough-image",
     style: {
         height: 300,
@@ -5952,7 +5953,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0856,
+    priority: 100000.0865,
     key: "swipeText",
     style: {
         top: 40

@@ -33,28 +33,28 @@ function Controller() {
         id: "timeLineRow"
     });
     $.__views.timeLineRow && $.addTopLevelView($.__views.timeLineRow);
-    $.__views.__alloyId3 = Ti.UI.createView({
+    $.__views.__alloyId5 = Ti.UI.createView({
         height: Ti.UI.SIZE,
         width: 65,
         left: 10,
-        id: "__alloyId3"
+        id: "__alloyId5"
     });
-    $.__views.timeLineRow.add($.__views.__alloyId3);
-    $.__views.__alloyId4 = Ti.UI.createView({
+    $.__views.timeLineRow.add($.__views.__alloyId5);
+    $.__views.__alloyId6 = Ti.UI.createView({
         backgroundColor: "#a9a9a9",
         width: 5,
         height: Ti.UI.FILL,
-        id: "__alloyId4"
+        id: "__alloyId6"
     });
-    $.__views.__alloyId3.add($.__views.__alloyId4);
-    $.__views.__alloyId5 = Ti.UI.createView({
+    $.__views.__alloyId5.add($.__views.__alloyId6);
+    $.__views.__alloyId7 = Ti.UI.createView({
         backgroundColor: "#a9a9a9",
-        width: 20,
-        height: 20,
-        borderRadius: 10,
-        id: "__alloyId5"
+        width: 15,
+        height: 15,
+        borderRadius: 7.5,
+        id: "__alloyId7"
     });
-    $.__views.__alloyId3.add($.__views.__alloyId5);
+    $.__views.__alloyId5.add($.__views.__alloyId7);
     $.__views.label = Ti.UI.createLabel({
         font: {
             fontFamily: "Helvetica Neue",

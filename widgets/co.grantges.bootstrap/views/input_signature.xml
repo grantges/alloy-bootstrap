@@ -1,0 +1,7 @@
+<Alloy>
+  <View id="container" class="size left-buffer right-buffer">
+    <Label id="inputLabel" class="h4 primary size left bottom no-touch" text="Label"/>
+    <View id="inputSignatureView" class="left bottom col-10" />
+    <Label id="inputCaptureBtn" class="btn btn-primary icon icon-pencil white bottom-buffer right-buffer" onClick="_onOpenSignatureDialog" />
+  </View>
+</Alloy>

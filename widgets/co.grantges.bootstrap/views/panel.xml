@@ -1,4 +1,7 @@
 <Alloy>
-  <View platform="ios" />
+  <!-- IOS -->
+  <View platform="ios, windows" />
+
+  <!-- Android -->
   <CardView platform="android" />
 </Alloy>

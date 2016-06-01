@@ -17,7 +17,8 @@ task("pre:load",function(event,logger){
         "co.grantges.bootstrap.timeline": "*",
         "co.grantges.bootstrap.menus": "*",
         "co.grantges.bootstrap.walkthrough": "*",
-        "co.grantges.bootstrap.locationFinder": "*"
+        "co.grantges.bootstrap.locationFinder": "*",
+        "co.grantges.bootstrap.signature": "*"
     };
     logger.info('Add widget dependencies in config.json');
     updateConfigDependencies(dependencies, event.dir.home+"/config.json");
@@ -28,6 +29,11 @@ task("pre:load",function(event,logger){
     // Create the destination directories for themes and widgets.
     var srcThemesFolder = repoFolder + '/themes';
     var srcWidgetsFolder = repoFolder + '/widgets';
+    var srcLibFolder = repoFolder + '/lib';
+
+    // Copy over the themes folder
+    logger.info('Copy theme folder from the main repository directory -> ' + srcThemesFolder );
+    copyRecursiveSync(srcLibFolder, event.dir.home+"/lib", true);
 
     // Copy over the themes folder
     logger.info('Copy theme folder from the main repository directory -> ' + srcThemesFolder );

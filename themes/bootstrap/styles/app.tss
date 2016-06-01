@@ -415,7 +415,8 @@
 '.btn':{
   borderRadius: 4,
   textAlign: 'center',
-  height: 45
+  height: 45,
+  width: 100
 },
 
 '.btn-icon':{

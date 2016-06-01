@@ -14,6 +14,42 @@ function __processArg(obj, key) {
 }
 
 function Controller() {
+    function _buildTimeLine() {
+        var footerView = Alloy.createWidget("co.grantges.bootstrap.timeline", "timeLineSection", {
+            fillColor: "#a9a9a9"
+        }).getView();
+        $.tableView.footerView = footerView;
+        var sections = [];
+        var todayHv = Alloy.createWidget("co.grantges.bootstrap.timeline", "timeLineSection", {
+            text: "Today",
+            fillColor: "#dcdcdc"
+        }).getView();
+        var todaySection = Ti.UI.createTableViewSection({
+            headerView: todayHv
+        });
+        todaySection.add(Alloy.createWidget("co.grantges.bootstrap.timeline", "timeLineRow").getView());
+        todaySection.add(Alloy.createWidget("co.grantges.bootstrap.timeline", "timeLineRow").getView());
+        sections.push(todaySection);
+        for (var i = 0; 5 >= i; i++) {
+            var hv = Alloy.createWidget("co.grantges.bootstrap.timeline", "timeLineSection", {
+                text: "Day\n" + i
+            }).getView();
+            var section = Ti.UI.createTableViewSection({
+                headerView: hv
+            });
+            section.add(Alloy.createWidget("co.grantges.bootstrap.timeline", "timeLineRow", {
+                label: "FILE"
+            }).getView());
+            section.add(Alloy.createWidget("co.grantges.bootstrap.timeline", "timeLineRow", {
+                label: "TASK"
+            }).getView());
+            section.add(Alloy.createWidget("co.grantges.bootstrap.timeline", "timeLineRow", {
+                label: "REPLY"
+            }).getView());
+            sections.push(section);
+        }
+        $.tableView.data = sections;
+    }
     new (require("alloy/widget"))("co.grantges.bootstrap.timeline");
     this.__widgetId = "co.grantges.bootstrap.timeline";
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
@@ -27,6 +63,7 @@ function Controller() {
     var $ = this;
     var exports = {};
     $.__views.tableView = Ti.UI.createTableView({
+        top: 10,
         separatorStyle: 0,
         separatorColor: "transparent",
         id: "tableView",
@@ -36,43 +73,16 @@ function Controller() {
     exports.destroy = function() {};
     _.extend($, $.__views);
     require("alloy/moment");
-    arguments[0] || {};
-    var footerView = Alloy.createWidget("co.grantges.bootstrap.timeline", "timeLineSection", {
-        fillColor: "#a9a9a9"
-    }).getView();
-    $.tableView.footerView = footerView;
-    var sections = [];
-    var todayHv = Alloy.createWidget("co.grantges.bootstrap.timeline", "timeLineSection", {
-        text: "Today",
-        fillColor: "#dcdcdc"
-    }).getView();
-    var todaySection = Ti.UI.createTableViewSection({
-        headerView: todayHv
-    });
-    todaySection.add(Alloy.createWidget("co.grantges.bootstrap.timeline", "timeLineRow").getView());
-    todaySection.add(Alloy.createWidget("co.grantges.bootstrap.timeline", "timeLineRow").getView());
-    sections.push(todaySection);
-    for (var i = 0; 5 >= i; i++) {
-        var hv = Alloy.createWidget("co.grantges.bootstrap.timeline", "timeLineSection", {
-            text: "Day+" + i
-        }).getView();
-        var section = Ti.UI.createTableViewSection({
-            headerView: hv
-        });
-        section.add(Alloy.createWidget("co.grantges.bootstrap.timeline", "timeLineRow", {
+    var _json;
+    !function(options) {
+        _json = options.json;
+        _buildTimeLine();
+    }($.args);
+    $.addItem = function() {
+        $.tableView.insertRowBefore(0, Alloy.createWidget("co.grantges.bootstrap.timeline", "timeLineRow", {
             label: "FILE"
         }).getView());
-        section.add(Alloy.createWidget("co.grantges.bootstrap.timeline", "timeLineRow", {
-            label: "TASK"
-        }).getView());
-        section.add(Alloy.createWidget("co.grantges.bootstrap.timeline", "timeLineRow", {
-            label: "REPLY"
-        }).getView());
-        sections.push(section);
-    }
-    $.tableView.data = sections;
-    $.init = function() {};
-    $.addItem = function() {};
+    };
     $.removeItem = function() {};
     $.createFromJSON = function() {};
     _.extend($, exports);

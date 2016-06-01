@@ -1,0 +1,5 @@
+<Alloy>
+  <Window id="win">
+    <Widget id="paint" src="co.grantges.bootstrap.signature" />
+  </Window>
+</Alloy>
