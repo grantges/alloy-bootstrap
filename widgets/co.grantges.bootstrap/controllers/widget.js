@@ -30,6 +30,7 @@ $.App = {
 
      start: function _app_start(options){
 
+
      },
 
      resume: function _app_resume(options){
