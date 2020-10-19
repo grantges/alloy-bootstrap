@@ -1,5 +1,5 @@
 <Alloy>
   <Window id="win">
-    <Widget id="paint" src="co.grantges.bootstrap.signature" />
+    <Widget id="paint" src="ti.bootstrap.signature" />
   </Window>
 </Alloy>

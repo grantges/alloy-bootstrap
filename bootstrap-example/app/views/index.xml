@@ -3,6 +3,7 @@
 	<Window class="container">
 		<TableView id="tableView" onClick="_onTableViewClick">
 			<TableViewRow title="form inputs" navid="form" />
+			<TableViewRow title="avatar" navid="avatar" />
 			<TableViewRow title="alerts" navid="alerts" />
 			<TableViewRow title="signature" navid="signature"/>
 			<TableViewRow title="browser" navid="browser" />

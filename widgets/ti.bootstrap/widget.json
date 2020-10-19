@@ -1,0 +1,13 @@
+{
+	"id": "ti.bootstrap",
+	"name": "ti.bootstrap",
+	"description" : "Base level components widget for Alloy Boostrap project",
+	"author": "Bert Grantges",
+	"version": "0.0.2",
+	"copyright":"Copyright (c) 2020",
+	"license":"MIT",
+	"min-alloy-version": "1.0",
+	"min-titanium-version":"2.1",
+	"tags":"",
+	"platforms":"android,ios"
+}

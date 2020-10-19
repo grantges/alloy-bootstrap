@@ -1,5 +1,0 @@
-<Alloy>
-  <View>
-		<Widget src="co.grantges.bootstrap" name="panel" class="col-8"/>
-	</View>
-</Alloy>

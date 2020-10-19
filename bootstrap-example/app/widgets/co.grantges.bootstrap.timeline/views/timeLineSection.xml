@@ -1,8 +1,0 @@
-<Alloy>
-	<View id="wrapper" class="container">
-		<View id="gradient"  platform="ios"/>
-		<View id="circle">
-			<Label id="label">2014</Label>
-		</View>
-	</View>
-</Alloy>

@@ -1,0 +1,16 @@
+{
+	"id": "ti.bootstrap.locationFinder",
+	"name": "ti.bootstrap.locationFinder",
+	"description" : "A UI and workflow for using and searching locations on a map within an app.",
+	"author": "Bert Grantges",
+	"version": "0.0.1",
+	"copyright":"Copyright (c) 2016",
+	"license":"MIT",
+	"min-alloy-version": "1.0",
+	"min-titanium-version":"2.1",
+	"tags":"",
+	"platforms":"android,ios",
+	"dependencies":{
+		"ti.bootstrap":"0.0.1"
+	}
+}

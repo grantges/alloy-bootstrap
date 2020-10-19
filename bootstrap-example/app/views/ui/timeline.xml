@@ -1,5 +1,5 @@
 <Alloy>
   <Window id="win">
-    <Widget id="timeline" src="co.grantges.bootstrap.timeline" />
+    <Widget id="timeline" src="ti.bootstrap.timeline" />
   </Window>
 </Alloy>

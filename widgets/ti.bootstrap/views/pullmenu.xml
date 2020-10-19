@@ -1,0 +1,8 @@
+<Alloy autoStyle="true">
+    <View id="widgetContainer" class="container rounded">
+		<View class="vgroup">
+			<View id="handle" class="top-buffer"/>
+            <ScrollView id="context" class="vgroup top-buffer" />
+        </View>
+    </View>
+</Alloy>

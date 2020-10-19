@@ -4,3 +4,8 @@
 # Build folder and log file
 build/
 build.log
+
+bootstrap-example/app/styles/app.tss
+bootstrap-example/app/lib/
+bootstrap-example/app/themes/
+bootstrap-example/app/widgets/

@@ -1,0 +1,8 @@
+<Alloy>
+	<View>
+		<View id="mapview" module="ti.map" />
+
+		<TextField id="search" />
+		<Widget id="panel" src="ti.bootstrap" name="panel" top="85%" left="0" right="0" height="Ti.UI.FILL"/>
+	</View>
+</Alloy>

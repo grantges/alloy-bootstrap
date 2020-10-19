@@ -1,0 +1,17 @@
+"#widgetContainer":{
+	backgroundColor: "#141925",
+	height: "98%"
+},
+
+"#handle" : {
+	backgroundColor: "#5fff",
+	width: 50,
+	height: 5,
+	borderRadius: 3
+},
+
+"#context":{
+    scrollType: "vertical",
+    scrollingEnabled: false,
+    showVerticalScrollIndicator: false
+}

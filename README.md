@@ -32,11 +32,11 @@ The goal of `alloy-boostrap` is to provide a faster easier approach to building 
     "os:mobileweb": {},
     "os:windows": {},
     "dependencies": {
-        "co.grantges.bootstrap": "0.0.1",
-        "co.grantges.bootstrap.browser": "0.0.1",
-        "co.grantges.bootstrap.timeline": "0.0.1",
-        "co.grantges.bootstrap.menus": "0.0.1",
-        "co.grantges.bootstrap.walkthrough": "0.0.1"
+        "ti.bootstrap": "0.0.1",
+        "ti.bootstrap.browser": "0.0.1",
+        "ti.bootstrap.timeline": "0.0.1",
+        "ti.bootstrap.menus": "0.0.1",
+        "ti.bootstrap.walkthrough": "0.0.1"
     }
 }
 ~~~
@@ -45,7 +45,7 @@ The goal of `alloy-boostrap` is to provide a faster easier approach to building 
 * In your project's `alloy.js` file, add the following code:
 
 ~~~
-App = Alloy.createWidget('co.grantges.bootstrap').App;
+App = Alloy.createWidget('ti.bootstrap').App;
 ~~~
 
 The above code will implement the global App singleton object used for managing your application.

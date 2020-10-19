@@ -2,7 +2,7 @@ var toast = null;
 
 function openToast(e){
   toast && toast.close() && (toast=null);
-  toast = Alloy.createWidget('co.grantges.bootstrap', 'toast', {
+  toast = Alloy.createWidget('ti.bootstrap', 'toast', {
     onClick: closeToast,
     title: 'Click to Close Me'
   });
@@ -13,9 +13,35 @@ function openToast(e){
 function openRedToast(){
 
   toast && toast.close() && (toast=null);
-  toast = Alloy.createWidget('co.grantges.bootstrap', 'toast', {
+  toast = Alloy.createWidget('ti.bootstrap', 'toast', {
     onClick: closeToast,
-    icon: 'bell-o',
+    icon: 'icon-envelope-o',
+    backgroundColor: '#E31B23',
+    borderColor: '#B7000B',
+    title: 'Click to Close Me'
+  });
+
+  toast.open();
+}
+
+function openTopToast(e){
+  toast && toast.close() && (toast=null);
+  toast = Alloy.createWidget('ti.bootstrap', 'toast', {
+    onClick: closeToast,
+    position: 'top',
+    title: 'Click to Close Me'
+  });
+
+  toast.open();
+}
+
+function openTopRedToast(){
+
+  toast && toast.close() && (toast=null);
+  toast = Alloy.createWidget('ti.bootstrap', 'toast', {
+    onClick: closeToast,
+    position: 'top',
+    icon: 'icon-envelope-o',
     backgroundColor: '#E31B23',
     borderColor: '#B7000B',
     title: 'Click to Close Me'

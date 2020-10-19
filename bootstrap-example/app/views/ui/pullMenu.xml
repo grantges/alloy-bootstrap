@@ -1,0 +1,5 @@
+<Alloy>
+	<Window class="container">
+		<Widget id="menu" src="ti.bootstrap" name="pullmenu" />
+	</Window>
+</Alloy>

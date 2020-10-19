@@ -1,0 +1,8 @@
+
+".container" : {
+  height: 75,
+  width: Ti.UI.FILL,
+  backgroundColor: '#038BC8',
+  borderWidth:1,
+  borderColor: '#0173BD',
+}

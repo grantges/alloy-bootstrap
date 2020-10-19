@@ -1,0 +1,181 @@
+
+
+'.avatar-xx-lrg':{
+    width: 150,
+    height: 150,
+},
+
+'.avatar-x-lrg':{
+    width: 125,
+    height: 125,
+},
+
+'.avatar-lrg':{
+    width: 100,
+    height: 100,
+},
+
+'.avatar-med':{
+    width: 75,
+    height: 75,
+}
+
+'.avatar-sm':{
+    width: 50,
+    height: 50,
+}
+
+'.avatar-xs':{
+    width: 25,
+    height: 25,
+}
+
+'.circle-xx-lrg':{
+    borderRadius: 75
+},
+
+'.circle-x-lrg':{
+    borderRadius: 62.5
+},
+
+'.circle-lrg':{
+    borderRadius: 50
+},
+
+'.circle-med':{
+   borderRadius: 37.5
+}
+
+'.circle-sm':{
+    borderRadius: 25
+}
+
+'.circle-xs':{
+    borderRadius: 12.5
+}
+
+'.smooth-xx-lrg':{
+    borderRadius: 38
+},
+
+'.smooth-x-lrg':{
+    borderRadius: 31
+},
+
+'.smooth-lrg':{
+    borderRadius: 25
+},
+
+'.smooth-med':{
+   borderRadius: 18
+}
+
+'.smooth-sm':{
+    borderRadius: 12
+}
+
+'.smooth-xs':{
+    borderRadius: 6
+}
+
+'.border-xx-lrg': {
+    borderWidth: 10,
+}
+
+'.border-x-lrg': {
+    borderWidth: 8,
+}
+
+'.border-lrg': {
+    borderWidth: 6,
+}
+
+'.border-med': {
+    borderWidth: 4,
+}
+
+'.border-sm': {
+    borderWidth: 2,
+}
+
+'.border-xs': {
+    borderWidth: 1,
+}
+
+/** Status Indicator **/
+'.status-xx-lrg':{
+    width: 36,
+    height: 36,
+    right: 15,
+    bottom: 15,
+    borderRadius: 18,
+    borderWidth: 3,
+}
+
+'.status-x-lrg':{
+    width: 30,
+    height: 30,
+    right: 12,
+    bottom: 12,
+    borderRadius: 15,
+    borderWidth: 3,
+}
+
+'.status-lrg':{
+    width: 25,
+    height: 25,
+    right: 9,
+    bottom: 9,
+    borderRadius: 12.5,
+    borderWidth: 2,
+}
+
+'.status-med':{
+    width: 18,
+    height: 18,
+    right: 6,
+    bottom: 6,
+    borderRadius: 9,
+    borderWidth: 2,
+}
+
+'.status-sm':{
+    width: 12,
+    height: 12,
+    right: 2,
+    bottom: 2,
+    borderRadius: 6,
+    borderWidth: 1,
+}
+
+'.status-xs':{
+    width: 8,
+    height: 8,
+    right: 0,
+    bottom: 0,
+    borderRadius: 4,
+    borderWidth: 1,
+}
+
+
+'.status-online': {
+	backgroundColor: '#5FCE82'
+}
+
+'.status-offline': {
+	backgroundColor: '#768192'
+}
+
+'.status-away': {
+	backgroundColor: '#E7854D'
+}
+
+'.status-dnd': {
+	backgroundColor: '#D5475A'
+}
+
+'.status-none': {
+	visible: false,
+	backgroundColor: 'transparent',
+	borderColor: 'transparent',
+}

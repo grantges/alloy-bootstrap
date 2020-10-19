@@ -12,13 +12,12 @@ var fs = require('fs'),
 task("pre:load",function(event,logger){
 
     var dependencies = {
-        "co.grantges.bootstrap": "*",
-        "co.grantges.bootstrap.browser": "*",
-        "co.grantges.bootstrap.timeline": "*",
-        "co.grantges.bootstrap.menus": "*",
-        "co.grantges.bootstrap.walkthrough": "*",
-        "co.grantges.bootstrap.locationFinder": "*",
-        "co.grantges.bootstrap.signature": "*"
+        "ti.bootstrap": "*",
+        "ti.bootstrap.browser": "*",
+        "ti.bootstrap.timeline": "*",
+        "ti.bootstrap.walkthrough": "*",
+        "ti.bootstrap.locationFinder": "*",
+        "ti.bootstrap.signature": "*"
     };
     logger.info('Add widget dependencies in config.json');
     updateConfigDependencies(dependencies, event.dir.home+"/config.json");
@@ -32,7 +31,7 @@ task("pre:load",function(event,logger){
     var srcLibFolder = repoFolder + '/lib';
 
     // Copy over the themes folder
-    logger.info('Copy theme folder from the main repository directory -> ' + srcThemesFolder );
+    logger.info('Copy Lib folder from the main repository directory -> ' + srcLibFolder );
     copyRecursiveSync(srcLibFolder, event.dir.home+"/lib", true);
 
     // Copy over the themes folder

@@ -1,0 +1,8 @@
+<Alloy>
+    <View id="cardContainer" class="buffer smooth">
+        <View id="header" class="hgroup span-width">
+            <Label id="headerTitle" class="left-buffer top-buffer bottom-buffer h1 text-semibold text-left" />
+            <Button id="headerLink" class="size right-buffer top-buffer bottom-buffer blue" />
+        </View>
+    </View>
+</Alloy>

@@ -1,0 +1,16 @@
+{
+	"id": "ti.bootstrap.signature",
+	"name": "ti.bootstrap.signature",
+	"description" : "A widget for capturing a signature from the user",
+	"author": "Bert Grantges",
+	"version": "0.0.1",
+	"copyright":"Copyright (c) 2016",
+	"license":"Public Domain",
+	"min-alloy-version": "1.0",
+	"min-titanium-version":"2.1",
+	"tags":"ti.paint, signature, bootstrap",
+	"platforms":"android,ios",
+	"dependencies":{
+		"ti.bootstrap":"0.0.2"
+	}
+}

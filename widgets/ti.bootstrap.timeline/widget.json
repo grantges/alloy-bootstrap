@@ -1,0 +1,16 @@
+{
+	"id": "ti.bootstrap.timeline",
+	"name": "ti.bootstrap.timeline",
+	"description" : "A tableview based timeline widget for displaying series information over time",
+	"author": "Bert Grantges",
+	"version": "0.0.1",
+	"copyright":"Copyright (c) 2016",
+	"license":"MIT",
+	"min-alloy-version": "1.0",
+	"min-titanium-version":"2.1",
+	"tags":"titanium, alloy, timeline, Ti.UI.TableView",
+	"platforms":"android,ios",
+	"dependencies":{
+		"ti.bootstrap":"0.0.2"
+	}
+}

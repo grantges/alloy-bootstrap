@@ -1,0 +1,6 @@
+<Alloy autoStyle="true">
+    <View id="avatarContainer" class="size">
+            <ImageView id="avatarImage" height="150" width="150" />
+            <View id="avatarStatus" class="hide" />
+    </View>
+</Alloy>
