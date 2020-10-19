@@ -2,6 +2,7 @@
 	<NavigationWindow>
 	<Window class="container">
 		<TableView id="tableView" onClick="_onTableViewClick">
+			<TableViewRow title="badges" navid="badge" />
 			<TableViewRow title="form inputs" navid="form" />
 			<TableViewRow title="avatar" navid="avatar" />
 			<TableViewRow title="alerts" navid="alerts" />

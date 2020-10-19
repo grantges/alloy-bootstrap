@@ -1,0 +1,7 @@
+'.pill' :{
+    height: 25,
+    borderRadius: 12.5,
+    width: Ti.UI.SIZE,
+    left: 3,
+    right: 3
+}

@@ -38,27 +38,30 @@ function Controller() {
   { backgroundColor: "white", id: "__alloyId13" });
 
   var __alloyId14 = [];$.__views["__alloyId15"] = Ti.UI.createTableViewRow(
-  { title: "form inputs", navid: "form", id: "__alloyId15" });
+  { title: "badges", navid: "badge", id: "__alloyId15" });
 
   __alloyId14.push($.__views["__alloyId15"]);$.__views["__alloyId16"] = Ti.UI.createTableViewRow(
-  { title: "avatar", navid: "avatar", id: "__alloyId16" });
+  { title: "form inputs", navid: "form", id: "__alloyId16" });
 
   __alloyId14.push($.__views["__alloyId16"]);$.__views["__alloyId17"] = Ti.UI.createTableViewRow(
-  { title: "alerts", navid: "alerts", id: "__alloyId17" });
+  { title: "avatar", navid: "avatar", id: "__alloyId17" });
 
   __alloyId14.push($.__views["__alloyId17"]);$.__views["__alloyId18"] = Ti.UI.createTableViewRow(
-  { title: "signature", navid: "signature", id: "__alloyId18" });
+  { title: "alerts", navid: "alerts", id: "__alloyId18" });
 
   __alloyId14.push($.__views["__alloyId18"]);$.__views["__alloyId19"] = Ti.UI.createTableViewRow(
-  { title: "browser", navid: "browser", id: "__alloyId19" });
+  { title: "signature", navid: "signature", id: "__alloyId19" });
 
   __alloyId14.push($.__views["__alloyId19"]);$.__views["__alloyId20"] = Ti.UI.createTableViewRow(
-  { title: "timeline", navid: "timeline", id: "__alloyId20" });
+  { title: "browser", navid: "browser", id: "__alloyId20" });
 
   __alloyId14.push($.__views["__alloyId20"]);$.__views["__alloyId21"] = Ti.UI.createTableViewRow(
-  { title: "locations", navid: "locationFinder", id: "__alloyId21" });
+  { title: "timeline", navid: "timeline", id: "__alloyId21" });
 
-  __alloyId14.push($.__views["__alloyId21"]);$.__views["tableView"] = Ti.UI.createTableView(
+  __alloyId14.push($.__views["__alloyId21"]);$.__views["__alloyId22"] = Ti.UI.createTableViewRow(
+  { title: "locations", navid: "locationFinder", id: "__alloyId22" });
+
+  __alloyId14.push($.__views["__alloyId22"]);$.__views["tableView"] = Ti.UI.createTableView(
   { data: __alloyId14, id: "tableView" });
 
   $.__views["__alloyId13"].add($.__views["tableView"]);

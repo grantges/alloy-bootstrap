@@ -165,19 +165,6 @@
 	left: 0
 },
 
-'.text-center':{
-  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
-},
-
-'.text-right':{
-  textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT
-},
-
-'.text-left':{
-  textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
-}
-
-
 /**
  * 	Grid System
  */
@@ -374,6 +361,17 @@
 	}
 },
 
+'.text-center':{
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+
+'.text-right':{
+  textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT
+},
+
+'.text-left':{
+  textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+}
 
 /**
  * 	Visibility

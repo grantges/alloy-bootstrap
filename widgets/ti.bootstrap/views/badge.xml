@@ -1,0 +1,5 @@
+<Alloy>
+    <View id="wrapper" class="pill">
+        <Label id="badge" class="small-text size text-center left-buffer right-buffer bold" />
+    </View>
+</Alloy>

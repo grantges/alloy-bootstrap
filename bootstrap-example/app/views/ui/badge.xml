@@ -1,0 +1,5 @@
+<Alloy>
+  <Window id="win" title="Badge" class="fill">
+    <View id="badgeContainer" class="hgroup"  />
+  </Window>
+</Alloy>
