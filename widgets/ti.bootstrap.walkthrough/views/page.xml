@@ -1,7 +1,7 @@
 <Alloy>
   <View class="size vgroup">
     <ImageView id="image" class='walkthrough-image' />
-    <Label id="title" class='light-gray walkthrough-title h2'>Page Title</Label>
-    <Label id="description" class='light-gray walkthrough-description h5 top-buffer'>Veniam proident incididunt mollit velit consectetur elit laboris eiusmod est dolor.</Label>
+    <Label id="title" class='gray walkthrough-title h2'>Page Title</Label>
+    <Label id="description" class='gray walkthrough-description h5 top-buffer'>Veniam proident incididunt mollit velit consectetur elit laboris eiusmod est dolor.</Label>
   </View>
 </Alloy>

@@ -4,6 +4,7 @@
 		<TableView id="tableView" onClick="_onTableViewClick">
 			<TableViewRow title="Badges" navid="badge" />
 			<TableViewRow title="Card" navid="card" />
+			<TableViewRow title="Indicator / Display" navid="indicator" />
 			<TableViewRow title="Form inputs" navid="form" />
 			<TableViewRow title="Avatar" navid="avatar" />
 			<TableViewRow title="Alerts" navid="alerts" />

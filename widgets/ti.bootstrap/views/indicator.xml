@@ -1,0 +1,17 @@
+<Alloy module="bootstrap/ui">
+    <View id="wrapper" class="size buffer">
+        <!-- <View class='row size left'> -->
+            <!-- <Icon id="icon" icon="icon-height" class="left right-buffer top small-text size" /> -->
+            <View class="vgroup size top ">
+                <View class='row size top'>
+                    <Icon id="indicatorIcon" icon="icon-height" class="left gray right-buffer top small-text size" />
+                    <Label id="indicatorTitle" class="gray size right-buffer top small-text" text="Altitude"/>
+                </View>
+                <View class="hgroup size right-buffer bottom">
+                    <Label id="indicatorValue" class="gray size right bottom h3" text="3600"/>
+                    <Label id="indicatorType" class="gray size right small-text" text="ft"/>
+                </View>
+            </View>
+        <!-- </View> -->
+    </View>
+</Alloy>

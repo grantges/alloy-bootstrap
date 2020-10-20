@@ -1,0 +1,21 @@
+<Alloy>
+    <Window>
+        <View class="row span-width">
+            <View class="col-4">
+            <Widget id="indicator" src="ti.bootstrap" name="indicator" />
+            </View>
+            <View class="col-4">
+                <Widget id="indicator1" src="ti.bootstrap" name="indicator" />
+            </View>
+            <View class="col-4">
+                <Widget id="indicator2" src="ti.bootstrap" name="indicator" />
+            </View>
+            <View class="col-4">
+                <Widget id="indicator3" src="ti.bootstrap" name="indicator" />
+            </View>
+            <View class="col-4">
+                <Widget id="indicator4" src="ti.bootstrap" name="indicator" />
+            </View>
+        </View>
+    </Window>
+</Alloy>

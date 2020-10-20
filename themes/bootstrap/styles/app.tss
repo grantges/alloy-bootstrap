@@ -456,7 +456,7 @@
 }
 
 '.dark-gray':{
-  color: '#201C1D'//'#646E7E'
+  color: '#201C1D'
 }
 
 '.black':{
@@ -538,7 +538,7 @@
 },
 
 '.btn-default':{
-  backgroundColor: '#768192',
+  backgroundColor: '#ECECEC',
   color:'#969696'
 },
 
