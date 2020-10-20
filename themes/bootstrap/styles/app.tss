@@ -274,15 +274,15 @@
  * View Shapes
  */
  '.smooth': {
-	 borderRadius: 20
+	 borderRadius: 10
  }
 
  '.smooth-top': {
-	 borderRadius: "20px 20px 0px 0px"
+	 borderRadius: "10px 10px 0px 0px"
  }
 
  '.smooth-bottom': {
-	 borderRadius: "0px 0px 20px 20px"
+	 borderRadius: "0px 0px 10px 10px"
  }
 
 '.rounded':{
@@ -444,11 +444,23 @@
  */
 
 '.white':{
-	color: '#fff'
+  color: '#FFF'
+}
+
+'.black': {
+	color: '#000'
+}
+
+'.light-gray':{
+  color: '#ECECEC'
+}
+
+'.dark-gray':{
+  color: '#201C1D'//'#646E7E'
 }
 
 '.black':{
-	color: '#000'
+  color: '#201C1D'
 }
 
 '.gray':{
@@ -472,47 +484,48 @@
 }
 
 '.primary':{
-	color: '#2D8DD6'
+	color: '#407CDE'
 },
 
 '.success':{
-	color: '#29C566'
+	color: '#5FCE82'
 }
 
 '.warn': {
-	color: '#EFBC12'
+	color: '#E7854D'
 }
 
 '.error': {
-  color: '#CB564D'
+  color: '#D5475A'
 }
 
 '.muted':{
   color: '#ececec'
 }
 
-'.white':{
-  color: '#fff'
-}
-
-'.light-gray':{
-  color: '#646E7E'
-}
-
-'.dark-gray':{
-  color: '#969696'
-}
-
-'.black':{
-  color: '#201C1D'
-}
+/**
+ * Button Styles
+ */
 
 '.btn':{
   borderRadius: 4,
   textAlign: 'center',
   height: 45,
-  width: 100
+  width: 100,
+  font: {
+	  fontSize: 14
+  }
 },
+
+'.btn-small':{
+	borderRadius: 4,
+	textAlign: 'center',
+	height: 35,
+	width: 75,
+	font: {
+	  fontSize: 12
+  }
+}
 
 '.btn-icon':{
   font:{
@@ -525,27 +538,27 @@
 },
 
 '.btn-default':{
-  backgroundColor: '#ececec',
+  backgroundColor: '#768192',
   color:'#969696'
 },
 
 '.btn-primary':{
-  backgroundColor: '#2D8DD6',
+  backgroundColor: '#407CDE',
   color:'#fff'
 },
 
 '.btn-success':{
-  backgroundColor: '#29C566',
+  backgroundColor: '#5FCE82',
   color:'#fff'
 },
 
 '.btn-warn':{
-  backgroundColor: '#EFBC12',
+  backgroundColor: '#E7854D',
   color:'#fff'
 },
 
 '.btn-error':{
-  backgroundColor: '#CB564D',
+  backgroundColor: '#D5475A',
   color:'#fff'
 }
 

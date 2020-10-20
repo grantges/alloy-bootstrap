@@ -1,12 +1,16 @@
 <Alloy module="bootstrap/ui">
   <View id="wrapper" class="buffer smooth size background-color">
-    <ImageView id="cardBkgImage" class="size" />
+    <ImageView id="cardBkgImage" class="size top" />
     <View id="cardContainer" class="size vgroup left right bottom">
         <ImageView id="cardImage" class='card-image top' />
-        <View id="cardTextContainer" class="buffer vgroup size">
-            <Label id="cardTitle" class='span-width top-buffer left-buffer light-gray medium semibold h4'>Page Title</Label>
-            <Label id="cardText" class='span-width buffer light-gray h5'>Veniam proident incididunt mollit velit consectetur elit laboris eiusmod est dolor.</Label>
+        <View id="cardTextContainer" class="top-buffer left-buffer right-buffer bottom vgroup size">
+            <Label id="cardTitle" class='top-buffer left-buffer right-buffer size dark-gray semibold medium  h4'>Page Title</Label>
+            <Label id="cardText" class='buffer size dark-gray h5'>Veniam proident incididunt mollit velit consectetur elit laboris eiusmod est dolor.</Label>
             <Label id="cardSubTitle" class="span-width top-buffer bottom left-buffer light-gray small-text">Last Updated on Tuesday</Label>
+        </View>
+        <View id="actionsContainer" class="size vgroup left-buffer right-buffer bottom-buffer">
+          <View class="gray-line left-buffer top-buffer right-buffer" />
+          <Button id="cardButton" class="btn btn-primary left-buffer top-buffer semibold medium bottom-buffer">Title</Button>
         </View>
     </View>
   </View>

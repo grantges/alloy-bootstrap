@@ -7,6 +7,9 @@
 			<ScrollView class="hgroup size top-buffer" scrollType="horizontal">
 				
 				<View class="col-6">
+					<Widget id="myCard0" src="ti.bootstrap" name="card" />
+				</View>
+				<View class="col-6">
 					<Widget id="myCard1" src="ti.bootstrap" name="card" />
 				</View>
 				<View class="col-6">

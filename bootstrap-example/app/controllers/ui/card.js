@@ -2,14 +2,17 @@
 var args = $.args;
 
 (function(){
-
+   
     $.myCard.title = 'Card Title';
     $.myCard.backgroundImage = '/images/camera.jpg';
     $.myCard.text = 'Take a picture of what your into, it will last longer than this iphone version.';
+    $.myCard.buttonTitle = "Click Me";
+    $.myCard.onButtonClick = function(e){ $.myCard.onButtonClick = null };
 
-    $.myCard1.title = 'Card Title';
-    $.myCard1.image = '/images/pg-view.jpg';
-    $.myCard1.text = 'This is an awesome view of a guy paragliding! You should try it!';
+    $.myCard0.title = 'Card Title';
+    $.myCard0.image = '/images/pg-view.jpg';
+    $.myCard0.text = 'This is an awesome view of a guy paragliding! You should try it!';
+    $.myCard0.subtitle = "Last updated yesterday";
 
     $.myCard1.title = 'Card Title';
     $.myCard1.image = '/images/pg-view.jpg';

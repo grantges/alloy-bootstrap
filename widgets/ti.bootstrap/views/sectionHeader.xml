@@ -1,9 +1,9 @@
-<Alloy autoStyle="true">
+<Alloy autoStyle="true" module="bootstrap/ui">
     <View id="wrapper" class="container vgroup">
         <View class="right-buffer span-width bottom-buffer">
             <Label id="title" class="gray size text-left normal-text left-buffer">Friends</Label>
             <Button id="link" class="blue text-left size normal-text right-buffer">Select All</Button>
         </View>
-        <Widget src="ti.bootstrap" name="hr" />
+        <Hr />
     </View>
 </Alloy>
