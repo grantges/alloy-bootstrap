@@ -4,8 +4,8 @@ var args = $.args;
 (function(){
 
     $.myCard.title = 'Card Title';
-    $.myCard.backgroundImage = '/images/pg-view.jpg';
-    $.myCard.text = 'This is an awesome view of a guy paragliding! You should try it!';
+    $.myCard.backgroundImage = '/images/camera.jpg';
+    $.myCard.text = 'Take a picture of what your into, it will last longer than this iphone version.';
 
     $.myCard1.title = 'Card Title';
     $.myCard1.image = '/images/pg-view.jpg';

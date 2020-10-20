@@ -1,6 +1,16 @@
 
 let _definedTextColor = null,
-    _definedTitleColor = null;
+    _definedTitleColor = null,
+    _definedSubTitleColor = null;
+
+let _backgroundGradient = {
+    backgroundGradient: {
+        type: 'linear',
+        startPoint: { x: 0, y: '100%' },
+        endPoint: { x: 0, y: 0 },
+        colors: [ "#c000", '#0000']
+    }
+  };
 
 /**
  * Constructor for the Walkthrough Page
@@ -27,13 +37,22 @@ let _definedTextColor = null,
       _definedTextColor = $.textColor;
       $.textColor = "#fff";
 
+      _definedSubTitleColor = $.subTitleColor;
+      $.subTitleColor = "#fff";
+
       _definedTitleColor = $.titleColor;
       $.titleColor = "#fff";
+
+      $.cardContainer.applyProperties(_backgroundGradient);
 
     }
     else {
       $.textColor = _definedTextColor;
       $.titleColor = _definedTitleColor;
+      $.subTitleColor = _definedSubTitleColor;
+      $.cardContainer.applyProperties({
+        backgroundGradient: null
+      });
     }
   };
 
@@ -131,6 +150,15 @@ let _definedTextColor = null,
     },
     set: function _setTitleColor(c){
       $.cardTitle.color = c;
+    }
+  });
+
+  Object.defineProperty($, 'subTitleColor', {
+    get: function _getTitleColor(){
+      return $.cardSubTitle.color;
+    },
+    set: function _setTitleColor(c){
+      $.cardSubTitle.color = c;
     }
   });
   
