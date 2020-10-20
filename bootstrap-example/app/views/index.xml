@@ -2,14 +2,15 @@
 	<NavigationWindow>
 	<Window class="container">
 		<TableView id="tableView" onClick="_onTableViewClick">
-			<TableViewRow title="badges" navid="badge" />
-			<TableViewRow title="form inputs" navid="form" />
-			<TableViewRow title="avatar" navid="avatar" />
-			<TableViewRow title="alerts" navid="alerts" />
-			<TableViewRow title="signature" navid="signature"/>
-			<TableViewRow title="browser" navid="browser" />
-			<TableViewRow title="timeline" navid="timeline"/>
-			<TableViewRow title="locations" navid="locationFinder"/>
+			<TableViewRow title="Badges" navid="badge" />
+			<TableViewRow title="Card" navid="card" />
+			<TableViewRow title="Form inputs" navid="form" />
+			<TableViewRow title="Avatar" navid="avatar" />
+			<TableViewRow title="Alerts" navid="alerts" />
+			<TableViewRow title="Signature" navid="signature"/>
+			<TableViewRow title="Browser" navid="browser" />
+			<TableViewRow title="Timeline" navid="timeline"/>
+			<TableViewRow title="Locations" navid="locationFinder"/>
 		</TableView>
 	</Window>
 </NavigationWindow>

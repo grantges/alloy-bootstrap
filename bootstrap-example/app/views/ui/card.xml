@@ -1,5 +1,31 @@
 <Alloy>
-	<Window class="container">
-		<Widget id="card" src="ti.bootstrap" name="card" />
+	<Window class="fill col">
+		<ScrollView class="fill vgroup" contentWidth="98%" scrollType="vertical">
+			<View class="buffer size">
+					<Widget id="myCard" src="ti.bootstrap" name="card" />
+			</View>
+			<ScrollView class="hgroup size top-buffer" scrollType="horizontal">
+				
+				<View class="col-6">
+					<Widget id="myCard1" src="ti.bootstrap" name="card" />
+				</View>
+				<View class="col-6">
+					<Widget id="myCard2" src="ti.bootstrap" name="card" />
+				</View>
+				<View class="col-6">
+					<Widget id="myCard3" src="ti.bootstrap" name="card" />
+				</View>
+				<View class="col-6">
+					<Widget id="myCard4" src="ti.bootstrap" name="card" />
+				</View>
+				<View class="col-6">
+					<Widget id="myCard5" src="ti.bootstrap" name="card" />
+				</View>
+				<View class="col-6">
+					<Widget id="myCard6" src="ti.bootstrap" name="card" />
+				</View>
+			
+			</ScrollView>
+		</ScrollView>
 	</Window>
 </Alloy>

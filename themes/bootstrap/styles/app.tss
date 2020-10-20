@@ -12,9 +12,13 @@
    modal: false // make android windows all heavyweight
 },
 
+'View':{
+	clipMode: Titanium.UI.iOS.CLIP_MODE_ENABLED
+}
+
 'Label':{
   font:{
-    fontFamily: 'Helvetica Neue'
+    fontFamily: 'AppleSDGothicNeo'
   }
 },
 
@@ -24,7 +28,7 @@
 
 'TextField': {
   font:{
-      fontFamily: 'Helvetica Neue'
+      fontFamily: 'AppleSDGothicNeo'
     },
   borderStyle: Ti.UI.INPUT_BORDERSTYLE_NONE, // common default style
   padding: {
@@ -170,78 +174,70 @@
  */
 '.row' : {
 	layout: 'horizontal',
-}
+},
+
+'.col' :{
+	layout: 'vertical'
+},
 
 '.col-1': {
 	width: '8.33333333%',
 	height:50,
-	layout: 'horizontal'
 },
 
 '.col-2': {
 	width: '16.66666667%',
 	height: Ti.UI.SIZE,
-	layout: 'horizontal',
 },
 
 '.col-3': {
 	width: '25%',
 	height: Ti.UI.SIZE,
-	layout: 'horizontal',
 },
 
 '.col-4': {
 	width: '33.33333333%',
 	height: Ti.UI.SIZE,
-	layout: 'horizontal',
 },
 
 '.col-5': {
 	width: '41.66666667%',
 	height: Ti.UI.SIZE,
-	layout: 'horizontal',
 },
 
 '.col-6': {
 	width: '50%',
 	height: Ti.UI.SIZE,
-	layout: 'horizontal',
 },
 
 '.col-7': {
 	width: '58.33333333%',
 	height: Ti.UI.SIZE,
-	layout: 'horizontal',
 },
 
 '.col-8': {
 	width: '66.66666667%',
 	height: Ti.UI.SIZE,
-	layout: 'horizontal',
 },
 
 '.col-9': {
 	width: '75%',
 	height: Ti.UI.SIZE,
-	layout: 'horizontal',
 },
 
 '.col-10': {
 	width: '83.33333333%',
 	height: Ti.UI.SIZE,
-	layout: 'horizontal',
 },
 
 '.col-11': {
 	width: '91.66666667%',
 	height: Ti.UI.SIZE,
-	layout: 'horizontal',
 },
 
 '.col-12': {
 	width: '100%',
 	height: Ti.UI.SIZE,
-	layout: 'horizontal',
 }
 
 
@@ -273,6 +269,35 @@
 	height: 250,
 	width: 250
 },
+
+/**
+ * View Shapes
+ */
+ '.smooth': {
+	 borderRadius: 20
+ }
+
+ '.smooth-top': {
+	 borderRadius: "20px 20px 0px 0px"
+ }
+
+ '.smooth-bottom': {
+	 borderRadius: "0px 0px 20px 20px"
+ }
+
+'.rounded':{
+	borderRadius: 3
+}
+
+/**
+ * Shadows
+ */
+ '.drop-shadow':{
+	 viewShadowColor: "#a000",
+	 viewShadowOffset: 5,
+	 viewShadowRadius: 10
+ }
+
 
 /**
  * 	Typography
@@ -331,6 +356,18 @@
 	}
 },
 
+'.thin':{
+	font:{
+		fontWeight: 'thim'
+	}
+},
+
+'.light':{
+	font:{
+		fontWeight: 'light'
+	}
+},
+
 '.normal': {
 	font: {
 		fontWeight: 'normal'
@@ -340,6 +377,13 @@
 '.semibold':{
 	font: {
 		fontWeight: 'semibold'
+	}
+},
+
+'.medium':{
+	font:{
+		//fontFamily: 'HelveticaNeue-Medium '
+		fontWeight: 'medium'
 	}
 },
 

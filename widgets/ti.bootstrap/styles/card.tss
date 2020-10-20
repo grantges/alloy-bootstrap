@@ -1,0 +1,12 @@
+/**
+ * Card
+ */
+
+'.background-color':{
+  backgroundColor: "#ececec"
+}
+
+ '.card-image[formFactor=handheld]':{
+   height: Ti.UI.SIZE,
+   width: "100%"
+ }

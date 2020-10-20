@@ -1,8 +1,13 @@
 <Alloy>
-    <View id="cardContainer" class="buffer smooth">
-        <View id="header" class="hgroup span-width">
-            <Label id="headerTitle" class="left-buffer top-buffer bottom-buffer h1 text-semibold text-left" />
-            <Button id="headerLink" class="size right-buffer top-buffer bottom-buffer blue" />
+  <View id="wrapper" class="buffer smooth size background-color">
+    <ImageView id="cardBkgImage" class="size" />
+    <View class="size vgroup bottom-buffer">
+        <ImageView id="cardImage" class='card-image top' />
+        <View id="cardTextContainer" class="buffer vgroup size">
+            <Label id="cardTitle" class='span-width top-buffer left-buffer light-gray medium semibold h4'>Page Title</Label>
+            <Label id="cardText" class='span-width top-buffer bottom-buffer left-buffer light-gray h5'>Veniam proident incididunt mollit velit consectetur elit laboris eiusmod est dolor.</Label>
+            <Label id="cardSubTitle" class="span-width top-buffer bottom left-buffer light-gray small-text">Last Updated on Tuesday</Label>
         </View>
     </View>
+  </View>
 </Alloy>
