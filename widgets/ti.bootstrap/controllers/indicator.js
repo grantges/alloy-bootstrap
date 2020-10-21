@@ -2,7 +2,7 @@ const icons = require('bootstrap/icons.json');
 
 
 (function _constructor(options){
-    console.log("Inidcator Constructor");
+    
     $.indicatorType.bottom = 6;
 
 })($.args);
@@ -23,6 +23,7 @@ Object.defineProperty($, 'icon', {
         $.indicatorIcon.text
     },
     set: function _setIcon(i) {
+        console.log(i);
         $.indicatorIcon.text = icons[i]
     }
 });
@@ -85,7 +86,7 @@ Object.defineProperty($, 'valueColor', {
 /**
  * Measurement Properties
  */
-Object.defineProperty($, 'measurement', {
+Object.defineProperty($, 'type', {
     get: function _getIcon() {
         $.indicatorType.text
     },
@@ -94,7 +95,7 @@ Object.defineProperty($, 'measurement', {
     }
 });
 
-Object.defineProperty($, 'measurementColor', {
+Object.defineProperty($, 'typeColor', {
     get: function _getIcon() {
         $.indicatorType.color
     },

@@ -35,7 +35,7 @@ function Controller() {
 
   // Generated UI code
   $.__views["__alloyId17"] = Ti.UI.createWindow(
-  { backgroundColor: "white", id: "__alloyId17" });
+  { backgroundColor: "white", title: "Alloy Bootstrap Components", id: "__alloyId17" });
 
   var __alloyId18 = [];$.__views["__alloyId19"] = Ti.UI.createTableViewRow(
   { title: "Badges", navid: "badge", id: "__alloyId19" });
@@ -47,27 +47,30 @@ function Controller() {
   { title: "Indicator / Display", navid: "indicator", id: "__alloyId21" });
 
   __alloyId18.push($.__views["__alloyId21"]);$.__views["__alloyId22"] = Ti.UI.createTableViewRow(
-  { title: "Form inputs", navid: "form", id: "__alloyId22" });
+  { title: "Icons", navid: "icon", id: "__alloyId22" });
 
   __alloyId18.push($.__views["__alloyId22"]);$.__views["__alloyId23"] = Ti.UI.createTableViewRow(
-  { title: "Avatar", navid: "avatar", id: "__alloyId23" });
+  { title: "Form inputs", navid: "form", id: "__alloyId23" });
 
   __alloyId18.push($.__views["__alloyId23"]);$.__views["__alloyId24"] = Ti.UI.createTableViewRow(
-  { title: "Alerts", navid: "alerts", id: "__alloyId24" });
+  { title: "Avatar", navid: "avatar", id: "__alloyId24" });
 
   __alloyId18.push($.__views["__alloyId24"]);$.__views["__alloyId25"] = Ti.UI.createTableViewRow(
-  { title: "Signature", navid: "signature", id: "__alloyId25" });
+  { title: "Alerts", navid: "alerts", id: "__alloyId25" });
 
   __alloyId18.push($.__views["__alloyId25"]);$.__views["__alloyId26"] = Ti.UI.createTableViewRow(
-  { title: "Browser", navid: "browser", id: "__alloyId26" });
+  { title: "Signature", navid: "signature", id: "__alloyId26" });
 
   __alloyId18.push($.__views["__alloyId26"]);$.__views["__alloyId27"] = Ti.UI.createTableViewRow(
-  { title: "Timeline", navid: "timeline", id: "__alloyId27" });
+  { title: "Browser", navid: "browser", id: "__alloyId27" });
 
   __alloyId18.push($.__views["__alloyId27"]);$.__views["__alloyId28"] = Ti.UI.createTableViewRow(
-  { title: "Locations", navid: "locationFinder", id: "__alloyId28" });
+  { title: "Timeline", navid: "timeline", id: "__alloyId28" });
 
-  __alloyId18.push($.__views["__alloyId28"]);$.__views["tableView"] = Ti.UI.createTableView(
+  __alloyId18.push($.__views["__alloyId28"]);$.__views["__alloyId29"] = Ti.UI.createTableViewRow(
+  { title: "Locations", navid: "locationFinder", id: "__alloyId29" });
+
+  __alloyId18.push($.__views["__alloyId29"]);$.__views["tableView"] = Ti.UI.createTableView(
   { data: __alloyId18, id: "tableView" });
 
   $.__views["__alloyId17"].add($.__views["tableView"]);

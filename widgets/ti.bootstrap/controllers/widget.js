@@ -14,45 +14,104 @@
  */
 
 $.App = {
-
+   
+   /**
+    * Placeholder User object so that you can access this globally.
+    */
    User: {
       isAuthenticated: false,
       sessionId: null,
    },
 
-   Device: {
-     screenHeight: Ti.Platform.displayCaps.platformHeight,
-     screenWidth: Ti.Platform.displayCaps.platformWidth,
-     dpi: Ti.Platform.displayCaps.dpi
-   },
+   /**
+	 * Device information, some come from the Ti API calls and can be referenced
+	 * from here so multiple bridge calls aren't necessary, others generated here
+	 * for ease of calculations and such.
+	 *
+	 * @type  {Object}
+	 * @param {String} version The version of the OS
+	 * @param {Number} versionMajor The major version of the OS
+	 * @param {Number} versionMinor The minor version of the OS
+	 * @param {Number} width The width of the device screen
+	 * @param {Number} height The height of the device screen
+	 * @param {Number} dpi The DPI of the device screen
+	 * @param {String} orientation The device orientation, either "landscape" or "portrait"
+	 * @param {String} statusBarOrientation A Ti.UI orientation value
+	 */
+	Device: {
+		version: Ti.Platform.version,
+		versionMajor: parseInt(Ti.Platform.version.split(".")[0], 10),
+		versionMinor: parseInt(Ti.Platform.version.split(".")[1], 10),
+		width: null,
+		height: null,
+		dpi: Ti.Platform.displayCaps.dpi,
+		orientation: Ti.Gesture.orientation == Ti.UI.LANDSCAPE_LEFT || Ti.Gesture.orientation == Ti.UI.LANDSCAPE_RIGHT ? "landscape" : "portrait"
+	},
 
-   Events: {
+  Events: {
 
-     start: function _app_start(options){
+    onAppStart: function _onAppStart(options) {
 
+        
+    },
 
-     },
+    onAppResume: function _onAppResume(_event) {
 
-     resume: function _app_resume(options){
+    },
 
-     },
+    onAppPause: function _onAppPause(_event) {
 
-     pause: function _app_pause(options){
+    },
 
-     },
+    onAppExit: function _onAppPause(_event) {
 
-   },
+    },
 
-   Errors: {
+    onOrientationChange: function _onOrientationChange(event) {
 
-     log: function _app_log_error(err) {
+    },
 
-     },
+    onNetworkChange: function _onNetworkChange(event) {
 
-     unhandledException: function _app_on_unhandled_exception(err){
+    }
 
-     }
-   }
- };
+  },
 
+  Error: {
+
+    log: function _app_log_error(err) {
+      Ti.API.error(err);
+    }
+
+  },
+
+  /**
+   * This starts up the application and setups up all of the event handlers etc.
+   * 
+   * Recommendation is to run this ONE time from the `alloy.js` file
+   */
+  startApp: function (options) {
+
+    // Global system Events
+    Ti.Network.addEventListener("change", App.Events.onNetworkChange);
+    Ti.App.addEventListener("pause", App.Events.onAppPause);
+    Ti.App.addEventListener("close", App.Events.onAppExit);
+    Ti.App.addEventListener("resumed", App.Events.onAppResume);
+    Ti.Gesture.addEventListener("orientationchange", App.Events.onOrientationChange);
+
+    if(OS_ANDROID) {
+      Ti.Android.currentActivity.addEventListener("resume", App.Events.onAppResume);
+    }
+
+    // Require in the navigation module
+    App.Navigator = require("navigation")({
+      parent: App.globalWindow
+    });
+
+    // Get device dimensions
+    App.Device.getDeviceDimensions();
+
+    
+  }
+};
  _.extend($.App, $.args);

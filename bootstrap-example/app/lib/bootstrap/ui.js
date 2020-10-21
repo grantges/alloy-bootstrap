@@ -1,6 +1,5 @@
 const icons = require('bootstrap/icons.json');
 
-
 /**
  * Creates an Alloy Bootstrap Input object of specified type ('text', 'signature', 'checkbox')
  * @param {Object} options 

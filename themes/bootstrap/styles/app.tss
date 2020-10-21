@@ -245,10 +245,16 @@
  * Common Sizes
  */
 
+
 '.thumbnail':{
 	height: 75,
 	width: 75
 },
+
+'.square50':{
+	height: 50,
+	width: 50
+}
 
 '.square100':{
 	height: 100,
@@ -508,10 +514,9 @@
  */
 
 '.btn':{
-  borderRadius: 4,
+  borderRadius: 3,
   textAlign: 'center',
   height: 45,
-  width: 100,
   font: {
 	  fontSize: 14
   }
@@ -557,10 +562,95 @@
   color:'#fff'
 },
 
+'.btn-primary-dark' : {
+	 backgroundColor: '#132238',
+	 color: '#2c7be5',
+	 borderColor: '#132238',
+ }
+
+ '.btn-error-dark' : {
+	 backgroundColor: '#132238',
+	 color: '#e63757',
+	 borderColor: '#132238',
+ }
+
+ '.btn-success-dark' : {
+	 backgroundColor: '#132238',
+	 color: '#00d27a',
+	 borderColor: '#132238',
+ }
+
+ '.btn-info-dark' : {
+	 backgroundColor: '#132238',
+	 color: '#27bcfd',
+	 borderColor: '#132238',
+ }
+
+  '.btn-warn-dark' : {
+	 backgroundColor: '#132238',
+	 color: '#f5803e',
+	 borderColor: '#132238',
+ }
+
 '.btn-error':{
   backgroundColor: '#D5475A',
   color:'#fff'
 }
+
+'.btn-google':{
+	 backgroundColor: '#132238',
+	 color: '#DB4437',
+	 borderColor: '#132238',
+ }
+
+ '.btn-facebook':{
+	 backgroundColor: '#132238',
+	 color: '#4267B2',
+	 borderColor: '#132238',
+ }
+
+
+ '.btn-primary-fill' : {
+	 backgroundColor: '#2c7be5',
+	 color: '#FFF',
+	 borderColor: '#2c7be5',
+ }
+
+ '.btn-error-fill' : {
+	 backgroundColor: '#e63757',
+	 color: '#FFF',
+	 borderColor: '#e63757',
+ }
+
+ '.btn-success-fill' : {
+	 backgroundColor: '#00d27a',
+	 color: '#FFF',
+	 borderColor: '#00d27a',
+ }
+
+ '.btn-info-fill' : {
+	 backgroundColor: '#27bcfd',
+	 color: '#FFF',
+	 borderColor: '#27bcfd',
+ }
+
+  '.btn-warn-fill' : {
+	 backgroundColor: '#f5803e',
+	 color: '#FFF',
+	 borderColor: '#f5803e',
+ }
+
+  '.btn-google-fill':{
+	 backgroundColor: '#DB4437',
+	 color: '#FFF',
+	 borderColor: '#DB4437',
+ }
+
+ '.btn-facebook-fill':{
+	 backgroundColor: '#4267B2',
+	 color: '#FFF',
+	 borderColor: '#4267B2',
+ }
 
 /**
  * 	Alert / Notification Styles

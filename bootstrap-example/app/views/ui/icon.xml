@@ -1,0 +1,14 @@
+<Alloy>
+    <Window id="container">
+        <View class="row size">
+            <Widget src="ti.bootstrap" name="icon" icon="icon-speed" class="gray size buffer" />
+            <Widget src="ti.bootstrap" name="icon" icon="icon-cloud" class="h1 blue size buffer" />
+            <Widget src="ti.bootstrap" name="icon" icon="icon-upload" class="h1 black size buffer" />
+            <Widget src="ti.bootstrap" name="icon" icon="icon-filter_hdr" class="h1 green size buffer" />
+            <Widget src="ti.bootstrap" name="icon" icon="icon-height" class="h1 orange size buffer" />
+            <Widget src="ti.bootstrap" name="icon" icon="icon-facebook-official" class="h1 gray size buffer" />
+            <Widget src="ti.bootstrap" name="icon" icon="icon-clock" class="h1 black size buffer" />
+            <Widget src="ti.bootstrap" name="icon" icon="icon-bell" class="h1 blue size buffer" />
+        </View>
+    </Window>
+</Alloy>
