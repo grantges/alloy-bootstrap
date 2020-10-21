@@ -1,4 +1,4 @@
-<Alloy>
+<Alloy module="bootstrap/ui">
     <Window id="container">
         <View class="row size">
             <Widget src="ti.bootstrap" name="icon" icon="icon-speed" class="gray size buffer" />
@@ -9,6 +9,10 @@
             <Widget src="ti.bootstrap" name="icon" icon="icon-facebook-official" class="h1 gray size buffer" />
             <Widget src="ti.bootstrap" name="icon" icon="icon-clock" class="h1 black size buffer" />
             <Widget src="ti.bootstrap" name="icon" icon="icon-bell" class="h1 blue size buffer" />
+        </View>
+
+        <View class="row size top-buffer">
+            <Icon id="myIcon" icon="icon-speed" class="h1 gray size buffer" />
         </View>
     </Window>
 </Alloy>

@@ -96,18 +96,15 @@ exports.createIconButton = (args) => {
 *                          : icon - one of the glyph references from the list above.
 */
 exports.createIcon = (args) => {
-  const props = _.extend(args, {
-      font:{
-          fontFamily:'icomoon',
-          fontSize: (args.font && args.font.fontSize) ? args.font.fontSize : null,
-          fontWeight: (args.font && args.font.fontWeight) ? args.font.fontWeight : null
-      },
-      text: icons[args.icon],
-      height: Ti.UI.SIZE,
-      width: Ti.UI.SIZE
-  });
+  var w = Alloy.createWidget('ti.bootstrap', 'icon', args);
+  var v = w.getView();
 
-  return Ti.UI.createLabel(props);
+  v.setIcon = function(i){
+    console.log(i);
+    w.icon = i;
+  }
+
+  return v;
 };
 
 /**

@@ -1,0 +1,3 @@
+
+
+$.myIcon.setIcon('icon-clock');
