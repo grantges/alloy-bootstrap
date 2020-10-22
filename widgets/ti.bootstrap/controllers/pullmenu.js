@@ -3,7 +3,7 @@ let _args = arguments[0] || {}
 /** Stops */
 const menuStopTop = Ti.Platform.DisplayCaps.platformHeight*.05;
 const menuStopMiddle = Ti.Platform.DisplayCaps.platformHeight*.6;
-const menuStopBottom = Ti.Platform.DisplayCaps.platformHeight - 105;
+const menuStopBottom = Ti.Platform.DisplayCaps.platformHeight - 150;
 let menuPosition = { top: menuStopBottom, state:"bottom" };
 
 /** Touch Monitoring */

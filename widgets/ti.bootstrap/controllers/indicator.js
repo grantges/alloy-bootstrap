@@ -2,7 +2,9 @@ const icons = require('bootstrap/icons.json');
 
 
 (function _constructor(options){
-    
+
+    this._titleAlign = options.titleAlign || 'right';
+    $.titleAlign = this._titleAlign;
     $.indicatorType.bottom = 6;
 
 })($.args);
@@ -15,6 +17,18 @@ $.setIconAndTitleColor = function(color) {
     $.iconColor = $.titleColor = color;
 }
 
+
+$.hideType = function() {
+    $.indicatorType.visible = false;
+    $.indicatorType.width = 0;
+}
+
+$.showType = function() {
+    $.indicatorType.visible = true;
+    $.indicatorType.width = Ti.UI.SIZE;
+}
+
+
 /**
  * Icon Properties
  */
@@ -23,7 +37,6 @@ Object.defineProperty($, 'icon', {
         $.indicatorIcon.text
     },
     set: function _setIcon(i) {
-        console.log(i);
         $.indicatorIcon.text = icons[i]
     }
 });
@@ -33,7 +46,6 @@ Object.defineProperty($, 'iconColor', {
         $.indicatorIcon.color
     },
     set: function _setIcon(c) {
-        console.log(c);
         $.indicatorIcon.color = c;
     }
 });
@@ -60,6 +72,31 @@ Object.defineProperty($, 'titleColor', {
         $.indicatorTitle.color = c;
     }
 });
+
+Object.defineProperty($, 'titleAlign', {
+    get: function _getTitleAlign() {
+        return this._titleAlign
+    },
+    set: function _setTitleAlign(align) {
+        switch(align){
+            case 'center':
+                $.titleContainer.right = null;
+                $.titleContainer.left = null;
+                break;
+
+            case 'left': 
+                $.titleContainer.right = null;
+                $.titleContainer.left = 0;
+                break;
+
+            case 'right': 
+                $.titleContainer.right = 0;
+                $.titleContainer.left = null;
+                break;
+            default:
+        }
+    }
+})
 
 
 /**

@@ -95,7 +95,7 @@ function _updateTextSize() {
 
     let contentSize = $.wrapper.toImage();
   
-    if(contentSize.width < ((App.Device.screenWidth*Ti.Platform.displayCaps.logicalDensityFactor)*.5)) {
+    if(contentSize.width < ((Ti.Platform.displayCaps.screenWidth*Ti.Platform.displayCaps.logicalDensityFactor)*.5)) {
       let fontStyleTitle = $.createStyle({
         classes: 'h5',
         left: 0,
