@@ -9,9 +9,7 @@ console.log('Get Users');
 App.Api.getUsers().then(function(users){
     let count = 0;
     _.each(users.results, function(user){
-
-        console.log(user.picture.large);
-
+       
         const avatar = Alloy.createWidget('ti.bootstrap', 'avatar', {
             image: user.picture.large,
             style: style[Math.floor(Math.random()*3)],

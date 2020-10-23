@@ -1,0 +1,5 @@
+<Alloy>
+	<Window class="fill col">
+		<Widget id="myCard" src="ti.bootstrap" name="userProfile" />
+	</Window>
+</Alloy>

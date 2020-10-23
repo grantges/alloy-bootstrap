@@ -1,0 +1,25 @@
+<Alloy module="bootstrap/ui">
+  <View id="wrapper" class="buffer smooth size background-color vgroup">
+    <ImageView id="cardBkgImage" class="top" />
+    <Widget id="userAvatar" src="ti.bootstrap" name="avatar" style='circle' size='med' status='none' />
+    <View id="cardContainer" class="size vgroup left right bottom">
+        <View id="cardTextContainer" class="top-buffer left-buffer right-buffer bottom vgroup size">
+            <Label id="cardTitle" class='top-buffer left-buffer right-buffer size dark-gray semibold medium  h3'>Bert Grantges</Label>
+            <Label id="cardText" class='top-buffer left-buffer right-buffer size dark-gray h5'>Paramotor | Hang Gliding | General Aviation</Label>
+            <Label id="cardSubTitle" class="span-width buffer gray h4">Austin, Tx</Label>
+        </View>
+        <View id="cardActionsContainer" class="buffer hgroup size" >
+          <View id="btnFollow" class="btn-light drop-shadow left-buffer rounded size" >
+            <Label id="btnFollowLbl" class="buffer primary size h4" text="L('follow', 'Follow')" />
+          </View>
+          <View id="btnMessage" class="btn-light drop-shadow left-buffer rounded size">
+            <Label id="btnMessageLbl" class="buffer gray size h4" text="L('message', 'Message')"/> 
+          </View>
+        </View>
+        <View id="extendedViewsContainer" class="size vgroup buffer">
+          <View class="gray-line left-buffer top-buffer right-buffer" />
+          <View id="extendedViews" class="top-buffer vgroup size">
+        </View>
+    </View>
+  </View>
+</Alloy>

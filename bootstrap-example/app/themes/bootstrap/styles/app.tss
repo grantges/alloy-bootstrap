@@ -522,6 +522,11 @@
   }
 },
 
+'.btn-light' : {
+	 backgroundColor: '#FFF',
+	 borderColor: '#E4E5E8',
+}
+
 '.btn-small':{
 	borderRadius: 4,
 	textAlign: 'center',
@@ -562,35 +567,71 @@
   color:'#fff'
 },
 
+'.btn-default-light' : {
+	 backgroundColor: '#FFF',
+	 color: '#768192',
+	 borderColor: '#E4E5E8',
+}
+
+'.btn-primary-light' : {
+	 backgroundColor: '#FFF',
+	 color: '#407CDE',
+	 borderColor: '#E4E5E8',
+}
+
+'.btn-error-light' : {
+	 backgroundColor: '#FFF',
+	 color: '#D5475A',
+	 borderColor: '#E4E5E8',
+}
+
+'.btn-success-light' : {
+	 backgroundColor: '#FFF',
+	 color: '#5FCE82',
+	 borderColor: '#E4E5E8',
+}
+
+'.btn-info-light' : {
+	 backgroundColor: '#FFF',
+	 color: '#768192',
+	 borderColor: '#E4E5E8',
+}
+
+'.btn-warn-light' : {
+	 backgroundColor: '#FFF',
+	 color: '#E7854D',
+	 borderColor: '#E4E5E8',
+}
+
 '.btn-primary-dark' : {
 	 backgroundColor: '#132238',
 	 color: '#2c7be5',
 	 borderColor: '#132238',
- }
+}
 
- '.btn-error-dark' : {
+'.btn-error-dark' : {
 	 backgroundColor: '#132238',
 	 color: '#e63757',
 	 borderColor: '#132238',
- }
+}
 
- '.btn-success-dark' : {
+'.btn-success-dark' : {
 	 backgroundColor: '#132238',
 	 color: '#00d27a',
 	 borderColor: '#132238',
- }
+}
 
- '.btn-info-dark' : {
+'.btn-info-dark' : {
 	 backgroundColor: '#132238',
 	 color: '#27bcfd',
 	 borderColor: '#132238',
- }
+}
 
-  '.btn-warn-dark' : {
+'.btn-warn-dark' : {
 	 backgroundColor: '#132238',
 	 color: '#f5803e',
 	 borderColor: '#132238',
- }
+}
 
 '.btn-error':{
   backgroundColor: '#D5475A',
