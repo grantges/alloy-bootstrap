@@ -34,9 +34,8 @@ let _callback = null,
   /**
    * Icon setup, defaults to envelope
    */
-  _icon = options.icon || 'icon-bell-o';
-  console.log(_icon);
-  console.log(icons[_icon]);
+ 
+  _icon = options.icon || 'icon-bell';
   $.icon.text = icons[_icon];
 
   

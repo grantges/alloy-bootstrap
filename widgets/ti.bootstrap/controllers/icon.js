@@ -27,7 +27,7 @@ const ICONS = require('bootstrap/icons.json');
      * If parameters are passed as part of the creation, lets make sure we add them to the Label
      */
     if(params) {
-
+        console.log(params.icon);
         /**
          * HACK - BG
          * Any passed in property / class that styles the font overwrites the `fontFamily` property, 
@@ -44,11 +44,14 @@ const ICONS = require('bootstrap/icons.json');
     /**
      * If an `icon` property is passed in on creation, lets go ahead and add it to the Label
      */
-    const iconText = _fetchIconText(params.icon);
-    if(iconText) {
-        this._icon = params.icon;
-        $.lblIcon.text = iconText;
+    if(params.icon){
+        const iconText = _fetchIconText(params.icon);
+        if(iconText) {
+            this._icon = params.icon;
+            $.lblIcon.text = iconText;
+        }
     }
+    
 
 })($.args);
 
@@ -62,9 +65,7 @@ function _fetchIconText (icon) {
         return ICONS[icon];
     }
     else {
-        let err = new Error();
-        err.name = 'Invalid Icon', 
-        err.message =`Icon '${icon}' does not exist. Please provide a valid Icon`
+        let err = new Error(`Icon '${icon}' does not exist. Please provide a valid Icon`);
         throw(err);
     }
 

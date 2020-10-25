@@ -1,5 +1,5 @@
 <Alloy module="bootstrap/ui">
-  <View id="wrapper" class="buffer smooth size background-color vgroup">
+  <View id="wrapper" class="size background-color vgroup top-buffer">
     <ImageView id="cardBkgImage" class="top" />
     <Widget id="userAvatar" src="ti.bootstrap" name="avatar" style='circle' size='med' status='none' />
     <View id="cardContainer" class="size vgroup left right bottom">
@@ -10,10 +10,10 @@
         </View>
         <View id="cardActionsContainer" class="buffer hgroup size" >
           <View id="btnFollow" class="btn-light drop-shadow left-buffer rounded size" >
-            <Label id="btnFollowLbl" class="buffer primary size h4" text="L('follow', 'Follow')" />
+            <Label id="btnFollowLbl" class="buffer primary size semibold medium h4" text="L('follow', 'Follow')" />
           </View>
           <View id="btnMessage" class="btn-light drop-shadow left-buffer rounded size">
-            <Label id="btnMessageLbl" class="buffer gray size h4" text="L('message', 'Message')"/> 
+            <Label id="btnMessageLbl" class="buffer gray size semibold medium h4" text="L('message', 'Message')"/> 
           </View>
         </View>
         <View id="extendedViewsContainer" class="size vgroup buffer">

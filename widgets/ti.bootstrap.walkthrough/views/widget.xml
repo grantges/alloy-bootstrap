@@ -26,3 +26,4 @@
 		<Label id="closeBtn" class="btn btn-default h4 col-4 bottom-buffer" onClick="_close" text="L('btn-skip', 'Skip')"/>
 	</Window>
 </Alloy>
+`

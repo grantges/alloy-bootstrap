@@ -513,7 +513,7 @@
  * Button Styles
  */
 
-'.btn':{
+'.btn':{ 
   borderRadius: 3,
   textAlign: 'center',
   height: 45,

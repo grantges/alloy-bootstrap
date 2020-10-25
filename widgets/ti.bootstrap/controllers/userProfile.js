@@ -32,6 +32,11 @@ let _views = [];
     $.userAvatar.getView().left = 20;
     $.userAvatar.viewBorderColor = $.wrapper.backgroundColor;
 
+    /**
+     * Profile Style
+     */
+    options.style && _setStyle(options.style)  // available options 'none' or 'card'
+
     _hideViewContainer();
 
 })($.args);
@@ -50,6 +55,19 @@ $.removeAllViews = function _removeView() {
         $.extendedViews.remove(_view);
       });
     }  
+}
+
+$.updateStyle = function _setStyle(style) {
+
+  switch(style) {
+    case 'card' :
+      $.resetClass($.wrapper, 'size background-color vgroup smooth buffer');
+      break;
+    case 'none':
+    default:
+      $.resetClass($.wrapper, 'size background-color vgroup top-buffer smooth buffer');
+  }
+
 }
 
 function _showViewContainer() {
