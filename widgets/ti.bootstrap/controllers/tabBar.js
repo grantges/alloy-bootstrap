@@ -14,7 +14,7 @@
  * 
  */
 
-const TAB_BAR_HEIGHT = 48;
+const TAB_BAR_HEIGHT = 70;
 
 const DEFAULT_TAB_BACKGROUND_COLOR = '#FFFFFF';
 const DEFAULT_TAB_ACTIVE_COLOR = '#5FCE82';
@@ -35,8 +35,8 @@ let _tabIndicatorColor = null;
         _tabGroup = options.tabGroup = options.tabGroup || null;
 
         _tabBackgroundColor = options.tabBackgroundColor || DEFAULT_TAB_BACKGROUND_COLOR;
-        _tabActiveColor = options.tabActiveBackgroundColor || DEFAULT_TAB_ACTIVE_COLOR;
         _tabIndicatorColor = options.tabIndicatorColor || DEFAULT_TAB_INDICATOR_COLOR;
+        _tabActiveColor = options.tabActiveColor || DEFAULT_TAB_ACTIVE_COLOR;
         _tabTextColor = options.tabTitleColor || DEFAULT_TAB_TEXT_COLOR;
         
         $.container.backgroundColor = _tabBackgroundColor;
@@ -44,18 +44,22 @@ let _tabIndicatorColor = null;
         if(options.tabs) {
             _addTabs(option.tabs);
         }
+
+        if(_tabGroup) {
+            _setActiveTab(_tabGroup.activeTab);
+        }
     }
 
  })($.args);
 
 function _addTab(tab) {
 
-    if(tab) {
+    if(tab) { 
 
         let view = Ti.UI.createView({
             index: _tabs.length,
             width: Ti.Platform.displayCaps.platformWidth / (_tabs.length || 1),
-            height: 45,
+            height: TAB_BAR_HEIGHT,
             layout: 'vertical'
         });
 
@@ -79,11 +83,13 @@ function _addTab(tab) {
         if(tab.title) {
             console.log(tab.title);
             let title = Ti.UI.createLabel({
+                top: 4,
                 width: Ti.UI.SIZE,
                 height: Ti.UI.SIZE,
-                title: tab.title,
+                text: tab.title,
                 font: {
-                    fontSize: 10
+                    fontSize: 10,
+                    fontWeight: 'bold'
                 },
                 color: _tabTextColor,
                 touchEnabled: false
@@ -93,7 +99,7 @@ function _addTab(tab) {
         }
 
         _tabs.push(view);
-        view.addEventListener('click', _setActiveTab);
+        view.addEventListener('click', _onTabClick);
         $.container.add(view);
 
     }
@@ -106,7 +112,6 @@ $.addTab = _addTab;
 function _addTabs(tabs) {
 
     if(tabs && tabs.length){
-        console.log('addTabs');
         _.each(tabs, function(t) {
             _addTab(t);
         });
@@ -125,20 +130,32 @@ function _getTab(index) {
 }
 $.getTab = _getTab;
 
-function _setActiveTab (event) {
+function _onTabClick (event) {
     
     _resetTabs();
 
     if(event.source.children) {
-        console.log("has Children");
         _.each(event.source.children, function(childView) {     
                 childView.color = _tabActiveColor;
         });
     }
     
     if(_tabGroup){
-        _tabGroup.setActiveTab(event.source.index);
+        _tabGroup.activeTab = event.source.index;
     }
+}
+
+function _setActiveTab(index) {
+    
+    if(index && _tabs && _tabs.length){
+    
+        _resetTabs();
+        _.each(_tabs[index].children, function(childView) {     
+            childView.color = _tabActiveColor;
+        });
+
+    }
+
 }
 $.setActiveTab = _setActiveTab;
 
@@ -147,9 +164,7 @@ function _resetTabs() {
     $.container.backgroundColor = _tabBackgroundColor;
    // $.indicator.backgroundColor = _tabIndicatorColor;
 
-    console.log(Ti.Platform.displayCaps.platformWidth/(_tabs.length));
-
-    _.each(_tabs, function(t) {
+   _.each(_tabs, function(t) {
         t.width = Ti.Platform.displayCaps.platformWidth/(_tabs.length);
 
         if(t.children){
@@ -173,11 +188,11 @@ Object.defineProperties($, {
      },
 
      'tabActiveColor':{
-        get: function _getTabBackgroundColor(){
+        get: function _getTabActiveColor(){
             return _tabActiveColor;
         },
-        set : function _setTabBackgroundColor(c) {
-            _tabBackgroundColor = c;
+        set : function _setTabActiveColor(c) {
+            _tabActiveColor = c;
             _resetTabs();
         }
      },
@@ -200,6 +215,15 @@ Object.defineProperties($, {
             _tabIndicatorColor = c;
             _resetTabs();
         }
+     },
+
+     'tabGroup' :{
+         get: function _getTabGroup() {
+             return _tabGroup;
+         },
+         set: function _setTabGroup(tg) {
+             _tabGroup = tg;
+         }
      }
 
 });

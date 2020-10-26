@@ -1,7 +1,7 @@
 
 '.customTabBar': {
     width: Ti.UI.FILL,
-    height: 48,
+    height: 50,
     bottom: 0
 }
 
@@ -9,14 +9,3 @@
     height: 3,
     width: 3
 }
-
-
-// '.customTabBar[platform=ios]': {
-//     width: Ti.UI.FILL,
-//     height: 48
-// }
-
-// '.customTabBar[platform=android]': {
-//     width: Ti.UI.FILL,
-//     height: 48
-// }
