@@ -27,7 +27,6 @@ const ICONS = require('bootstrap/icons.json');
      * If parameters are passed as part of the creation, lets make sure we add them to the Label
      */
     if(params) {
-        console.log(params.icon);
         /**
          * HACK - BG
          * Any passed in property / class that styles the font overwrites the `fontFamily` property, 

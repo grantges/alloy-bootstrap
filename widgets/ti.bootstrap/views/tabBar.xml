@@ -1,0 +1,8 @@
+<Alloy>
+    <View id="container" class="customTabBar hgroup">
+        <!-- All sub views are programmatic -->
+        <!-- <View class="size bottom">
+            <View id="indicator"  />
+        </View> -->
+    </View>
+</Alloy>

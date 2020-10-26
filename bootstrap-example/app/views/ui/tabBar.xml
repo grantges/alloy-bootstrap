@@ -1,0 +1,5 @@
+<Alloy>
+    <View id="container">
+        <Widget id="tabBar" src="ti.bootstrap" name="tabBar" />
+    </View>
+</Alloy>
