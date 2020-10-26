@@ -10,11 +10,31 @@
  * 
  * @author              Bert Grantges
  * @date.               October 26, 2020
- * @description         
- * 
+ * @description         Custome TabBar for a TabGroup that leverages ti.bootstrap icons instead of images. 
+ * @example             
+ *                      var myTabBar = Alloy.createWidget('ti.bootstrap', 'tabBar', {tabGroup: SomeTabGroupReference});
+ *                      myTabBar.addTabs({
+ *                          {
+ *                              icon: 'icon-user',
+ *                              title: 'My Profile'
+ *                          },
+ *                          {
+ *                              icon: 'icon-group',
+ *                              title: 'My Groups'
+ *                          },
+ *                          {
+ *                              icon: 'icon-compass',
+ *                              title: 'My Trips'
+ *                          },
+ *                          {
+ *                              icon: 'icon-settings',
+ *                              title: 'Settings'
+ *                          }
+ *                      });
+ *                      SomeTabGroupReference.add(myTabBar);
  */
 
-const TAB_BAR_HEIGHT = 70;
+const TAB_BAR_HEIGHT = 50;
 
 const DEFAULT_TAB_BACKGROUND_COLOR = '#FFFFFF';
 const DEFAULT_TAB_ACTIVE_COLOR = '#5FCE82';
@@ -28,6 +48,10 @@ let _tabActiveColor = null;
 let _tabTextColor = null;
 let _tabIndicatorColor = null;
 
+/**
+ * Widget Constructor function
+ * @param {Object} options - Arguments passed into the controller from the calling function
+ */
 (function _constructor(options){
 
     if(options) {
@@ -52,6 +76,10 @@ let _tabIndicatorColor = null;
 
  })($.args);
 
+/**
+ * Adds a tab to the custom TabBar
+ * @param {Object} tab - Object that has an icon and title property
+ */
 function _addTab(tab) {
 
     if(tab) { 
@@ -109,6 +137,10 @@ function _addTab(tab) {
 }
 $.addTab = _addTab;
 
+/**
+ * Allows the developer to add multiple tabs at once.
+ * @param {Object} tabs - An array of multiple tab objects (see addTab for description of tab object)
+ */
 function _addTabs(tabs) {
 
     if(tabs && tabs.length){
@@ -121,6 +153,10 @@ function _addTabs(tabs) {
 $.addTabs = _addTabs;
 
 
+/**
+ * Returns a reference to the Ti.UI.View at the provided zero based index.
+ * @param {Number} index - zero based index of the tabs in the Tab Bar
+ */
 function _getTab(index) {
 
      if(_tabs && index) {
@@ -130,6 +166,10 @@ function _getTab(index) {
 }
 $.getTab = _getTab;
 
+/**
+ * Handles the click of a tab view
+ * @param {Object} event - Standard Click event object for a Ti.Ui.View
+ */
 function _onTabClick (event) {
     
     _resetTabs();
@@ -145,6 +185,10 @@ function _onTabClick (event) {
     }
 }
 
+/**
+ * Sets the active tab for the Tab Bar
+ * @param {Number} index 
+ */
 function _setActiveTab(index) {
     
     if(index && _tabs && _tabs.length){
@@ -159,6 +203,9 @@ function _setActiveTab(index) {
 }
 $.setActiveTab = _setActiveTab;
 
+/**
+ * Resets all of the tabs to default size / color
+ */
 function _resetTabs() {
 
     $.container.backgroundColor = _tabBackgroundColor;
@@ -176,6 +223,7 @@ function _resetTabs() {
 
 }
 
+/** Public Properties of the TabBar Widget */
 Object.defineProperties($, {
 
      'tabBackgroundColor':{
