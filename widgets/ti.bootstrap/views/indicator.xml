@@ -7,7 +7,7 @@
             </View>
             <View class="hgroup size right-buffer bottom">
                 <Label id="indicatorValue" class="gray size right bottom h3" text="3600"/>
-                <Label id="indicatorType" class="gray size right small-text" text="ft"/>
+                <Label id="indicatorUOM" class="gray size right small-text" text="ft"/>
             </View>
         </View>
     </View>

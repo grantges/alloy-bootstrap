@@ -99,6 +99,7 @@ $.close = function _close(){
 
   $.toast.animate(animation, function(){
     $.toast.close();
+    $.toast = null;
   });
 }
 

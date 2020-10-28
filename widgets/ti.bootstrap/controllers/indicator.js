@@ -5,7 +5,7 @@ const icons = require('bootstrap/icons.json');
 
     this._titleAlign = options.titleAlign || 'right';
     $.titleAlign = this._titleAlign;
-    $.indicatorType.bottom = 6;
+    $.indicatorUOM.bottom = 6;
 
 })($.args);
 
@@ -19,13 +19,13 @@ $.setIconAndTitleColor = function(color) {
 
 
 $.hideType = function() {
-    $.indicatorType.visible = false;
-    $.indicatorType.width = 0;
+    $.indicatorUOM.visible = false;
+    $.indicatorUOM.width = 0;
 }
 
 $.showType = function() {
-    $.indicatorType.visible = true;
-    $.indicatorType.width = Ti.UI.SIZE;
+    $.indicatorUOM.visible = true;
+    $.indicatorUOM.width = Ti.UI.SIZE;
 }
 
 
@@ -68,7 +68,6 @@ Object.defineProperty($, 'titleColor', {
         $.indicatorTitle.color
     },
     set: function _setIcon(c) {
-        console.log(c)
         $.indicatorTitle.color = c;
     }
 });
@@ -103,40 +102,70 @@ Object.defineProperty($, 'titleAlign', {
  * Value properties
  */
 Object.defineProperty($, 'value', {
-    get: function _getIcon() {
+    get: function _getValue() {
         $.indicatorValue.text
     },
-    set: function _setIcon(text) {
+    set: function _setValue(text) {
         $.indicatorValue.text = text;
     }
 });
 
 Object.defineProperty($, 'valueColor', {
-    get: function _getIcon() {
+    get: function _getValueColor() {
         $.indicatorValue.color
     },
-    set: function _setIcon(c) {
+    set: function _setValueColor(c) {
         $.indicatorValue.color = c;
     }
 });
 
+Object.defineProperty($, 'valueSize', {
+    get: function _getValueSize() {
+        console.log($.indicatorValue.font.fontSize);
+        return $.indicatorValue.font.fontSize;
+    },
+    set: function _setValueSize(s) {
+        let size = $.createStyle({
+            font:{
+                fontSize: s
+            }
+        });
+        
+        $.indicatorValue.applyProperties(size);
+    }
+})
+
 /**
  * Measurement Properties
  */
-Object.defineProperty($, 'type', {
-    get: function _getIcon() {
-        $.indicatorType.text
+Object.defineProperty($, 'uom', {
+    get: function _getUOM() {
+        $.indicatorUOM.text
     },
-    set: function _setIcon(text) {
-        $.indicatorType.text = text;
+    set: function _setUOM(text) {
+        $.indicatorUOM.text = text;
     }
 });
 
-Object.defineProperty($, 'typeColor', {
-    get: function _getIcon() {
-        $.indicatorType.color
+Object.defineProperty($, 'uomColor', {
+    get: function _getUOMColor() {
+        $.indicatorUOM.color
     },
-    set: function _setIcon(c) {
-        $.indicatorType.color = c;
+    set: function _setUOMColor(c) {
+        $.indicatorUOM.color = c;
+    }
+});
+
+Object.defineProperty($, 'uomSize', {
+    get: function _getUOMSize() {
+        $.indicatorUOM.color
+    },
+    set: function _setUOMSize(s) {
+        let size = $.createStyle({
+            font:{
+                fontSize: s
+            }
+        });
+        $.indicatorUOM.applyProperties(size);
     }
 });

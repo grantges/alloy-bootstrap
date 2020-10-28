@@ -765,6 +765,7 @@
 '.gray-line':{
 	backgroundColor: '#9b9d9f',
 	width: Ti.UI.FILL,
+	opacity: 0.25,
 	height: 1
 },
 

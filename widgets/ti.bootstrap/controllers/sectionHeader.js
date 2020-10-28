@@ -1,19 +1,39 @@
 
 console.log($.args);
 
-let title = $.args.title || 'Title';
-let linkTitle = $.args.linkTitle || 'Link';
-let linkCallback = $.args.linkCallback || null;
+let title = 
+    linkTitle = 
+    linkCallback = null;
 
+
+/** Private Methods */
+(function _constructor(options){
+
+    title = options.title || 'Title';
+    linkTitle = options.linkTitle;
+    linkCallback = options.linkCallback || null;
+
+    _setTitle(title);
+    _setLink(linkTitle, linkCallback);
+
+    /** Register Event Handlers */
+    $.link.addEventListener('click', (e) => {
+        linkCallback && linkCallback(e);
+    });
+
+
+})($.args);
 
 /** Public Methods */
 
-$.setTitle = (t) => {
+function _setTitle(t) {
     title = t;
     $.title.text = title;
 }
+$.setTitle =  _setTitle;
 
-$.setLink = (title, callback) => {
+function _setLink(title, callback) {
+    
     if(title) {
         $.link.title = title;
     }
@@ -21,20 +41,5 @@ $.setLink = (title, callback) => {
     if(callback) {
         linkCallback = callback;
     }
-}
-
-/** Private Methods */
-const _init = ()=> {
-    $.setTitle(title);
-    $.setLink(linkTitle, linkCallback);
 };
-
-/** Register Event Handlers */
-$.link.addEventListener('click', (e) => {
-    linkCallback && linkCallback(e);
-});
-
-/**
- * Initialize the widget
- */
-_init();
+$.setLink = _setLink;
