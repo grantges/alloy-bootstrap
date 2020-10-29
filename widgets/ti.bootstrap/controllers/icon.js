@@ -38,19 +38,23 @@ const ICONS = require('bootstrap/icons.json');
         }
 
         $.lblIcon.applyProperties(params);
-    }
 
-    /**
-     * If an `icon` property is passed in on creation, lets go ahead and add it to the Label
-     */
-    if(params.icon){
-        const iconText = _fetchIconText(params.icon);
-        if(iconText) {
-            this._icon = params.icon;
-            $.lblIcon.text = iconText;
+        /**
+         * If an `icon` property is passed in on creation, lets go ahead and add it to the Label
+         */
+        if(params.icon){
+            const iconText = _fetchIconText(params.icon);
+            if(iconText) {
+                this._icon = params.icon;
+                $.lblIcon.text = iconText;
+            }
+        }
+
+        if(params.value){
+            $._value = params.value;
         }
     }
-    
+
 
 })($.args);
 
@@ -84,6 +88,15 @@ Object.defineProperty($,'icon', {
             this._icon = icon;
             $.lblIcon.text = iconText;
         }
+    }
+});
+
+Object.defineProperty($, 'value', {
+    get: function _getValue() {
+        return $._value;
+    },
+    set: function _setValue(v) {
+        $._value = v;
     }
 });
 
