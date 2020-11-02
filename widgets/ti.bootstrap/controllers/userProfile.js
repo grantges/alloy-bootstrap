@@ -49,15 +49,16 @@ $.addView = function _addView(_view) {
   }
 };
 
-$.removeAllViews = function _removeView() {
-    if(this.views.length){
-      _.each(this.views, function(_view){
+function _removeAllView() {
+    if(_views.length){
+      _.each(_views, function(_view){
         $.extendedViews.remove(_view);
       });
     }  
 }
+$.removeAllViews = _removeAllView()
 
-$.updateStyle = function _setStyle(style) {
+function _setStyle(style) {
 
   switch(style) {
     case 'card' :
@@ -69,16 +70,31 @@ $.updateStyle = function _setStyle(style) {
   }
 
 }
+$.updateStyle = _setStyle
 
 function _showViewContainer() {
   $.extendedViewsContainer.visible = true;
   $.extendedViewsContainer.height = Ti.UI.SIZE;
 }
+$.showViewContainer = _showViewContainer;
 
 function _hideViewContainer() {
   $.extendedViewsContainer.visible = false;
   $.extendedViewsContainer.height = 0;
 }
+$.hideViewContainer = _hideViewContainer;
+
+function _showActions() {
+  $.cardActionsContainer.visible = true;
+  $.cardActionsContainer.height = Ti.UI.SIZE;
+}
+$.showActions = _showActions;
+
+function _hideActions() {
+  $.cardActionsContainer.visible = false;
+  $.cardActionsContainer.height = 0;
+}
+$.hideActions = _hideActions;
 
 /**
  * Avatar Properties

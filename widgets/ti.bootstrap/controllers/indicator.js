@@ -50,6 +50,21 @@ Object.defineProperty($, 'iconColor', {
     }
 });
 
+Object.defineProperty($, 'iconSize', {
+    get: function _getIcon() {
+        $.indicatorIcon.font.fontSize
+    },
+    set: function _setIcon(size) {
+        let style = $.createStyle({
+            classes: 'icon',
+            font: {
+                fontSize: size
+            }
+        });
+        $.indicatorIcon.applyProperties(style);
+    }
+});
+
 
 /**
  * Title Properties
@@ -94,6 +109,21 @@ Object.defineProperty($, 'titleAlign', {
                 break;
             default:
         }
+    }
+})
+
+Object.defineProperty($, 'titleSize', {
+    get: function _getValueSize() {
+        return $.indicatorTitle.font.fontSize;
+    },
+    set: function _setValueSize(s) {
+        let size = $.createStyle({
+            font:{
+                fontSize: s
+            }
+        });
+        
+        $.indicatorTitle.applyProperties(size);
     }
 })
 

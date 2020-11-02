@@ -16,8 +16,8 @@
             <Label id="btnMessageLbl" class="buffer gray size semibold medium h4" text="L('message', 'Message')"/> 
           </View>
         </View>
-        <View id="extendedViewsContainer" class="size vgroup buffer">
-          <View class="gray-line left-buffer top-buffer right-buffer" />
+        <View id="extendedViewsContainer" class="size vgroup">
+          <View class="gray-line left-buffer right-buffer" />
           <View id="extendedViews" class="top-buffer vgroup size">
         </View>
     </View>

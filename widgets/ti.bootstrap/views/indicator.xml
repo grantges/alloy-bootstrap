@@ -1,12 +1,12 @@
 <Alloy module="bootstrap/ui">
-    <View id="wrapper" class="size buffer">
+    <View id="wrapper" class="size buffer vgroup">
         <View class="vgroup size top ">
             <View id='titleContainer' class='row size top'>
                 <Icon id="indicatorIcon" icon="icon-height" class="right-buffer gray top small-text size" />
                 <Label id="indicatorTitle" class="gray size right-buffer top small-text" text="Altitude"/>
             </View>
-            <View class="hgroup size right-buffer bottom">
-                <Label id="indicatorValue" class="gray size right bottom h3" text="3600"/>
+            <View id="valueContainer" class="hgroup size right-buffer bottom">
+                <Label id="indicatorValue" class="gray right bottom h3" text="3600" ellipsize="Ti.UI.TEXT_ELLIPSIZE_TRUNCATE_CLIP"/>
                 <Label id="indicatorUOM" class="gray size right small-text" text="ft"/>
             </View>
         </View>

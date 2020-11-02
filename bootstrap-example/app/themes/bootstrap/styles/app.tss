@@ -775,6 +775,25 @@
 	height: 1
 },
 
+'.black-line-vertical':{
+	backgroundColor: '#000',
+	width: 1,
+	height: Ti.UI.FILL
+},
+
+'.gray-line-vertical':{
+	backgroundColor: '#9b9d9f',
+	width: 1,
+	opacity: 0.25,
+	height: Ti.UI.FILL
+},
+
+'.white-line-vertical':{
+	backgroundColor: '#fff',
+	width: 1,
+	height: Ti.UI.FILL
+},
+
 /** ICOMOON FONT REFERENCE **/
 
 '.icon': {
