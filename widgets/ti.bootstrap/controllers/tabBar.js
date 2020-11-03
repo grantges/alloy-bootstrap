@@ -34,8 +34,6 @@
  *                      SomeTabGroupReference.add(myTabBar);
  */
 
-const TAB_BAR_HEIGHT = 50;
-
 const DEFAULT_TAB_BACKGROUND_COLOR = '#FFFFFF';
 const DEFAULT_TAB_ACTIVE_COLOR = '#5FCE82';
 const DEFAULT_TAB_TEXT_COLOR = '#407CDE';
@@ -87,7 +85,7 @@ function _addTab(tab) {
         let view = Ti.UI.createView({
             index: _tabs.length,
             width: Ti.Platform.displayCaps.platformWidth / (_tabs.length || 1),
-            height: TAB_BAR_HEIGHT,
+            height: Ti.UI.SIZE,
             layout: 'vertical'
         });
 
@@ -209,10 +207,10 @@ $.setActiveTab = _setActiveTab;
 function _resetTabs() {
 
     $.container.backgroundColor = _tabBackgroundColor;
-   // $.indicator.backgroundColor = _tabIndicatorColor;
 
    _.each(_tabs, function(t) {
-        t.width = Ti.Platform.displayCaps.platformWidth/(_tabs.length);
+       
+        t.width = Math.floor(Ti.Platform.displayCaps.platformWidth/(_tabs.length));
 
         if(t.children){
             _.each(t.children, function(childView) {     

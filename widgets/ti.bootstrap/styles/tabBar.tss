@@ -1,11 +1,12 @@
 
-'.customTabBar': {
+'.customTabBar[if=!Alloy.CFG.TiDetect.hasNotch]': {
     width: Ti.UI.FILL,
     height: 50,
     bottom: 0
 }
 
-'#indicator': {
-    height: 3,
-    width: 3
+'.customTabBar[if=Alloy.CFG.TiDetect.hasNotch]': {
+    width: Ti.UI.FILL,
+    height: 50,
+    bottom: 34
 }
