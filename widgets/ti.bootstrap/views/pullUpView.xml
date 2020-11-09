@@ -1,0 +1,9 @@
+<Alloy autoStyle="true">
+    <View id="widgetContainer">
+        <View id="shadow" />
+		<View id="contentContainer" class="vgroup">
+			<View id="handle" class="top-buffer"/>
+            <ScrollView id="context" class="vgroup top-buffer" />
+        </View>
+    </View>
+</Alloy>

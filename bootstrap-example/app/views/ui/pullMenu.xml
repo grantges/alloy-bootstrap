@@ -1,5 +1,7 @@
 <Alloy>
 	<Window class="container">
-		<Widget id="menu" src="ti.bootstrap" name="pullmenu" />
+		<View id="mapview" module="ti.map" />
+		<Button backgroundColor="#fff" top="100" onClick="_changeStickyPoints">Update StickyPoints</Button>
+		<Widget id="pullUpView" src="ti.bootstrap" name="pullUpView" />
 	</Window>
 </Alloy>

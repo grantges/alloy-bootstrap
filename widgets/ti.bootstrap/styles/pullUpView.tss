@@ -1,0 +1,32 @@
+"#widgetContainer":{
+	height: "98%",
+	clipMode: Titanium.UI.iOS.CLIP_MODE_DISABLED 
+},
+
+"#contentContainer":{
+	backgroundColor: "#FFF",
+	borderRadius: 20
+}
+"#shadow" : {
+	top:-10,
+	borderRadius: 20,
+	backgroundGradient: {
+        type: 'linear',
+        startPoint: { x: 0, y: 0 },
+        endPoint: { x: 0, y: 50 },
+        colors: [ {color: 'transparent', offset: 0.0}, {color:'#5000', offset: 1.0}]
+    }
+}
+
+"#handle" : {
+	backgroundColor: "#5000",
+	width: 50,
+	height: 5,
+	borderRadius: 3
+},
+
+"#context":{
+    scrollType: "vertical",
+    scrollingEnabled: false,
+    showVerticalScrollIndicator: false
+}

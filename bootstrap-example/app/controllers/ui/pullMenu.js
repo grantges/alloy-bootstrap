@@ -1,2 +1,14 @@
-// Arguments passed into this controller can be accessed via the `$.args` object directly or:
-var args = $.args;
+
+
+function _changeStickyPoints(e) {
+    
+    console.log("Change Sticky Points")
+    
+    let points = [
+        150, 250, 350, 400, 70, 625, 550
+    ]
+
+    $.pullUpView.setStickyPoints(points, 4);
+
+
+}
