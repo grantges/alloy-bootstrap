@@ -61,26 +61,19 @@ exports.createIconButton = (args) => {
   
   const icon = args.icon ? icons[args.icon] : null;
 
-  const props = _.extend(args, {
-      font:{
-          fontSize: (args.font && args.font.fontSize) ? args.font.fontSize : null,
-          fontWeight: (args.font && args.font.fontWeight) ? args.font.fontWeight : null
-      }
-  });
-
   const wrapper = Ti.UI.createView({
       layout:'horizontal',
       height: Ti.UI.SIZE,
       width: Ti.UI.SIZE,
   });
 
-  const iconFont =  Ti.UI.createButton(props);
+  const iconFont =  Ti.UI.createButton(args);
   iconFont.font = {fontFamily:'icomoon'}; 
   iconFont.title = icon;
   wrapper.add(iconFont);
 
   if(args.text) { 
-      const textLabel = Ti.UI.createLabel(props);
+      const textLabel = Ti.UI.createLabel(args);
       textLabel.text = args.text;
       textLabel.left = 10;
       wrapper.add(textLabel);

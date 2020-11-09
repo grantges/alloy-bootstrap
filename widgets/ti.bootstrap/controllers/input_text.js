@@ -103,3 +103,12 @@ Object.defineProperty($, 'textColor', {
     $.inputText.color = color;
   }
 });
+
+Object.defineProperty($, 'hintText', {
+  get: function _getTextValue(){
+    return $.inputText.hintText;
+  },
+  set: function _setTextValue(value){
+    $.inputText.hintText = value;
+  }
+});

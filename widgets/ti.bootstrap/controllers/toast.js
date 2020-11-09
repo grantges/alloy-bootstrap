@@ -1,5 +1,7 @@
 const icons = require('bootstrap/icons.json');
 
+const HEIGHT = (Alloy.CFG.TiDetect && Alloy.CFG.TiDetect.hasNotch) ? 100 : 75;
+
 let _callback = null,
     _position = 'bottom',
     _icon = null;
@@ -22,12 +24,14 @@ let _callback = null,
     _position = options.position;
   }
 
+  $.toast.height = HEIGHT;
 
   if(_position === 'bottom') {
     $.toast.top = Ti.Platform.displayCaps.platformHeight;
   }
   else {
-    $.toast.top = -75
+    $.message.top = 30;
+    $.toast.top = -1*HEIGHT;
   }
   $.title.text = options.title;
 
@@ -63,7 +67,7 @@ $.open = function _open(){
   let animation = null;
   if(_position === 'bottom') {
     animation = Ti.UI.createAnimation({
-      top: Ti.Platform.displayCaps.platformHeight - 75,
+      top: Ti.Platform.displayCaps.platformHeight - HEIGHT,
       duration: 150,
       curve: Ti.UI.ANIMATION_CURVE_EASE_OUT
     });
@@ -92,7 +96,7 @@ $.close = function _close(){
       curve: Ti.UI.ANIMATION_CURVE_EASE_OUT
     }) :
     Ti.UI.createAnimation({
-      top: -75,
+      top: -1*HEIGHT,
       duration: 150,
       curve: Ti.UI.ANIMATION_CURVE_EASE_OUT
     });

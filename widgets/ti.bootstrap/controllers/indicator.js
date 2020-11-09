@@ -1,34 +1,5 @@
 const icons = require('bootstrap/icons.json');
 
-
-(function _constructor(options){
-
-    this._titleAlign = options.titleAlign || 'right';
-    $.titleAlign = this._titleAlign;
-    $.indicatorUOM.bottom = 6;
-
-})($.args);
-
-$.setAllTextColor = function(color) {
-    $.iconColor = $.titleColor = $.valueColor = $.measurementColor = color;
-};
-
-$.setIconAndTitleColor = function(color) {
-    $.iconColor = $.titleColor = color;
-}
-
-
-$.hideType = function() {
-    $.indicatorUOM.visible = false;
-    $.indicatorUOM.width = 0;
-}
-
-$.showType = function() {
-    $.indicatorUOM.visible = true;
-    $.indicatorUOM.width = Ti.UI.SIZE;
-}
-
-
 /**
  * Icon Properties
  */
@@ -37,6 +8,7 @@ Object.defineProperty($, 'icon', {
         $.indicatorIcon.text
     },
     set: function _setIcon(i) {
+        console.log(i);
         $.indicatorIcon.text = icons[i]
     }
 });
@@ -199,3 +171,54 @@ Object.defineProperty($, 'uomSize', {
         $.indicatorUOM.applyProperties(size);
     }
 });
+
+
+
+(function _constructor(options){
+
+    this._titleAlign = options.titleAlign || 'right';
+    $.titleAlign = this._titleAlign;
+    $.indicatorUOM.bottom = 6;
+
+    if(options){
+        console.log(options);
+        $.icon = options.icon;
+        $.iconColor = options.color || options.iconColor;
+
+        $.value = options.value;
+        $.valueSize = options.valueSize;
+        $.valueColor = options.valueColor;
+        
+        $.uom = options.uom;
+        $.uomSize = options.uomSize;
+        $.uomColor = options.uomColor;
+
+        $.title = options.title;
+        $.titleSize = options.titleSize;
+        $.titleColor = options.titleColor;
+    }
+    
+
+})($.args);
+
+function _setAllTextColor(color) {
+    $.iconColor = $.titleColor = $.valueColor = $.measurementColor = color;
+};
+$.setAllTextColor = _setAllTextColor;
+
+function _setIconAndTitleColor(color) {
+    $.iconColor = $.titleColor = color;
+}
+$.setIconAndTitleColor = _setIconAndTitleColor;
+
+function _hideType() {
+    $.indicatorUOM.visible = false;
+    $.indicatorUOM.width = 0;
+}
+$.hideType = _hideType;
+
+function _showType() {
+    $.indicatorUOM.visible = true;
+    $.indicatorUOM.width = Ti.UI.SIZE;
+}
+$.showType = _showType;

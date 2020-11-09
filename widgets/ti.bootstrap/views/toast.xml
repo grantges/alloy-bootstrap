@@ -1,8 +1,11 @@
-<Alloy autoStyle="true" module="bootstrap/ui">
+<Alloy module="bootstrap/ui">
 	<Window class="container" onClick="_onToastClick">
-		<View class="hgroup size">
-			<Icon id="icon" class="no-touch" />
-			<Label id="title" class="left-buffer no-touch white normal-text semibold">Message Title</Label>
+		<View class="size no-touch">
+			<View id="message" class="hgroup no-touch size">
+				<Icon id="icon" class="h4 no-touch" />
+				<Label id="title" class="h4 left-buffer no-touch white semibold" />
+			</View>
 		</View>
 	</Window>
 </Alloy>
+ 

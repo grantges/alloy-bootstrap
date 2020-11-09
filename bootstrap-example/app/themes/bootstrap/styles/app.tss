@@ -5,7 +5,8 @@
  * https://gist.github.com/tonylukasavage/6009423
  */
 'Window': {
-   backgroundColor: '#fff' // white background instead of default transparent
+   backgroundColor: '#fff', // white background instead of default transparent
+   extendSafeArea: false
 },
 
 'Window[platform=android]': {
