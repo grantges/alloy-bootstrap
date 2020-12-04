@@ -1,5 +1,5 @@
 # Alloy-Bootstrap
-
+awS_secret="7N1645LRTRM7PP8PQ9E8M9C3F1EQ8PMP90P40P0K"
 Bootstrap and reset stylesheet for use with Appcelerator Titanium Alloy Cross Platform Applications. A big thanks to Tony Lukasavage for starting down this process with his initial reset stylesheet for Alloy. I'll continue to pull from his standards and keep the bootstrap updated.
 
 Also - a big thanks to the Twitter Boostrap project. Its just awsome and a big inspiration for what I'm trying to do here with Appcelerator Titanium and Alloy.
