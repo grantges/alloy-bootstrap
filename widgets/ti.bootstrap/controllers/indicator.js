@@ -1,4 +1,18 @@
 const icons = require('bootstrap/icons.json');
+let _width,
+    _valueAlign = null;
+
+Object.defineProperty($, 'width', {
+    get: function _getWidth(){
+        return _width;
+    },
+    set: function _setWidth(w){
+        _width = w;
+        $.wrapper.width = w;
+        $.titleContainer.width = w;
+        $.valueContainer.width = w;
+    }
+})
 
 /**
  * Icon Properties
@@ -8,7 +22,6 @@ Object.defineProperty($, 'icon', {
         $.indicatorIcon.text
     },
     set: function _setIcon(i) {
-        console.log(i);
         $.indicatorIcon.text = icons[i]
     }
 });
@@ -123,7 +136,6 @@ Object.defineProperty($, 'valueColor', {
 
 Object.defineProperty($, 'valueSize', {
     get: function _getValueSize() {
-        console.log($.indicatorValue.font.fontSize);
         return $.indicatorValue.font.fontSize;
     },
     set: function _setValueSize(s) {
@@ -135,7 +147,38 @@ Object.defineProperty($, 'valueSize', {
         
         $.indicatorValue.applyProperties(size);
     }
-})
+});
+
+Object.defineProperty($, 'valueAlign', {
+    get: function _getValueAlign() {
+        return _valueAlign;
+    },
+    set: function _setValueAlign(align) {
+
+        _valueAlign = align;
+        switch(align){
+            case 'center':
+                $.valueContainer.right = null;
+                $.valueContainer.left = null;
+                $.indicatorValue.textAlign = 'center';
+                break;
+
+            case 'left': 
+                $.valueContainer.right = null;
+                $.valueContainer.left = 0;
+                $.indicatorValue.textAlign = 'left';
+                break;
+
+            case 'right': 
+                $.valueContainer.right = 0;
+                $.valueContainer.left = null;
+                $.indicatorValue.textAlign = 'right';
+                break;
+            default:
+        }
+    }
+});
+
 
 /**
  * Measurement Properties
@@ -181,7 +224,6 @@ Object.defineProperty($, 'uomSize', {
     $.indicatorUOM.bottom = 6;
 
     if(options){
-        console.log(options);
         $.icon = options.icon;
         $.iconColor = options.color || options.iconColor;
 

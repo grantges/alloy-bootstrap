@@ -10,6 +10,7 @@
 			<TableViewRow title="Form inputs" navid="form" />
 			<TableViewRow title="Avatar" navid="avatar" />
 			<TableViewRow title="Alerts" navid="alerts" />
+			<TableViewRow title="Menu Button" navid="menuButton" />
 			<TableViewRow title="Pull Up View" navid="pullMenu" />
 			<TableViewRow title="Custom Tab Bar" navid="tabBar" />
 			<TableViewRow title="Signature" navid="signature"/>

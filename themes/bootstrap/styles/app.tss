@@ -7,11 +7,11 @@
 'Window': {
    backgroundColor: '#fff', // white background instead of default transparent
    extendSafeArea: false
-},
+}
 
 'Window[platform=android]': {
    modal: false // make android windows all heavyweight
-},
+}
 
 'View':{
 	clipMode: Titanium.UI.iOS.CLIP_MODE_ENABLED
@@ -21,34 +21,35 @@
   font:{
     fontFamily: 'AppleSDGothicNeo'
   }
-},
+}
 
 'Label[platform=android]': {
   color: '#000' // all platforms except Android default to black
-},
+}
 
 'TextField': {
-  font:{
-      fontFamily: 'AppleSDGothicNeo'
-    },
-  borderStyle: Ti.UI.INPUT_BORDERSTYLE_NONE, // common default style
-  padding: {
-   left: 10,
-   right: 10   
-  },
-  bottom: 5,
-  backgroundColor: '#e7e7e7'
-},
+	font:{
+		fontFamily: 'AppleSDGothicNeo'
+	},
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_NONE, // common default style
+	padding: {
+		left: 10,
+		right: 10   
+	},
+	bottom: 5,
+backgroundColor: '#e7e7e7'
+}
 
 'TextArea':{
   font:{
       fontFamily: 'Helvetica Neue'
     }
-},
+}
 
 'ImageView':{
 	preventDefaultImage: true
 }
+
 
 /**************************************************************************
  * Widget Icons
@@ -63,7 +64,7 @@
 		fontFamily: 'FontAwesome', fontSize: 18
 	},
 	color: '#fff'
-},
+}
 
 '.dropDownIcon':{
 	left: 10,
@@ -75,7 +76,7 @@
 	},
 	//color: '#7d8493' <-- Old School iOS
 	color: '#fff'
-},
+}
 
 
 '.chevronListIcon':{
@@ -88,7 +89,7 @@
 	},
 	//color: '#7d8493' <-- Old School iOS
 	color: '#ff0000'
-},
+}
 
 /**************************************************************************
  * General Helper and Utility Styles
@@ -105,136 +106,136 @@
 
 '.vgroup':{
 	layout: 'vertical'
-},
+}
 
 '.hgroup':{
 	layout: 'horizontal'
-},
+}
 
 '.buffer':{
 	top: 10,
 	left: 10,
 	right: 10,
 	bottom: 10
-},
+}
 
 '.top-buffer':{
 	top: 10
-},
+}
 
 '.left-buffer':{
 	left: 10
-},
+}
 
 '.right-buffer':{
 	right: 10
-},
+}
 
 '.bottom-buffer':{
 	bottom: 10
-},
+}
 
 '.fill':{
 	height: Ti.UI.FILL,
 	width: Ti.UI.FILL
-},
+}
 
 '.span-width':{
 	width: '100%',
 	height: Ti.UI.SIZE
-},
+}
 
 '.span-height':{
 	height: '100%',
 	width: Ti.UI.SIZE
-},
+}
 
 '.size':{
 	height: Ti.UI.SIZE,
 	width: Ti.UI.SIZE
-},
+}
 
 '.bottom':{
 	bottom: 0
-},
+}
 
 '.top':{
 	top: 0
-},
+}
 
 '.right':{
 	right: 0
-},
+}
 
 '.left':{
 	left: 0
-},
+}
 
 /**
  * 	Grid System
  */
 '.row' : {
 	layout: 'horizontal',
-},
+}
 
 '.col' :{
 	layout: 'vertical'
-},
+}
 
 '.col-1': {
 	width: '8.33333333%',
 	height:50,
-},
+}
 
 '.col-2': {
 	width: '16.66666667%',
 	height: Ti.UI.SIZE,
-},
+}
 
 '.col-3': {
 	width: '25%',
 	height: Ti.UI.SIZE,
-},
+}
 
 '.col-4': {
 	width: '33.33333333%',
 	height: Ti.UI.SIZE,
-},
+}
 
 '.col-5': {
 	width: '41.66666667%',
 	height: Ti.UI.SIZE,
-},
+}
 
 '.col-6': {
 	width: '50%',
 	height: Ti.UI.SIZE,
-},
+}
 
 '.col-7': {
 	width: '58.33333333%',
 	height: Ti.UI.SIZE,
-},
+}
 
 '.col-8': {
 	width: '66.66666667%',
 	height: Ti.UI.SIZE,
-},
+}
 
 '.col-9': {
 	width: '75%',
 	height: Ti.UI.SIZE,
-},
+}
 
 '.col-10': {
 	width: '83.33333333%',
 	height: Ti.UI.SIZE,
-},
+}
 
 '.col-11': {
 	width: '91.66666667%',
 	height: Ti.UI.SIZE,
-},
+}
 
 '.col-12': {
 	width: '100%',
@@ -250,7 +251,7 @@
 '.thumbnail':{
 	height: 75,
 	width: 75
-},
+}
 
 '.square50':{
 	height: 50,
@@ -260,22 +261,22 @@
 '.square100':{
 	height: 100,
 	width: 100
-},
+}
 
 '.square150':{
 	height: 150,
 	width: 150
-},
+}
 
 '.square200':{
 	height: 200,
 	width: 200
-},
+}
 
 '.square250':{
 	height: 250,
 	width: 250
-},
+}
 
 /**
  * View Shapes
@@ -299,6 +300,7 @@
 /**
  * Shadows
  */
+
  '.drop-shadow':{
 	 viewShadowColor: "#a000",
 	 viewShadowOffset: 5,
@@ -313,112 +315,111 @@
 	font:{
 		fontSize: 36
 	}
-},
+}
 
 '.h2':{
 	font:{
 		fontSize: 30
 	}
-},
+}
 
 '.h3':{
 	font:{
 		fontSize: 24
 	}
-},
+}
 
 '.h4':{
 	font:{
 		fontSize: 18
 	}
-},
+}
 
 '.h5':{
 	font:{
 		fontSize: 14
 	}
-},
+}
 
 '.h6':{
 	font:{
 		fontSize: 12
 	}
-},
+}
 
 '.normal-text':{
 	font:{
 		fontSize: 14
 	}
-},
+}
 
 '.small-text':{
 	font:{
 		fontSize: 10
 	}
-},
+}
 
 '.large-text':{
 	font:{
 		fontSize: 18
 	}
-},
+}
 
 '.thin':{
 	font:{
 		fontWeight: 'thim'
 	}
-},
+}
 
 '.light':{
 	font:{
 		fontWeight: 'light'
 	}
-},
+}
 
 '.normal': {
 	font: {
 		fontWeight: 'normal'
 	}
-},
+}
 
 '.semibold':{
 	font: {
 		fontWeight: 'semibold'
 	}
-},
+}
 
 '.medium':{
 	font:{
-		//fontFamily: 'HelveticaNeue-Medium '
 		fontWeight: 'medium'
 	}
-},
+}
 
 '.bold' :{
 	font:{
 		fontWeight: 'bold'
 	}
-},
+}
 
 '.italic' : {
 	font: {
 		fontStyle: 'italic'
 	}
-},
+}
 
 '.underline' : {
 	font: {
 		fontStyle: 'underline'
 	}
-},
+}
 
 '.text-center':{
   textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
-},
+}
 
 '.text-right':{
   textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT
-},
+}
 
 '.text-left':{
   textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
@@ -431,7 +432,7 @@
 '.hide':{
 	visible: false,
     opacity: 0.0
-},
+}
 
 '.show':{
     visible: true,
@@ -442,9 +443,9 @@
 	opacity: 0.25
 }
 
-/*
- * Color Classes for Labels
- */
+'.no-touch':{
+	touchEnabled: false
+}
 
  /*
  * Color Classes for Labels
@@ -466,10 +467,6 @@
   color: '#201C1D'
 }
 
-'.black':{
-  color: '#201C1D'
-}
-
 '.gray':{
 	color:'#768192' 
 }
@@ -482,6 +479,10 @@
 	color: '#407CDE'
 }
 
+'.light-blue':{
+	color: '#4BAAEE'
+}
+
 '.orange':{
 	color: '#E7854D'
 }
@@ -490,9 +491,21 @@
 	color: '#5FCE82'
 }
 
+'.dark-green':{
+	color: '#00864e'
+}
+
+'.yellow':{
+	color: '#F3B820'
+}
+
 '.primary':{
 	color: '#407CDE'
-},
+}
+
+'.info':{
+	color: '#27bcfd'
+}
 
 '.success':{
 	color: '#5FCE82'
@@ -503,12 +516,89 @@
 }
 
 '.error': {
-  color: '#D5475A'
+  	color: '#D5475A'
+}
+
+'.danger': {
+  	color: '#D5475A'
 }
 
 '.muted':{
-  color: '#ececec'
+  	color: '#ececec'
 }
+
+'.bg-primary':{
+	backgroundColor: '#407CDE'
+}
+
+'.bg-info':{
+	backgroundColor: '#27bcfd'
+}
+
+'.bg-success':{
+	backgroundColor: '#5FCE82'
+}
+
+'.bg-warn': {
+	backgroundColor: '#E7854D'
+}
+
+'.bg-error': {
+  	backgroundColor: '#D5475A'
+}
+
+'.bg-danger': {
+  	backgroundColor: '#D5475A'
+}
+
+'.bg-muted':{
+  	backgroundColor: '#ececec'
+}
+
+'.bg-white':{
+  	backgroundColor: '#FFF'
+}
+
+'.bg-light-gray':{
+  	backgroundColor: '#ECECEC'
+}
+
+'.bg-dark-gray':{
+  	backgroundColor: '#201C1D'
+}
+
+'.bg-black':{
+  	backgroundColor: '#201C1D'
+}
+
+'.bg-gray':{
+	backgroundColor:'#768192' 
+}
+
+'.bg-red':{
+	backgroundColor: '#D5475A' 
+}
+
+'.bg-blue':{
+	backgroundColor: '#407CDE'
+}
+
+'.bg-light-blue':{
+	backgroundColor: '#4BAAEE'
+}
+
+'.bg-orange':{
+	backgroundColor: '#E7854D'
+}
+
+'.bg-green':{
+	backgroundColor: '#5FCE82'
+}
+
+'.bg-yellow':{
+	backgroundColor: '#F3B820'
+}
+
 
 /**
  * Button Styles
@@ -521,7 +611,7 @@
   font: {
 	  fontSize: 14
   }
-},
+}
 
 '.btn-light' : {
 	 backgroundColor: '#FFF',
@@ -546,27 +636,32 @@
   width: 50,
   textAlign: 'center',
   borderRadius: 25
-},
+}
 
 '.btn-default':{
   backgroundColor: '#ECECEC',
   color:'#969696'
-},
+}
 
 '.btn-primary':{
   backgroundColor: '#407CDE',
   color:'#fff'
-},
+}
+
+'.btn-info':{
+	backgroundColor: '#27bcfd',
+	color:'#fff'
+}
 
 '.btn-success':{
   backgroundColor: '#5FCE82',
   color:'#fff'
-},
+}
 
 '.btn-warn':{
   backgroundColor: '#E7854D',
   color:'#fff'
-},
+}
 
 '.btn-default-light' : {
 	 backgroundColor: '#FFF',
@@ -703,18 +798,18 @@
 	backgroundColor: '#dff0d8',
 	borderColor: '#d6e9c6',
 	border: 1
-},
+}
 
 '.error':{
 	color: '#b94a48',
 	backgroundColor: '#f2dede',
 	borderColor: '#eed3d7',
 	border: 1
-},
+}
 
 '.warn':{
 
-},
+}
 
 '.info':{
 	color: '#3a87ad',
@@ -729,71 +824,70 @@
 '.border-dark':{
 	border: 6,
 	borderColor:'#666',
-},
+}
 
 '.border-dark-thin':{
 	border: 2,
 	borderColor:'#666',
-},
+}
 
 '.border-dark-thick':{
 	border: 10,
 	borderColor:'#666',
-},
+}
 
 '.border-light':{
 	border: 6,
 	borderColor:'#ececec',
-},
+}
 
 '.border-light-thin':{
 	border: 2,
 	borderColor:'#ececec',
-},
+}
 
 '.border-light-thick':{
 	border: 10,
 	borderColor:'#ececec',
-},
+}
 
 
 '.black-line':{
 	backgroundColor: '#000',
 	width: Ti.UI.FILL,
 	height: 1
-},
+}
 
 '.gray-line':{
-	backgroundColor: '#9b9d9f',
+	backgroundColor: '#EBEBEB',
 	width: Ti.UI.FILL,
-	opacity: 0.25,
 	height: 1
-},
+}
 
 '.white-line':{
 	backgroundColor: '#fff',
 	width: Ti.UI.FILL,
 	height: 1
-},
+}
 
 '.black-line-vertical':{
 	backgroundColor: '#000',
 	width: 1,
 	height: Ti.UI.FILL
-},
+}
 
 '.gray-line-vertical':{
 	backgroundColor: '#9b9d9f',
 	width: 1,
 	opacity: 0.25,
 	height: Ti.UI.FILL
-},
+}
 
 '.white-line-vertical':{
 	backgroundColor: '#fff',
 	width: 1,
 	height: Ti.UI.FILL
-},
+}
 
 /** ICOMOON FONT REFERENCE **/
 

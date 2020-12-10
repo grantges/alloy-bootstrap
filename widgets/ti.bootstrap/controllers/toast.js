@@ -3,6 +3,7 @@ const icons = require('bootstrap/icons.json');
 const HEIGHT = (Alloy.CFG.TiDetect && Alloy.CFG.TiDetect.hasNotch) ? 100 : 75;
 
 let _callback = null,
+    _dismissOnClick = true,
     _position = 'bottom',
     _icon = null;
 
@@ -12,17 +13,16 @@ let _callback = null,
  * @constructor
  */
 (function _constructor(options){
-
+   options = options || {};
   /**
    * Style the toast as needed
    */
-  options.borderColor && ($.toast.borderColor = options.borderColor);
-  options.backgroundColor && ($.toast.backgroundColor = options.backgroundColor);
+  $.toast.borderColor = options.borderColor;
+  $.toast.backgroundColor = options.backgroundColor;
   $.title.color = $.icon.color = options.color || "#FFF";
-
-  if(options.position) {
-    _position = options.position;
-  }
+  _dismissOnClick = options.dismissOnClick;
+  
+  _position = options.position;
 
   $.toast.height = HEIGHT;
 
@@ -57,12 +57,14 @@ let _callback = null,
 function _onToastClick(e){
   Ti.Analytics.featureEvent('com.grantges.bootstrap.toast.clicked');
   _callback && _callback(e);
+  
+  _dismissOnClick && _close();
 }
 
 /**
  * Displays the Toast alert
  */
-$.open = function _open(){
+function _open(){
 
   let animation = null;
   if(_position === 'bottom') {
@@ -83,29 +85,34 @@ $.open = function _open(){
   $.toast.open(animation);
 
 }
+$.open = _open;
 
 /**
  * Closes the toast alert
  */
-$.close = function _close(){
+function _close(){
 
-  const animation = (_position === 'bottom') ?
-    Ti.UI.createAnimation({
-      top: Ti.Platform.displayCaps.platformHeight,
-      duration: 150,
-      curve: Ti.UI.ANIMATION_CURVE_EASE_OUT
-    }) :
-    Ti.UI.createAnimation({
-      top: -1*HEIGHT,
-      duration: 150,
-      curve: Ti.UI.ANIMATION_CURVE_EASE_OUT
+  if($.toast){
+      const animation = (_position === 'bottom') ?
+      Ti.UI.createAnimation({
+        top: Ti.Platform.displayCaps.platformHeight,
+        duration: 150,
+        curve: Ti.UI.ANIMATION_CURVE_EASE_OUT
+      }) :
+      Ti.UI.createAnimation({
+        top: -1*HEIGHT,
+        duration: 150,
+        curve: Ti.UI.ANIMATION_CURVE_EASE_OUT
+      });
+
+    $.toast.animate(animation, function(){
+      $.toast && $.toast.close();
+      $.toast = null;
+      $.destroy();
     });
-
-  $.toast.animate(animation, function(){
-    $.toast.close();
-    $.toast = null;
-  });
+  }
 }
+$.close = _close;
 
 /**
  * Toast border color

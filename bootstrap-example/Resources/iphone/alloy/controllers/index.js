@@ -62,24 +62,27 @@ function Controller() {
   { title: "Alerts", navid: "alerts", id: "__alloyId24" });
 
   __alloyId16.push($.__views["__alloyId24"]);$.__views["__alloyId25"] = Ti.UI.createTableViewRow(
-  { title: "Pull Up View", navid: "pullMenu", id: "__alloyId25" });
+  { title: "Menu Button", navid: "menuButton", id: "__alloyId25" });
 
   __alloyId16.push($.__views["__alloyId25"]);$.__views["__alloyId26"] = Ti.UI.createTableViewRow(
-  { title: "Custom Tab Bar", navid: "tabBar", id: "__alloyId26" });
+  { title: "Pull Up View", navid: "pullMenu", id: "__alloyId26" });
 
   __alloyId16.push($.__views["__alloyId26"]);$.__views["__alloyId27"] = Ti.UI.createTableViewRow(
-  { title: "Signature", navid: "signature", id: "__alloyId27" });
+  { title: "Custom Tab Bar", navid: "tabBar", id: "__alloyId27" });
 
   __alloyId16.push($.__views["__alloyId27"]);$.__views["__alloyId28"] = Ti.UI.createTableViewRow(
-  { title: "Browser", navid: "browser", id: "__alloyId28" });
+  { title: "Signature", navid: "signature", id: "__alloyId28" });
 
   __alloyId16.push($.__views["__alloyId28"]);$.__views["__alloyId29"] = Ti.UI.createTableViewRow(
-  { title: "Timeline", navid: "timeline", id: "__alloyId29" });
+  { title: "Browser", navid: "browser", id: "__alloyId29" });
 
   __alloyId16.push($.__views["__alloyId29"]);$.__views["__alloyId30"] = Ti.UI.createTableViewRow(
-  { title: "Locations", navid: "locationFinder", id: "__alloyId30" });
+  { title: "Timeline", navid: "timeline", id: "__alloyId30" });
 
-  __alloyId16.push($.__views["__alloyId30"]);$.__views["tableView"] = Ti.UI.createTableView(
+  __alloyId16.push($.__views["__alloyId30"]);$.__views["__alloyId31"] = Ti.UI.createTableViewRow(
+  { title: "Locations", navid: "locationFinder", id: "__alloyId31" });
+
+  __alloyId16.push($.__views["__alloyId31"]);$.__views["tableView"] = Ti.UI.createTableView(
   { data: __alloyId16, id: "tableView" });
 
   $.__views["__alloyId15"].add($.__views["tableView"]);

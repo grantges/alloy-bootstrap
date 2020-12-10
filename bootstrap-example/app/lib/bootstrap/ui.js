@@ -89,6 +89,7 @@ exports.createIconButton = (args) => {
 *                          : icon - one of the glyph references from the list above.
 */
 exports.createIcon = (args) => {
+
   var w = Alloy.createWidget('ti.bootstrap', 'icon', args);
   var v = w.getView();
 

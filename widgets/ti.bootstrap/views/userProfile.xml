@@ -1,5 +1,5 @@
 <Alloy module="bootstrap/ui">
-  <View id="wrapper" class="size background-color vgroup top-buffer">
+  <View id="wrapper" class="size background-color vgroup">
     <ImageView id="cardBkgImage" class="top" />
     <Widget id="userAvatar" src="ti.bootstrap" name="avatar" style='circle' size='med' status='none' />
     <View id="cardContainer" class="size vgroup left right bottom">

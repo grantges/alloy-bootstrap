@@ -2,6 +2,8 @@
 	<Window class="container">
 		<View id="mapview" module="ti.map" />
 		<Button backgroundColor="#fff" top="100" onClick="_changeStickyPoints">Update StickyPoints</Button>
-		<Widget id="pullUpView" src="ti.bootstrap" name="pullUpView" />
+		<Widget id="pullUpView" src="ti.bootstrap" name="pullUpView">
+			<View backgroundColor="#f00" height="50" />
+		</Widget>
 	</Window>
 </Alloy>

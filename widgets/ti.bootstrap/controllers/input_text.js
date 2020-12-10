@@ -6,6 +6,7 @@
  * @constructor
  */
 (function _constructor(options){
+
   $.container.width = options.width || Ti.UI.FILL,
   $.inputLabel.text = options.title || L('bootstrap-inputTextTitle', 'title');
 

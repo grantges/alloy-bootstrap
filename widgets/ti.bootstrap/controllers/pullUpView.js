@@ -36,6 +36,16 @@ let menuPosition,
     $.context.addEventListener('scroll', _onContextScroll);
     $.context.addEventListener('dragstart', _onContextDragStart);
     $.context.addEventListener('dragend', _onContextDragEnd);
+
+    /**
+     * Add any childrend to the pullUpView content container
+     */
+
+     if(options && options.children){
+         options.children.forEach(function(childView){
+             _addView(childView);
+         })
+     }
     
 })($.args);
 
@@ -66,9 +76,7 @@ $.addView = _addView;
 
 function _setStickyPoints(arr, index) {
     
-    console.log("Set Sticky Points");
     if(arr && (arr instanceof Array) ){
-        console.log("is an Array");
         stickyPoints = arr;
         stickyPoints.sort((a,b) => (a-b));
 
@@ -85,7 +93,7 @@ $.setStickyPoints = _setStickyPoints;
  */
 function _onContextScroll(e) {
     
-    if(e.y <= 0 && isDragging) {
+    if(e.y <= 0 && isContextDragging) {
         $.context.scrollingEnabled = false;
         menuPosition.index = currentStickyPointIdx;
         _animateMenuPosition(stickyPoints[currentStickyPointIdx]);
