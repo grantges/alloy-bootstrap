@@ -28,29 +28,3 @@ App = Alloy.createWidget('ti.bootstrap').App;
  *   }
  * }).App;
  */
-
-const Reste = require('reste');
-App.Api = new Reste();
-
-App.Api.config({
-    Q: require('q'),
-    debug: true, // allows logging to console of ::REST:: messages
-    errorsAsObjects: true, // Default: false. New in 1.4.5, will break 1.4.4 apps that handle errors
-    autoValidateParams: false, // set to true to throw errors if <param> url properties are not passed
-    validatesSecureCertificate: false, // Optional: If not specified, default behaviour from http://goo.gl/sJvxzS is kept.
-    timeout: 4000,
-    url: "https://randomuser.me/api/",
-    requestHeaders: {
-        "Content-Type": "application/json"
-    },
-    methods: [{
-        name: "getUsers",
-        get: "?results=6&inc=picture"
-    }],
-    onError: function(e, retry) {
-        console.log('Error -> ' + e );
-    },
-    onLoad: function(e, callback) {
-        callback(e);
-    }
-});

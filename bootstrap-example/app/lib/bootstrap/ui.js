@@ -7,7 +7,6 @@ const icons = require('bootstrap/icons.json');
 exports.createInput = (options) => {
   if(!options.type){
     throw new Error('Unable to create Boostap Form Input. No type specified.');
-    return;
   }
   return Alloy.createWidget('ti.bootstrap', 'input_'+ options.type.toLowerCase(), options);
 };
@@ -61,21 +60,32 @@ exports.createIconButton = (args) => {
   
   const icon = args.icon ? icons[args.icon] : null;
 
-  const wrapper = Ti.UI.createView({
-      layout:'horizontal',
-      height: Ti.UI.SIZE,
-      width: Ti.UI.SIZE,
-  });
+  const wrapper = Ti.UI.createView(args);
 
-  const iconFont =  Ti.UI.createButton(args);
-  iconFont.font = {fontFamily:'icomoon'}; 
-  iconFont.title = icon;
+  let _iconStyle = {
+    touchEnabled: false,
+    font: {
+      fontFamily: 'icomoon',
+      fontSize: args.font.fontSize
+    },
+    color : args.color,
+    title: icon
+  };
+
+  const iconFont =  Ti.UI.createButton(_iconStyle);
   wrapper.add(iconFont);
 
   if(args.text) { 
-      const textLabel = Ti.UI.createLabel(args);
-      textLabel.text = args.text;
-      textLabel.left = 10;
+
+      let _textStyle = {
+        touchEnabled: false,
+        font: {
+          fontSize: args.font.fontSize
+        }, 
+        text: args.text,
+        left: 10
+      }
+      const textLabel = Ti.UI.createLabel(_textStyle);
       wrapper.add(textLabel);
   }
 
@@ -115,3 +125,27 @@ exports.createHr = (args) => {
   });
 
 };
+
+/**
+ * Creates a badge component.
+ * @param {Object} args 
+ */
+exports.createBadge = (args) => {
+
+  let w = Alloy.createWidget('ti.bootstrap', 'badge', args);
+  let v = w.getView();
+
+  v.setTitle = function(t) {
+    w.title = t;
+  }
+
+  v.setBgColor = function(c) {
+    w.backgroundColor = c;
+  }
+
+  v.setTitleColor = function(c) {
+    w.color = c;
+  }
+
+  return v;
+}

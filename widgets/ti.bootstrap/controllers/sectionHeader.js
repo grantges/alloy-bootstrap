@@ -1,9 +1,6 @@
-
-console.log($.args);
-
-let title = 
-    linkTitle = 
-    linkCallback = null;
+let title = null;
+let linkTitle = null;
+let linkCallback = null;
 
 
 /** Private Methods */

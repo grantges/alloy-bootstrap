@@ -34,43 +34,17 @@ if (!global.Alloy) {
 App = Alloy.createWidget('ti.bootstrap').App;
 
 /**
-                                               * The App object is easily extenisble if you need to, just pass in data objects like
-                                               * any widget!
-                                               *
-                                               * Example - Extending the User Object
-                                               *
-                                               * App = Alloy.createWidget('ti.bootstrap', {
-                                               *   User: {
-                                               *     type: 'admin'
-                                               *   }
-                                               * }).App;
-                                               */
-
-const Reste = require('reste');
-App.Api = new Reste();
-
-App.Api.config({
-  Q: require('q'),
-  debug: true, // allows logging to console of ::REST:: messages
-  errorsAsObjects: true, // Default: false. New in 1.4.5, will break 1.4.4 apps that handle errors
-  autoValidateParams: false, // set to true to throw errors if <param> url properties are not passed
-  validatesSecureCertificate: false, // Optional: If not specified, default behaviour from http://goo.gl/sJvxzS is kept.
-  timeout: 4000,
-  url: "https://randomuser.me/api/",
-  requestHeaders: {
-    "Content-Type": "application/json" },
-
-  methods: [{
-    name: "getUsers",
-    get: "?results=6&inc=picture" }],
-
-  onError: function (e, retry) {
-    console.log('Error -> ' + e);
-  },
-  onLoad: function (e, callback) {
-    callback(e);
-  } });
-
+                                                                                             * The App object is easily extenisble if you need to, just pass in data objects like
+                                                                                             * any widget!
+                                                                                             *
+                                                                                             * Example - Extending the User Object
+                                                                                             *
+                                                                                             * App = Alloy.createWidget('ti.bootstrap', {
+                                                                                             *   User: {
+                                                                                             *     type: 'admin'
+                                                                                             *   }
+                                                                                             * }).App;
+                                                                                             */
 
 
 // Open root window if a new UI session has started. Can happen more than once in app's lifetime.
@@ -84,4 +58,3 @@ Ti.UI.addEventListener('sessionbegin', function () {
 if (typeof Ti.UI.hasSession === 'undefined' || Ti.UI.hasSession) {
   Alloy.createController('index');
 }
-//# sourceMappingURL=file:///Users/bert/Repos/titanium/alloy-bootstrap/bootstrap-example/build/map/Resources/iphone/app.js.map

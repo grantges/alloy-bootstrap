@@ -37,7 +37,7 @@
 		right: 10   
 	},
 	bottom: 5,
-backgroundColor: '#e7e7e7'
+	backgroundColor: '#e7e7e7'
 }
 
 'TextArea':{
@@ -302,11 +302,16 @@ backgroundColor: '#e7e7e7'
  */
 
  '.drop-shadow':{
-	 viewShadowColor: "#a000",
-	 viewShadowOffset: 5,
+	 viewShadowColor: "#8000",
+	 viewShadowOffset: {x:0, y:5},
 	 viewShadowRadius: 10
  }
 
+ '.reverse-drop-shadow':{
+	 viewShadowColor: "#8000",
+	 viewShadowOffset: {x:0, y:5},
+	 viewShadowRadius: 10
+ }
 
 /**
  * 	Typography
@@ -630,7 +635,7 @@ backgroundColor: '#e7e7e7'
 
 '.btn-icon':{
   font:{
-    fontSize: 36
+    fontSize: 24
   },
   height: 50,
   width: 50,

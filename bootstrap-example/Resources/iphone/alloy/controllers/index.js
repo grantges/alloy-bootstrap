@@ -34,60 +34,63 @@ function Controller() {
 
 
   // Generated UI code
-  $.__views["__alloyId15"] = Ti.UI.createWindow(
-  { backgroundColor: "white", extendSafeArea: false, title: "Alloy Bootstrap Components", id: "__alloyId15" });
+  $.__views["__alloyId16"] = Ti.UI.createWindow(
+  { backgroundColor: "white", extendSafeArea: false, title: "Alloy Bootstrap Components", id: "__alloyId16" });
 
-  var __alloyId16 = [];$.__views["__alloyId17"] = Ti.UI.createTableViewRow(
-  { title: "Badges", navid: "badge", id: "__alloyId17" });
+  var __alloyId17 = [];$.__views["__alloyId18"] = Ti.UI.createTableViewRow(
+  { title: "Badges", navid: "badge", id: "__alloyId18" });
 
-  __alloyId16.push($.__views["__alloyId17"]);$.__views["__alloyId18"] = Ti.UI.createTableViewRow(
-  { title: "Card", navid: "card", id: "__alloyId18" });
+  __alloyId17.push($.__views["__alloyId18"]);$.__views["__alloyId19"] = Ti.UI.createTableViewRow(
+  { title: "Card", navid: "card", id: "__alloyId19" });
 
-  __alloyId16.push($.__views["__alloyId18"]);$.__views["__alloyId19"] = Ti.UI.createTableViewRow(
-  { title: "User Profile", navid: "userProfile", id: "__alloyId19" });
+  __alloyId17.push($.__views["__alloyId19"]);$.__views["__alloyId20"] = Ti.UI.createTableViewRow(
+  { title: "Dialog", navid: "dialog", id: "__alloyId20" });
 
-  __alloyId16.push($.__views["__alloyId19"]);$.__views["__alloyId20"] = Ti.UI.createTableViewRow(
-  { title: "Indicator / Display", navid: "indicator", id: "__alloyId20" });
+  __alloyId17.push($.__views["__alloyId20"]);$.__views["__alloyId21"] = Ti.UI.createTableViewRow(
+  { title: "User Profile", navid: "userProfile", id: "__alloyId21" });
 
-  __alloyId16.push($.__views["__alloyId20"]);$.__views["__alloyId21"] = Ti.UI.createTableViewRow(
-  { title: "Icons", navid: "icon", id: "__alloyId21" });
+  __alloyId17.push($.__views["__alloyId21"]);$.__views["__alloyId22"] = Ti.UI.createTableViewRow(
+  { title: "Indicator / Display", navid: "indicator", id: "__alloyId22" });
 
-  __alloyId16.push($.__views["__alloyId21"]);$.__views["__alloyId22"] = Ti.UI.createTableViewRow(
-  { title: "Form inputs", navid: "form", id: "__alloyId22" });
+  __alloyId17.push($.__views["__alloyId22"]);$.__views["__alloyId23"] = Ti.UI.createTableViewRow(
+  { title: "Icons", navid: "icon", id: "__alloyId23" });
 
-  __alloyId16.push($.__views["__alloyId22"]);$.__views["__alloyId23"] = Ti.UI.createTableViewRow(
-  { title: "Avatar", navid: "avatar", id: "__alloyId23" });
+  __alloyId17.push($.__views["__alloyId23"]);$.__views["__alloyId24"] = Ti.UI.createTableViewRow(
+  { title: "Form inputs", navid: "form", id: "__alloyId24" });
 
-  __alloyId16.push($.__views["__alloyId23"]);$.__views["__alloyId24"] = Ti.UI.createTableViewRow(
-  { title: "Alerts", navid: "alerts", id: "__alloyId24" });
+  __alloyId17.push($.__views["__alloyId24"]);$.__views["__alloyId25"] = Ti.UI.createTableViewRow(
+  { title: "Avatar", navid: "avatar", id: "__alloyId25" });
 
-  __alloyId16.push($.__views["__alloyId24"]);$.__views["__alloyId25"] = Ti.UI.createTableViewRow(
-  { title: "Menu Button", navid: "menuButton", id: "__alloyId25" });
+  __alloyId17.push($.__views["__alloyId25"]);$.__views["__alloyId26"] = Ti.UI.createTableViewRow(
+  { title: "Alerts", navid: "alerts", id: "__alloyId26" });
 
-  __alloyId16.push($.__views["__alloyId25"]);$.__views["__alloyId26"] = Ti.UI.createTableViewRow(
-  { title: "Pull Up View", navid: "pullMenu", id: "__alloyId26" });
+  __alloyId17.push($.__views["__alloyId26"]);$.__views["__alloyId27"] = Ti.UI.createTableViewRow(
+  { title: "Menu Button", navid: "menuButton", id: "__alloyId27" });
 
-  __alloyId16.push($.__views["__alloyId26"]);$.__views["__alloyId27"] = Ti.UI.createTableViewRow(
-  { title: "Custom Tab Bar", navid: "tabBar", id: "__alloyId27" });
+  __alloyId17.push($.__views["__alloyId27"]);$.__views["__alloyId28"] = Ti.UI.createTableViewRow(
+  { title: "Pull Up View", navid: "pullMenu", id: "__alloyId28" });
 
-  __alloyId16.push($.__views["__alloyId27"]);$.__views["__alloyId28"] = Ti.UI.createTableViewRow(
-  { title: "Signature", navid: "signature", id: "__alloyId28" });
+  __alloyId17.push($.__views["__alloyId28"]);$.__views["__alloyId29"] = Ti.UI.createTableViewRow(
+  { title: "Custom Tab Bar", navid: "tabBar", id: "__alloyId29" });
 
-  __alloyId16.push($.__views["__alloyId28"]);$.__views["__alloyId29"] = Ti.UI.createTableViewRow(
-  { title: "Browser", navid: "browser", id: "__alloyId29" });
+  __alloyId17.push($.__views["__alloyId29"]);$.__views["__alloyId30"] = Ti.UI.createTableViewRow(
+  { title: "Signature", navid: "signature", id: "__alloyId30" });
 
-  __alloyId16.push($.__views["__alloyId29"]);$.__views["__alloyId30"] = Ti.UI.createTableViewRow(
-  { title: "Timeline", navid: "timeline", id: "__alloyId30" });
+  __alloyId17.push($.__views["__alloyId30"]);$.__views["__alloyId31"] = Ti.UI.createTableViewRow(
+  { title: "Browser", navid: "browser", id: "__alloyId31" });
 
-  __alloyId16.push($.__views["__alloyId30"]);$.__views["__alloyId31"] = Ti.UI.createTableViewRow(
-  { title: "Locations", navid: "locationFinder", id: "__alloyId31" });
+  __alloyId17.push($.__views["__alloyId31"]);$.__views["__alloyId32"] = Ti.UI.createTableViewRow(
+  { title: "Timeline", navid: "timeline", id: "__alloyId32" });
 
-  __alloyId16.push($.__views["__alloyId31"]);$.__views["tableView"] = Ti.UI.createTableView(
-  { data: __alloyId16, id: "tableView" });
+  __alloyId17.push($.__views["__alloyId32"]);$.__views["__alloyId33"] = Ti.UI.createTableViewRow(
+  { title: "Locations", navid: "locationFinder", id: "__alloyId33" });
 
-  $.__views["__alloyId15"].add($.__views["tableView"]);
+  __alloyId17.push($.__views["__alloyId33"]);$.__views["tableView"] = Ti.UI.createTableView(
+  { data: __alloyId17, id: "tableView" });
+
+  $.__views["__alloyId16"].add($.__views["tableView"]);
   _onTableViewClick ? $.addListener($.__views["tableView"], 'click', _onTableViewClick) : __defers['$.__views["tableView"]!click!_onTableViewClick'] = true;$.__views["index"] = Ti.UI.createNavigationWindow(
-  { window: $.__views["__alloyId15"], id: "index" });
+  { window: $.__views["__alloyId16"], id: "index" });
 
   $.__views["index"] && $.addTopLevelView($.__views["index"]);
   exports.destroy = function () {};

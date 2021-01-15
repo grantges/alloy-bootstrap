@@ -10,12 +10,5 @@
     "os:ios": {},
     "os:mobileweb": {},
     "os:windows": {},
-    "dependencies": {
-        "ti.bootstrap": "*",
-        "ti.bootstrap.browser": "*",
-        "ti.bootstrap.timeline": "*",
-        "ti.bootstrap.walkthrough": "*",
-        "ti.bootstrap.locationFinder": "*",
-        "ti.bootstrap.signature": "*"
-    }
+    "dependencies": {}
 }
