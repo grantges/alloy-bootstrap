@@ -127,3 +127,8 @@ function _close(animate){
   _onClose && _onClose(null, {pageIndex: _currentPage});
 };
 exports.close = _close;
+
+function _next(){
+  $.scrollableView.moveNext();
+}
+exports.next = _next;

@@ -11,7 +11,7 @@
    width: '90%'
  },
 
- '.walkthrough-image[formFactor=handheld]':{
+ '.walkthrough-image':{
    height: 300,
    width: Ti.UI.Size
  },

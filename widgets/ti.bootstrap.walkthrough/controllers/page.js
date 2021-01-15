@@ -11,6 +11,17 @@
   $.title.text = options.title;
   $.description.text = options.description
 
+  console.log(options.button);
+  if(options.button){
+
+    $.btnLabel.text = options.button.title;
+    options.button.callback && $.actionBtn.addEventListener('click', options.button.callback);
+
+    $.removeClass($.actionBtn, 'hide');
+    $.addClass($.actionBtn, 'show');
+
+  }
+
 })($.args);
 
 
