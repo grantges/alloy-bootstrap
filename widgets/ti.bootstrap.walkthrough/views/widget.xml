@@ -1,4 +1,4 @@
-<Alloy autoStyle="true">
+<Alloy autoStyle="true" module="bootstrap/ui">
 	<Window id="walkthroughView">
 		<ScrollableView id="scrollableView">
 
@@ -22,8 +22,12 @@
 				<Label class='walkthrough walkthrough-text h5 top-buffer'>The process of transportation has never been so easy, complete form in just a few steps.</Label>
 			</View>
 	 	-->
+
 		</ScrollableView>
-		<Label id="closeBtn" class="btn btn-default h4 col-4 bottom-buffer" onClick="_close" text="L('btn-skip', 'Skip')"/>
+		<View id="btnContainer" class="col-10" height="Ti.UI.SIZE">
+			<Label id="closeBtn" class="btn btn-default h4 col-4" onClick="_close" text="L('btn-skip', 'Skip')"/>
+			<!-- <Label id="nextBtn"  class="btn btn-primary h4 bold col-4 bottom-buffer right-buffer" onClick="_next" text="L('btn-next', 'Next')"/> -->
+		</View>
 	</Window>
 </Alloy>
 `

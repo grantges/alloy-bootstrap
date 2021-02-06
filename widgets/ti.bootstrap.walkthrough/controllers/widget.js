@@ -4,15 +4,15 @@
  * @constant {Object}
  * @private
  */
-var PAGE_START_TRANSFORMATION = Ti.UI.createMatrix2D().scale(0.5),
-    PAGE_START_OPACITY = 0.4;
+let PAGE_START_TRANSFORMATION = Ti.UI.createMatrix2D().scale(0.5),
+    PAGE_START_OPACITY = 0.4,
 
 /**
  * Utility Library for standard Animations
  * @property {Object}
  * @private
  */
-var $A = require('bootstrap/animations'),
+$A = require('bootstrap/animations'),
 
 /**
  * Current Page placeholder
@@ -35,7 +35,8 @@ _pages = [],
  * @property {Function}
  * @private
  */
-_onCancel;
+_onClose;
+
 
 /**
  * Initialization function of the Walkthrough Widget
@@ -49,7 +50,14 @@ _onCancel;
      if($.scrollableView.currentPage >= $.scrollableView.views.length-1){
        //set the skip button to a close style
        $.removeClass($.closeBtn, 'btn-default');
-       $.addClass($.closeBtn, 'btn-primary', {text: 'Close'});
+
+       if(options.closeBackgroundColor){
+        $.closeBtn.backgroundColor = options.closeBackgroundColor;
+       }
+       else {
+        $.addClass($.closeBtn, 'btn-primary', {text: 'Close'});
+       }
+       
      }
      else if($.closeBtn.text != L('btn-skip', 'Skip')){
        //set the skip button to a close style
@@ -58,7 +66,29 @@ _onCancel;
      }
    });
 
-  $.scrollableView.addEventListener('scroll', function(e){
+  $.scrollableView.addEventListener('scroll', _onScroll);
+
+  /**
+   * Insert Walkthrough Pages into ScrollableView
+   */
+  if(options.pages && options.pages.length){
+
+    console.log(typeof(options.pages.forEach));
+    options.pages.forEach(function(item){
+      _add(item);
+    });
+
+  }
+
+   /**
+    * Setup the callbacks
+    */
+    _onClose = options.onClose;
+
+})($.args);
+
+function _onScroll(e) {
+
     var scale = Math.abs((e.currentPageAsFloat - e.currentPage));
     if(scale < 0.5) {
       if(_pages[e.currentPage-1]){
@@ -68,26 +98,7 @@ _onCancel;
     }
     _pages[e.currentPage].getView().opacity = 1-scale.toFixed(2);
     _pages[e.currentPage].getView().transform = Ti.UI.createMatrix2D().scale(1-scale);
-  });
-
-  /**
-   * Insert Walkthrough Pages into ScrollableView
-   */
-  if(options.pages && options.pages.length){
-
-     console.log(typeof(options.pages.forEach));
-     options.pages.forEach(function(item){
-
-       _add(item);
-     });
-   }
-
-   /**
-    * Setup the callbacks
-    */
-    _onClose = options.onClose;
-
-})($.args);
+  }
 
 function _add(pageData){
   var page = Alloy.createWidget('ti.bootstrap.walkthrough', 'page', pageData);
@@ -121,10 +132,17 @@ function _open(animate){
 exports.open = _open;
 
 function _close(animate){
-  animate = animate || true;
-  $.walkthroughView.close(animate ? $A.fadeOut : null);
-
-  _onClose && _onClose(null, {pageIndex: _currentPage});
+  
+  if(_onClose) {
+    
+    let cancel = _onClose(null, {pageIndex: _currentPage});
+    
+    if(!cancel){
+      animate = animate || true;
+      $.walkthroughView.close(animate ? $A.fadeOut : null);
+    }
+    
+  }
 };
 exports.close = _close;
 

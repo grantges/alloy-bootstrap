@@ -15,6 +15,7 @@
   if(options.button){
 
     $.btnLabel.text = options.button.title;
+    options.button.backgroundColor && ($.actionBtn.backgroundColor = options.button.backgroundColor);
     options.button.callback && $.actionBtn.addEventListener('click', options.button.callback);
 
     $.removeClass($.actionBtn, 'hide');

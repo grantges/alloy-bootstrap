@@ -184,62 +184,63 @@
 
 '.col-1': {
 	width: '8.33333333%',
-	height:50,
+	height: Ti.UI.SIZE
+	
 }
 
 '.col-2': {
 	width: '16.66666667%',
-	height: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
 }
 
 '.col-3': {
 	width: '25%',
-	height: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
 }
 
 '.col-4': {
 	width: '33.33333333%',
-	height: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
 }
 
 '.col-5': {
 	width: '41.66666667%',
-	height: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
 }
 
 '.col-6': {
 	width: '50%',
-	height: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
 }
 
 '.col-7': {
 	width: '58.33333333%',
-	height: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
 }
 
 '.col-8': {
 	width: '66.66666667%',
-	height: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
 }
 
 '.col-9': {
 	width: '75%',
-	height: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
 }
 
 '.col-10': {
 	width: '83.33333333%',
-	height: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
 }
 
 '.col-11': {
 	width: '91.66666667%',
-	height: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
 }
 
 '.col-12': {
 	width: '100%',
-	height: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
 }
 
 
@@ -430,6 +431,12 @@
   textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
 }
 
+'.monospace':{
+	font:{
+		fontFamily: 'Helvetica'
+	}
+}
+
 /**
  * 	Visibility
  */
@@ -613,9 +620,7 @@
   borderRadius: 3,
   textAlign: 'center',
   height: 45,
-  font: {
-	  fontSize: 14
-  }
+
 }
 
 '.btn-light' : {

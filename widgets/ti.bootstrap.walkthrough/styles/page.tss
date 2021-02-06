@@ -7,13 +7,10 @@
    }
  },
 
- '.walkthrough-description':{
-   width: '90%'
- },
-
  '.walkthrough-image':{
-   height: 300,
-   width: Ti.UI.Size
+   height: Ti.UI.SIZE,
+   width: 'auto',
+   bottom: 30
  },
 
  '#swipeText':{

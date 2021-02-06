@@ -8,6 +8,6 @@
   currentPageIndicatorColor: '#2D8DD6',
 }
 
-'#closeBtn':{
+'#btnContainer' : {
   bottom: 40
 }

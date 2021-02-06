@@ -141,6 +141,7 @@ Object.defineProperty($, 'valueSize', {
     set: function _setValueSize(s) {
         let size = $.createStyle({
             font:{
+                fontFamily: $.indicatorValue.font.fontFamily || null,
                 fontSize: s
             }
         });
@@ -185,7 +186,7 @@ Object.defineProperty($, 'valueAlign', {
  */
 Object.defineProperty($, 'uom', {
     get: function _getUOM() {
-        $.indicatorUOM.text
+        return $.indicatorUOM.text;
     },
     set: function _setUOM(text) {
         $.indicatorUOM.text = text;
@@ -194,7 +195,7 @@ Object.defineProperty($, 'uom', {
 
 Object.defineProperty($, 'uomColor', {
     get: function _getUOMColor() {
-        $.indicatorUOM.color
+        return $.indicatorUOM.color;
     },
     set: function _setUOMColor(c) {
         $.indicatorUOM.color = c;
@@ -203,7 +204,7 @@ Object.defineProperty($, 'uomColor', {
 
 Object.defineProperty($, 'uomSize', {
     get: function _getUOMSize() {
-        $.indicatorUOM.color
+        return $.indicatorUOM.font.fontSize;
     },
     set: function _setUOMSize(s) {
         let size = $.createStyle({
@@ -219,28 +220,28 @@ Object.defineProperty($, 'uomSize', {
 
 (function _constructor(options){
 
-    this._titleAlign = options.titleAlign || 'right';
+    this._titleAlign = options.titleAlign || 'center';
     $.titleAlign = this._titleAlign;
     $.indicatorUOM.bottom = 6;
+
 
     if(options){
         $.icon = options.icon;
         $.iconColor = options.color || options.iconColor;
 
         $.value = options.value;
-        $.valueSize = options.valueSize;
-        $.valueColor = options.valueColor;
+        $.valueSize = options.valueSize || $.indicatorValue.font.fontSize;
+        $.valueColor = options.valueColor || $.indicatorValue.color;
         
         $.uom = options.uom;
-        $.uomSize = options.uomSize;
-        $.uomColor = options.uomColor;
+        $.uomSize = options.uomSize || $.indicatorUOM.font.fontSize;
+        $.uomColor = options.uomColor || $.indicatorUOM.color;
 
         $.title = options.title;
-        $.titleSize = options.titleSize;
-        $.titleColor = options.titleColor;
+        $.titleSize = options.titleSize || $.indicatorTitle.font.fontSize;
+        $.titleColor = options.titleColor || $.indicatorTitle.color;
     }
     
-
 })($.args);
 
 function _setAllTextColor(color) {

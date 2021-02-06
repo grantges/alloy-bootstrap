@@ -51,43 +51,74 @@ exports.createIconFont = (args) => {
 exports.createIconLabel = exports.createIconFont;
 
 /**
-* Creates an Icon Button
+* Creates a view with an Icon and Text in a button style
 * @param {Object} args -   list of properties passed to the createIconFont function from the Alloy XML or calling function.
 *                          Required parameter(s)
 *                          : icon - one of the glyph references from the list above.
+                           : text - text of the label (can be null/blank)
 */
 exports.createIconButton = (args) => {
-  
-  const icon = args.icon ? icons[args.icon] : null;
 
-  const wrapper = Ti.UI.createView(args);
+  let iconFont = null;
+  let textLabel = null;
+  let wrapper = Ti.UI.createView(args);
 
+  console.log(args);
+
+  /**
+   * Create Icon and Handler Function
+   */
   let _iconStyle = {
     touchEnabled: false,
     font: {
       fontFamily: 'icomoon',
       fontSize: args.font.fontSize
     },
+    left: args.icon ? 10 : 0,
     color : args.color,
-    title: icon
   };
-
-  const iconFont =  Ti.UI.createButton(_iconStyle);
-  wrapper.add(iconFont);
-
-  if(args.text) { 
-
-      let _textStyle = {
-        touchEnabled: false,
-        font: {
-          fontSize: args.font.fontSize
-        }, 
-        text: args.text,
-        left: 10
-      }
-      const textLabel = Ti.UI.createLabel(_textStyle);
-      wrapper.add(textLabel);
+  iconFont =  Ti.UI.createButton(_iconStyle);
+  
+  function _setIcon(_i){
+    const _icon = _i ? icons[_i] : null;
+    iconFont.left = _icon ? 10 : 0;
+    iconFont.title = _icon;
   }
+  wrapper.setIcon = _setIcon;
+
+  /**
+   * Add Icon to Wrapper and Update Icon
+   */
+  wrapper.add(iconFont);
+  wrapper.setIcon(args.icon);
+
+  /**
+   * Create Text Label and Handler Function
+   */
+  let _textStyle = {
+    touchEnabled: false,
+    font: {
+      fontFamily: args.font.fontFamily,
+      fontSize: args.font.fontSize,
+      fontWeight: args.font.fontWeight
+    },
+    textAlign: args.textAlign || 'center',
+    color: args.color || 'WHITE',
+    right: args.text ? 10 : 0
+  }
+  textLabel = Ti.UI.createLabel(_textStyle);
+
+  function _setText(_txt) {
+    textLabel.right = _txt ? 10 : 0;
+    textLabel.text = _txt;
+  }
+  wrapper.setText = _setText;
+  
+  /**
+   * Add Label to Wrapper and Update Text
+   */
+  wrapper.add(textLabel);
+  wrapper.setText(args.text);
 
   return wrapper;
 };
