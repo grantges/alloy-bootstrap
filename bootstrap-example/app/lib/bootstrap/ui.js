@@ -63,8 +63,6 @@ exports.createIconButton = (args) => {
   let textLabel = null;
   let wrapper = Ti.UI.createView(args);
 
-  console.log(args);
-
   /**
    * Create Icon and Handler Function
    */

@@ -1,0 +1,13 @@
+<Alloy module="bootstrap/ui">
+    <Window id="dialog" class="smooth drop-shadow col-10">
+        <View class="vgroup size top-buffer">
+            <View id="iconContainer" class="size top-buffer" if="$.args.icon" />
+            <Label id="title" class="dark-gray h3 span-width text-center top-buffer" if="$.args.title"/>
+            <Label id="subtitle" class="gray h5 span-width text-center top-buffer" if="$.args.subtitle"/>
+        </View>
+        <View id="buttonContainer" class="bottom-buffer row size">
+            <Button id="btnCancel" class="btn btn-primary" title="L('cancel', 'Cancel')" if="$.args.cancelCallback" />
+            <Button id="btnOk" class="btn btn-primary" title="L('ok', 'OK')" if="$.args.okCallback" />
+        </View>
+    </Window>
+</Alloy>

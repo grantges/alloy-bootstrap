@@ -19,7 +19,7 @@
 
 'Label':{
   font:{
-    fontFamily: 'AppleSDGothicNeo'
+    fontFamily: 'Helvetica Neue'
   }
 }
 
@@ -29,7 +29,7 @@
 
 'TextField': {
 	font:{
-		fontFamily: 'AppleSDGothicNeo'
+		fontFamily: 'Helvetica Neue'
 	},
 	borderStyle: Ti.UI.INPUT_BORDERSTYLE_NONE, // common default style
 	padding: {
@@ -172,6 +172,55 @@
 }
 
 /**
+ * Shadows
+ */
+
+ '.drop-shadow':{
+	 viewShadowColor: "#8000",
+	 viewShadowOffset: {x:0, y:0},
+	 viewShadowRadius: 5
+ }
+
+ '.reverse-drop-shadow':{
+	 viewShadowColor: "#8000",
+	 viewShadowOffset: {x:0, y:5},
+	 viewShadowRadius: 10
+ }
+
+/**
+ * Elevation
+ */
+'.elevation-1':{
+	viewShadowColor: "#8000",
+	viewShadowOffset: {x:0, y:5},
+	viewShadowRadius: 5
+}
+
+'.elevation-2':{
+	viewShadowColor: "#8000",
+	viewShadowOffset: {x:0, y:10},
+	viewShadowRadius: 10
+}
+
+'.elevation-3':{
+	viewShadowColor: "#8000",
+	viewShadowOffset: {x:0, y:15},
+	viewShadowRadius: 15
+}
+
+'.elevation-4':{
+	viewShadowColor: "#8000",
+	viewShadowOffset: {x:0, y:20},
+	viewShadowRadius:20
+}
+
+'.elevation-5':{
+	viewShadowColor: "#8000",
+	viewShadowOffset: {x:0, y:25},
+	viewShadowRadius: 25
+}
+
+/**
  * 	Grid System
  */
 '.row' : {
@@ -199,7 +248,7 @@
 }
 
 '.col-4': {
-	width: '33.33333333%',
+	width: '33.34%',
 	height: Ti.UI.SIZE
 }
 
@@ -297,22 +346,6 @@
 '.rounded':{
 	borderRadius: 3
 }
-
-/**
- * Shadows
- */
-
- '.drop-shadow':{
-	 viewShadowColor: "#8000",
-	 viewShadowOffset: {x:0, y:5},
-	 viewShadowRadius: 10
- }
-
- '.reverse-drop-shadow':{
-	 viewShadowColor: "#8000",
-	 viewShadowOffset: {x:0, y:5},
-	 viewShadowRadius: 10
- }
 
 /**
  * 	Typography
@@ -620,7 +653,11 @@
   borderRadius: 3,
   textAlign: 'center',
   height: 45,
+}
 
+'.btn-flat':{
+  textAlign: 'center',
+  height: 45,
 }
 
 '.btn-light' : {
@@ -640,7 +677,7 @@
 
 '.btn-icon':{
   font:{
-    fontSize: 24
+    fontSize: 28
   },
   height: 50,
   width: 50,

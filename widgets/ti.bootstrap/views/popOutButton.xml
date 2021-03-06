@@ -1,0 +1,12 @@
+<Alloy module="bootstrap/ui">
+	<View id="container" class="left-buffer top-buffer">
+		<View id="subMenu" class="btn-icon bg-white span-width left-buffer top-buffer" onClick="onItemClick">
+			<View id="spacer" class="btn-icon" />
+			<!-- <Icon class="btn-icon blue left-buffer" index="0" status="true" icon="icon-compass2" />
+			<Icon class="btn-icon blue left-buffer" index="1" status="true" icon="icon-location_pin" />
+			<Icon class="btn-icon blue left-buffer" index="2" status="true" icon="icon-make-group" />
+			<Icon class="btn-icon blue left-buffer" index="3" status="true" icon="icon-share21" /> -->
+		</View>
+		<Icon id="toggleBtn" class="btn-icon bold gray bg-white drop-shadow left-buffer top-buffer" icon="icon-layers" onClick="togglePopOutItems" />
+	</View>
+</Alloy>

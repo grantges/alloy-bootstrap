@@ -1,0 +1,6 @@
+<Alloy>
+    <View>
+        <View module="ti.map" />
+        <Widget src="ti.bootstrap" name="menu_button" />
+    </View>
+</Alloy>

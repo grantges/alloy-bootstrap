@@ -1,0 +1,8 @@
+<Alloy>
+
+    <Window class="col top-buffer bg-light-gray">
+        <Button onClick="onSuccessDialogClick" class="top-buffer">Open Success Dialog</Button>
+        <Button onClick="onCancelDialogClick" class="top-buffer">Open Cancel Dialog</Button>
+    </Window>
+
+</Alloy>
